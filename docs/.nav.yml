@@ -1,6 +1,7 @@
 nav:
-  - Introduction: index.md
-  - Design History: history.md
+  - Design Overview:
+    - Introduction / Quick Start: index.md
+    - Development History: history.md
   - Design Inputs: inputs
   - Design Outputs: outputs
   - Design Verification: verification

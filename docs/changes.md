@@ -5,7 +5,7 @@
 The following table provides an overview of design differences between the nPOC-BB Alpha and Beta/Gamma prototypes developed at GHL.
 
 !!! note
-    The GHL Beta and Gamma prototypes have the same mechanical design but different main printed circuit boards (PCBs), which are denoted RevB and RevC, respectively. The RevC PCB redesign primarily address flaws in the main board that can cause units to fail randomly. Changes to the main PCB are described further below.
+    The GHL Beta and Gamma prototypes have the same mechanical design but different main printed circuit boards (PCBs), which are denoted RevB and RevC, respectively, by GHL. The RevC PCB redesign primarily address flaws in the main board that can cause units to fail randomly. Changes to the main PCB are described further below.
 
 <table>
   <tbody>
