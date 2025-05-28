@@ -1,0 +1,15 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: GHL NAATOS Sample Prep Heater Board.PcbDoc   5/28/2025  2:02:35 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : GHL NAATOS Sample Prep Heater Board.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.305mm (12mil)         +0.076mm (3mil)/-0.305mm (12mil)  Round             12        PTH        60.91mm (2.40inch)
+T2      3.048mm (120mil)        +/-0.076mm (3mil)                 Round             6         NPTH       92.99mm (3.66inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              18
+
+Total Processing Time (hh:mm:ss) : 00:00:00

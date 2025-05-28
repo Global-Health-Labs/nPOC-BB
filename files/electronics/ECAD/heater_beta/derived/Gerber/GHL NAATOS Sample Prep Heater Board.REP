@@ -1,0 +1,185 @@
+*************************************************************
+FileName = GHL NAATOS Sample Prep Heater Board.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Layer
+      File : GHL NAATOS Sample Prep Heater Board.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D20
+    D21
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Top Silk Screen
+      File : GHL NAATOS Sample Prep Heater Board.GTO
+
+    Adding Layer      : Top Silk Screen
+
+    Adding Layer      : Title_Block
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : GHL NAATOS Sample Prep Heater Board.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D26
+    D27
+    D29
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : GHL NAATOS Sample Prep Heater Board.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D14
+    D15
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Bottom Silk Screen
+      File : GHL NAATOS Sample Prep Heater Board.GBO
+
+    Adding Layer      : Bottom Silk Screen
+
+    Adding Layer      : Title_Block
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Top Solder Mask
+      File : GHL NAATOS Sample Prep Heater Board.GTS
+
+    Adding Layer      : Top Solder Mask
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder Mask
+      File : GHL NAATOS Sample Prep Heater Board.GBS
+
+    Adding Layer      : Bottom Solder Mask
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D18
+    D19
+    D28
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : GHL NAATOS Sample Prep Heater Board.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Title_Block
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : GHL NAATOS Sample Prep Heater Board.GM
+
+
+Used DCodes :
+    D38
+*************************************************************
+

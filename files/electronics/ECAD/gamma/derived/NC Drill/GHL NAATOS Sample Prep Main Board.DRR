@@ -1,0 +1,36 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: GHL NAATOS Sample Prep Main Board.PcbDoc   5/22/2025  9:41:22 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : GHL NAATOS Sample Prep Main Board-RoundHoles.TXT
+ASCII SlotHoles File : GHL NAATOS Sample Prep Main Board-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.305mm (12mil)         +0.076mm (3mil)/-0.305mm (12mil)  Round             632       PTH        1377.92mm (54.25inch)
+T2      0.4mm (16mil)           +/-0.05mm (2mil)                  Round             12        PTH        10.14mm (0.40inch)
+T3      0.6mm (24mil)           +/-0.05mm (2mil)                  Slot              4         PTH        34.45mm (1.36inch)
+T4      0.7mm (28mil)           +/-0.076mm (3mil)                 Round             8         PTH        101.19mm (3.98inch)
+T5      4mm (157mil)            +/-0.076mm (3mil)                 Round             4         PTH        85.96mm (3.38inch)
+T6      0.75mm (30mil)          +/-0.076mm (3mil)                 Round             1         NPTH       0.00mm (0.00inch)
+T7      0.75mm (30mil)          +/-0.076mm (3mil)                 Slot              1         NPTH       0.20mm (0.01inch)
+T8      0.991mm (39mil)         +/-0.076mm (3mil)                 Round             6         NPTH       59.32mm (2.34inch)
+T9      2.375mm (94mil)         +/-0.076mm (3mil)                 Round             4         NPTH       11.43mm (0.45inch)
+T10     3.048mm (120mil)        +/-0.076mm (3mil)                 Round             2         NPTH       57.15mm (2.25inch)
+T11     3.175mm (125mil)        +/-0.076mm (3mil)                 Round             4         NPTH       254.79mm (10.03inch)
+T12     5.08mm (200mil)         +/-0.076mm (3mil)                 Round             2         NPTH       13.00mm (0.51inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              680
+
+Two holes at same point : 7
+-----------------------
+697,3514
+657,3714
+737,3714
+597,3514
+597,3639
+797,3514
+797,3639
+
+Total Processing Time (hh:mm:ss) : 00:00:01

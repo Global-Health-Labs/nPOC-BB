@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: D:\AltiumShared\Documents\GHL NAATOS Sample Prep Main Board RevB ODIC\GHL NAATOS Sample Prep Main Board.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=ghl naatos sample prep main board-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=ghl naatos sample prep main board-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

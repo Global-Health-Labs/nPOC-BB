@@ -1,0 +1,26 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: GHL NAATOS Sample Prep Main Board.PcbDoc   5/28/2025  2:00:21 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : GHL NAATOS Sample Prep Main Board-RoundHoles.TXT
+ASCII SlotHoles File : GHL NAATOS Sample Prep Main Board-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.305mm (12mil)         +0.076mm (3mil)/-0.305mm (12mil)  Round             536       PTH        1166.29mm (45.92inch)
+T2      0.4mm (16mil)           +/-0.05mm (2mil)                  Round             12        PTH        9.62mm (0.38inch)
+T3      0.6mm (24mil)           +/-0.05mm (2mil)                  Slot              4         PTH        34.45mm (1.36inch)
+T4      0.889mm (35mil)         +/-0.076mm (3mil)                 Round             9         PTH        70.41mm (2.77inch)
+T5      0.75mm (30mil)          +/-0.025mm (1mil)                 Round             1         NPTH       0.00mm (0.00inch)
+T6      0.75mm (30mil)          +/-0.025mm (1mil)                 Slot              1         NPTH       0.20mm (0.01inch)
+T7      0.991mm (39mil)         +/-0.076mm (3mil)                 Round             9         NPTH       56.15mm (2.21inch)
+T8      3.048mm (120mil)        +/-0.076mm (3mil)                 Round             4         NPTH       118.62mm (4.67inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              576
+
+Two holes at same point : 1
+-----------------------
+2205,3024
+
+Total Processing Time (hh:mm:ss) : 00:00:00
