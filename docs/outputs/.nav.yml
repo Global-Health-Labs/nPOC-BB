@@ -1,4 +1,5 @@
 nav:
-  - architecture.md
-  - Gamma (GHL Prototype 2025Q1): gamma.md
-  - Alpha (GHL Prototype 2024Q2): alpha.md
+  - gamma.md
+  - notifications.md
+  - programming.md
+  - batteries.md

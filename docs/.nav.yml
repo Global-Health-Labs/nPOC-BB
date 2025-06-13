@@ -1,10 +1,10 @@
 nav:
   - Design Overview:
-    - Introduction / Quick Start: index.md
+    - Project Introduction: index.md
+    - Quick Start Guide: quickstart.md
     - Development History: history.md
   - Design Inputs: inputs
   - Design Outputs: outputs
   - Design Verification: verification
-  - Design Changes: changes.md
-  - Tools / Troubleshooing: tools
+  - Design Changes: changes
   - glossary.md

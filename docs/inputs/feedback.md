@@ -1,8 +1,8 @@
-# Usability - Formative Feedback
+# Usability / Formative Feedback
 
 ## Overview
 
-In partnership with [Market Access Africa (MAA)](https://www.marketaccess.africa/) and [Health Innovation Advisors (HIA)](https://innovationadvisors.org/), Global Health Labs (GHL) conducted in-person, moderated, usability interviews using a structured guide to lead participants through six tasks, ask follow-up questions, and observe their behaviour with 40+ stakeholders at 13 primary health care facilities in Kenya and South Africa. The first three tasks, excerpted feedback, and key recommendations listed below are specific to the **Alpha version** of the nPOC-BB, which was the sample preparation subcomponent of a larger diagnostic system, called NAATOS, in this usability assessment. The full report on this NAATOS usability assessment, including the nPOC-BB, can be found at **REPLACE**.
+In partnership with [Market Access Africa (MAA)](https://www.marketaccess.africa/) and [Health Innovation Advisors (HIA)](https://innovationadvisors.org/), Global Health Labs (GHL) conducted in-person, moderated, usability interviews using a structured guide to lead participants through six tasks, ask follow-up questions, and observe their behavior with 40+ stakeholders at 13 primary health care facilities in Kenya and South Africa. The first three tasks, excerpted feedback, and key recommendations listed below are specific to the **Alpha version** of the nPOC-BB, which was the sample preparation subcomponent of a larger diagnostic system, called NAATOS, in this usability assessment. The full report on this NAATOS usability assessment, including the nPOC-BB, can be found at **REPLACE**.
 
 Task 1: Open and label consumables - sample tube and test device
 

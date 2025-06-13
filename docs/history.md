@@ -1,6 +1,8 @@
-# Design History
+# Development History
 
-Health system levels at level 0 (community), level I (primary health care facilities with limited lab capabilities), and level II (first referral health facilities with basic lab capabilities) lack a viable molecular test platform with high sensitivity at low cost which does not require maintenance.
+## Problem Statement
+
+Health system levels at Level 0 (community), Level I (primary health care facilities with limited lab capabilities), and Level II (first referral health facilities with basic lab capabilities) lack a viable molecular test platform with high sensitivity at low cost which does not require maintenance.
 
 Our target customers, health care providers and patients in LMIC POC settings, need a rapid diagnostic test for TB that provides an accurate bacteriological confirmation of TB during the same clinical encounter for effective linkage of care. Patients need a non-invasive and efficient testing experience, while health care providers need a test that can rapidly and accurately diagnose TB, allowing for timely treatment and prevention of disease transmission.
 

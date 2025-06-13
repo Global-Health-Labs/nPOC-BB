@@ -1,20 +1,8 @@
-# Batteries Replacement Guide (Gamma)
+# Batteries Specification and Instructions
 
-## Overview
+This guide outlines the specifications for acceptable battery replacements and provides step-by-step instructions for safely removing and replacing batteries.
 
-Note that this batteries replacement procedure for the nPOC-BB (GHL prototype version Gamma) has attendant risks. Accessing the internal electronics of the module is a significant risk to the user and others if batteries or wires are not handled properly. This procedure should only be done when necessary, such as placing the unit in long term storage or to accommodate shipping requirements. This guide outlines the specifications for acceptable battery replacements and provide step-by-step instructions for safely removing and replacing batteries.
-
-![1](../img/batt-01.png)
-/// caption
-Figure 1: Isometric view of the front, side and top of the Sample Prep module.
-///
-
-![2](../img/batt-02.png)
-/// caption
-Figure 2: Isometric view of the back, side and top of the Sample Prep module.
-///
-
-## Battery Specifications
+## Batteries Specification
 
 Existing nPOC-BB (Gamma) units are installed with manufacturer specified batteries – [Molicel INR-21700-P45B](#datasheet). If this battery is unavailable, replacement battery cells with equivalent specifications are likely acceptable.
 
@@ -38,6 +26,9 @@ Battery cells are installed in a nPOC-BB (Gamma) unit in the same state of charg
 3. Ensure the balanced cells are installed in the same unit.
 
 ## Instruction for Batteries Replacement
+
+!!! warning
+    Note that this batteries replacement procedure for the nPOC-BB (GHL prototype version Gamma) has attendant risks. Accessing the internal electronics of the module is a significant risk to the user and others if batteries or wires are not handled properly. This procedure should only be done when necessary, such as placing the unit in long term storage or to accommodate shipping requirements.
 
 1. Ensure the unit is unplugged, and the power switch (next to the USB port) is in the off position.
 2. Place the unit upside down on a stable surface.
@@ -65,22 +56,22 @@ Battery cells are installed in a nPOC-BB (Gamma) unit in the same state of charg
 
 12. Tighten the 4-40 screws (Figure 3).
 
-    ![3](../img/batt-03.png)
+    ![nPOC-BB bottom view](../img/batt-01.png)
     /// caption
-    Figure 3: Bottom of the nPOC-BB (Gamma) showing the battery cover and the screws location.
+    Figure 1: Bottom of the nPOC-BB (Gamma) showing the battery cover and the screws location.
     ///
 
 13. Plug in the USB cable and turn on the power switch (required to restart the device). When completed, the Battery LED will show breathing blue.
 14. The Real Time Clock (RTC) is powered by the 21700 batteries and must be reset after the batteries are replaced to ensure proper logging function.
 
-![4](../img/batt-04.jpg)
+![nPOC-BB internal view with batteries](../img/batt-02.jpg)
 /// caption
-Figure 4: Internal view of the nPOC-BB (Gamma) with all battery cells in place.
+Figure 2: Internal view of the nPOC-BB (Gamma) with all battery cells in place.
 ///
 
-![5](../img/batt-05.jpg)
+![nPOC-BB internal view without batteries](../img/batt-03.jpg)
 /// caption
-Figure 5: Internal view of the nPOC-BB (Gamma), with top row of batteries removed showing the polarity label.
+Figure 3: Internal view of the nPOC-BB (Gamma), with top row of batteries removed showing the polarity label.
 ///
 
 ## Instruction for Resetting the Real Time Clock
@@ -100,7 +91,7 @@ Figure 5: Internal view of the nPOC-BB (Gamma), with top row of batteries remove
 
 ## Manufacturer Specified Battery Datasheet
 
-<a name="datasheet" target="_blank" rel="noopener noreferrer" href="https://www.molicel.com/inr21700-p45b/">![6](../img/batt-06.png)</a>
+<a name="datasheet" target="_blank" rel="noopener noreferrer" href="https://www.molicel.com/inr21700-p45b/">![6](../img/batt-04.png)</a>
 
 [^1]: The nPOC-BB (Gamma) units are not compatible with protected cells because the units have internal battery protection circuit.
 [^2]: The nPOC-BB (Gamma) units cannot protect against over-temperature cell damage if this rating is lower because the units have a cutoff temperature of 59 °C.

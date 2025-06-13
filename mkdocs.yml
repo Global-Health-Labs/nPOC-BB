@@ -1,4 +1,5 @@
 site_name: Near-Point-Of-Care Bead Beater
+repo_url: https://github.com/Global-Health-Labs/nPOC-BB
 theme: 
   name: material
   favicon: 'img/favicon.ico'
@@ -6,12 +7,11 @@ theme:
     # - navigation.tabs
     # - navigation.tabs.sticky
     # - navigation.sections
-    # - navigation.expand
+    - navigation.expand
     - navigation.path
+    - navigation.tracking
     - content.code.copy
-  # icon:
-  #   admonition:
-  #     alert: 'material/alert'
+    - navigation.footer
   palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -31,23 +31,31 @@ theme:
         name: Switch to dark mode
   logo: 'img/favicon.svg'
 extra_css:
-  - stylesheets/extra.css
+  - includes/extra.css
 markdown_extensions:
+  - abbr
   - attr_list
   - def_list
   - md_in_html
   - pymdownx.blocks.caption
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  # - pymdownx.superfences
   - footnotes
+  - pymdownx.snippets:
+      base_path: !relative $config_dir  # Relative to the root directory with mkdocs.yml
+      auto_append:
+        - includes/abbreviations.txt
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+watch:
+  - includes
 plugins:
   - search
   - awesome-nav
   - macros
+  - table-reader
   # - git-revision-date-localized:
   #     enable_creation_date: true
 extra:
