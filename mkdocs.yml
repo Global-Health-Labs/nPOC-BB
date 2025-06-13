@@ -3,6 +3,8 @@ repo_url: https://github.com/Global-Health-Labs/nPOC-BB
 theme: 
   name: material
   favicon: 'img/favicon.ico'
+  icon:
+    repo: fontawesome/brands/github
   features:
     # - navigation.tabs
     # - navigation.tabs.sticky
@@ -31,7 +33,9 @@ theme:
         name: Switch to dark mode
   logo: 'img/favicon.svg'
 extra_css:
-  - includes/extra.css
+  - etc/extra.css
+exclude_docs: |
+  /readme.md
 markdown_extensions:
   - abbr
   - attr_list
@@ -45,12 +49,10 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: !relative $config_dir  # Relative to the root directory with mkdocs.yml
       auto_append:
-        - includes/abbreviations.txt
+        - docs/etc/abbreviations.txt
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-watch:
-  - includes
 plugins:
   - search
   - awesome-nav
@@ -59,4 +61,4 @@ plugins:
   # - git-revision-date-localized:
   #     enable_creation_date: true
 extra:
-  repo_url: 'https://github.com/Global-Health-Labs/nPOC-BB'
+  files_url: 'https://github.com/Global-Health-Labs/nPOC-BB/blob/main'

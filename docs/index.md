@@ -30,7 +30,9 @@ GHL is the lead developer of the nPOC-BB device, having invested in several area
 - [Simon Ghionea](https://github.com/sghionea) [:material-linkedin:](https://www.linkedin.com/in/simonghionea/){:target="_blank"}
 - [Chin Ng Hei](https://github.com/ngchei) [:material-linkedin:](https://www.linkedin.com/in/chin-ng-ph-d-21522013/){:target="_blank"}
 - Isabel Izek [:material-linkedin:](https://www.linkedin.com/in/isabel-izek/){:target="_blank"}
+- Khushboo Khimani [:material-linkedin:](https://www.linkedin.com/in/khushboo-khimani/){:target="_blank"}
 - [Andrew Miller](https://github.com/andrewmiller-ghl) [:material-linkedin:](https://www.linkedin.com/in/andrew-miller-78938520/){:target="_blank"}
+- Julie Pendergraft [:material-linkedin:](https://www.linkedin.com/in/julielpendergraft/){:target="_blank"}
 - Jamie Purcell [:material-linkedin:](https://www.linkedin.com/in/jamie-purcell-phd-098aa65a/){:target="_blank"}
 
 ### Central Centerless Grinding (CCG)/Scitus Engineering
