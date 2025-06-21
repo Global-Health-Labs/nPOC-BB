@@ -1,0 +1,12 @@
+# run from this folder in tools/py_npocbb_wrangler
+# to generate an exe file that will run okay!
+pyinstaller --paths ../../ --python-option u --onefile py_npocbb_wrangler_gooey.py
+
+# info:
+# streaming print() stdout not showing up:
+# https://github.com/chriskiehl/Gooey/issues/701
+# https://github.com/chriskiehl/Gooey/issues/878
+# solved with the "u" unbuffered option
+
+# notes:
+# in the current working directory, uploadImage.bat will be needed

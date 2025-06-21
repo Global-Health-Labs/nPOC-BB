@@ -1,6 +1,6 @@
 ﻿Status LED,Status,Battery LED,Battery,Description,User action
 :black_circle:,Off,:black_circle:,Off,Module is off for storage or transport,Turn on the power switch before starting a run
-:black_circle:,Off,:material-circle-outline:,Any,Module is ready,Can load ST/TC in the module
+:black_circle:,Off,:material-circle-outline:,Any,Module is ready,Can load STC in the module
 :green_circle:{.flashing},Green</br>(flashing),:material-circle-outline:,Any,Run is in progress,Wait until the run is completed
 :green_circle:,Green,:material-circle-outline:,Any,Run is completed,Remove Sample Tube for next user step
 :yellow_circle:{.flashing},"Yellow</br>(flashing, 3 s)",:material-circle-outline:,Any,ST/TC is not loading correctly,Remove and reload ST/TC

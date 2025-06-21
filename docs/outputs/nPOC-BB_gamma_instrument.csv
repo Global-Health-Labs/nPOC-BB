@@ -4,9 +4,9 @@ Component,DIX36B Eccentric,CCG (custom part),GHL-1-20004,CCG,GHL-1-20004,TBD,TBD
 Assembly,Tube Holder Subassembly,CCG (custom part),GHL-1-22001,CCG,GHL-1-22001,TBD,TBD
 Component,Concept Bearing Block,CCG (custom part),GHL-1-20005,CCG,GHL-1-20005,TBD,TBD
 Component,Heater Block,CCG (custom part),GHL-1-20007,CCG,GHL-1-20007,TBD,TBD
-Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread Size, 3/16"" Long",Unknown,[p/n],McMaster-Carr,92949A105,N/A,Incoming Inspection
-Component,Permanently Lubricated Stainless Steel Ball Bearing,"Unknown. Permanently Lubricated Stainless Steel Ball Bearing, Sealed, Trade Number R3-2RS, for 3/16"" Shaft Diameter",[p/n],McMaster-Carr,4668K11,N/A,Incoming Inspection
-Component,"Screw, Button Head Hex Drive, 6-32 Thread, 3/16"" Long","Unknown. 18-8 Stainless Steel Button Head Hex Drive Screw, 6-32 Thread Size, 3/16"" Long",[p/n],McMaster-Carr,92949A143,N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread Size, 3/16"" Long",unknown,[p/n],McMaster-Carr,92949A105,N/A,Incoming Inspection
+Component,"Ball Bearing, Permanently Lubricated, Stainless Steel, Sealed, Trade Number R3-2RS, for 3/16"" Shaft Diameter",unknown,[p/n],McMaster-Carr,4668K11,N/A,Incoming Inspection
+Component,"Screw, Button Head Hex Drive, 6-32 Thread, 3/16"" Long",unknown,[p/n],McMaster-Carr,92949A143,N/A,Incoming Inspection
 Component,"Brushless DC Motor, 5200 RPM, 7W, 24VDC","NMB Technologies, A MinebeaMitsumi Group Company (DIX36B)",DIX36B,*Mouser Electronics,472-DIX36B,N/A,Incoming Inspection
 Component,Simple Snap Cap,CCG (custom part),GHL-1-20018,CCG,,TBD,TBD
 Component,Silicone Insulator Sleeve,CCG (custom part),GHL-1-20023,CCG,,TBD,TBD
@@ -15,11 +15,11 @@ Component,Custom 8127A82,CCG (custom part),GHL-1-20024,CCG,,TBD,TBD
 Component,Sample Prep Module Base,CCG (custom part),GHL-1-20001,CCG,,TBD,TBD
 Component,Sample Prep Module Housing Top,CCG (custom part),GHL-1-20002,CCG,,TBD,TBD
 Component,Sample Prep Module Battery Access Cover,CCG (custom part),GHL-1-20020,CCG ,,TBD,TBD
-Component,"Screw, Socket Head, 10-24 Thread, 1/2"" Long","Unknown. 18-8 Stainless Steel Socket Head Screw, 10-24 Thread Size, 1/2"" Long",[p/n],McMaster-Carr (),92196A242,N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 10-24 Thread, 1/2"" Long",unknown,[p/n],McMaster-Carr,92196A242,N/A,Incoming Inspection
 Component,Offset Door,CCG (custom part),GHL-1-20003,CCG,,TBD,TBD
-Component,"Cylinder Magnet, D44","Unknown. Neodymium Cylinder Magnet, D44, 0.25"" Diameter, 0.25"" Thickness",[p/n],KJ Magnetics (),D44,N/A,Incoming Inspection
+Component,"Cylinder Magnet, Neodymium, D44, 0.25"" Diameter, 0.25"" Thickness",unknown,[p/n],KJ Magnetics,D44,N/A,Incoming Inspection
 Component,Door Gibb,CCG (custom part),GHL-1-20015,CCG,,TBD,TBD
-Component,"Compression Springs, 316 Stainless Steel, Corrosion-Resistant, 0.25"" Long, 0.088"" OD, 0.064"" ID",Unknown. ,[p/n],McMaster-Carr,8969T108,N/A,Incoming Inspection
+Component,"Compression Spring, 316 Stainless Steel, Corrosion-Resistant, 0.25"" Long, 0.088"" OD, 0.064"" ID",unknown,[p/n],McMaster-Carr,8969T108,N/A,Incoming Inspection
 Component,"Dowel Pin, 18-8 Stainless Steel, 1/8"" Diameter, 9/16"" Long",unknown,[p/n],McMaster-Carr,90145A483,N/A,Incoming Inspection
 Component,Door Window,CCG (custom part),GHL-1-20011,CCG,,TBD,TBD
 Component,"Dowel Pin, 416 Stainless Steel, 0.25"" Diameter, 0.344"" Long",CCG (custom part),GHL-1-20009,CCG,,TBD,TBD
@@ -29,21 +29,21 @@ Component,"Screw, 18-8 Stainless Steel, Hex Drive Flat Head, 4-40 Thread, 3/8"" 
 Component,Button Extension,CCG (custom part),GHL-1-20010,CCG,,TBD,TBD
 Component,Light Pipe,CCG (custom part),GHL-1-20012,CCG,,TBD,TBD
 Component,Laminate Button Cap,CCG (custom part),GHL-1-20013,CCG,,TBD,TBD
-Component,"Screw, Socket Head, 4-40 Thread, 1/4"" Long","Unknown. 18-8 Stainless Steel Socket Head Screw, 4-40 Thread Size, 1/4"" Long",[p/n],McMaster-Carr (),92196A106,N/A,Incoming Inspection
-Component,"Flat Flexible Cable (FFC) Jumper Cable, 40 position ","Molex Premo-Flex 15166, 40 Position FFC, FPC Cable 0.020"" (0.50mm) 6.000"" (152.40mm)",151660436,Digikey (),WM19594-ND,N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread, 1/4"" Long",unknown,[p/n],McMaster-Carr,92196A106,N/A,Incoming Inspection
+Component,"Cable, Premo-Flex 15166, 40 Position FFC, FPC Cable 0.020"" (0.50mm) 6.000"" (152.40mm)",Molex,151660436,Digikey ,WM19594-ND,N/A,Incoming Inspection
 Component,Motor Bracket,CCG (custom part),GHL-1-20014,CCG,,TBD,TBD
 Component,"Screw, 18-8 Stainless Steel, Socket Head, M3 x 0.5 mm Thread, 5 mm Long","Unknown. 18-8 Stainless Steel Socket Head Screw, M3 x 0.5 mm Thread, 5 mm Long",[p/n],McMaster-Carr,91292A110,N/A,Incoming Inspection
 Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread Size, 1-5/8"" Long","Unknown. 18-8 Stainless Steel Socket Head Screw, 4-40 Thread Size, 1-5/8"" Long",[p/n],McMaster-Carr,92196A215,N/A,Incoming Inspection
 Component,"Label, 3” x 1""",See Slide 37,,,,,
 Component,*Sample Prep Module Main PCA,Odic (custom PCB assembly),GHL-1-21002,CCG,,TBD,TBD
 Assembly,"Sample Prep Module Main PCA, Reworked",Odic (custom PCB assembly reworked by GHL),N/A,CCG,,TBD,TBD
-Component,"Rubber Protective Foot, 1"" Diameter x 5/16"" High Base with 1/4"" Long 8-32 Threading",Unknown. ,[p/n],McMaster-Carr (),53535A11,N/A,Incoming Inspection
+Component,"Rubber Protective Foot, 1"" Diameter x 5/16"" High Base with 1/4"" Long 8-32 Threading",Unknown. ,[p/n],McMaster-Carr,53535A11,N/A,Incoming Inspection
 Component,FFC Stiffener,CCG (custom part),GHL-1-20019,CCG,,TBD,TBD
 Component,Rocker Switch,See Slide 37,,,,,
 Component,21700 Battery,See Slide 36,,,,,
 Component,"Washer, Nylon, #10","Unknown. Nylon Plastic Washer for Number 10 Screw Size, 0.193"" ID, 0.438"" OD",[p/n],McMaster-Carr ,90295A420,N/A,Incoming Inspection
 Component,Custom Standoff,CCG (custom part),GHL-1-20027,CCG,,TBD,TBD
-Component,"Screw, 18-8 Stainless Steel, Socket Head, 10-32 Thread, 7/8"" Long","Unknown. 18-8 Stainless Steel Socket Head Screw, 10-32 Thread Size, 7/8"" Long",[p/n],McMaster-Carr (),92196A273,N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 10-32 Thread, 7/8"" Long","Unknown. 18-8 Stainless Steel Socket Head Screw, 10-32 Thread Size, 7/8"" Long",[p/n],McMaster-Carr,92196A273,N/A,Incoming Inspection
 Component,3x Bus Bar,CCG (custom part),GHL-1-20022,CCG,,TBD,TBD
 Assembly,Bus Wire Subassembly,CCG (custom part),GHL-1-22003,CCG,,TBD,TBD
 Component,Ring Terminal,See Slide 36,,,,,
@@ -51,7 +51,7 @@ Component,"Stranded Wire, 10AWG, 6""",,,,,,
 Component,"Screw, Pan Head, 8-32 Thread, 3/8"" Long, 18-8 Stainless Steel",,,,,,
 Component,21700 holder 3x bracket,,,,,,
 Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread, 1-3/8"" Long",,,,,,
-Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread, 1/8"" Long",Unknown. ,[p/n],McMaster-Carr (),92949A103,N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread, 1/8"" Long",Unknown. ,[p/n],McMaster-Carr,92949A103,N/A,Incoming Inspection
 Component,"Rectangular Socket to Socket Cable, 6 position","JST Sales America Inc., 6 Position Cable Assembly, Rectangular Socket to Socket, Reversed 0.167' (50.80mm, 2.00"")",A06ZR06Z-R28H51A,Digikey ,455-3023-ND,N/A,Incoming Inspection
 Component,Thin Blocker,CCG (custom part),GHL-1-20026,CCG,,TBD,TBD
 Component,Top Insulator Sleeve,CCG (custom part),GHL-1-20025,CCG,,TBD,TBD

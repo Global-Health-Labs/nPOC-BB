@@ -2,10 +2,10 @@
 
 ## Overview
 
-The nPOC-BB was originally developed at GHL as the front-end of a prototype diagnostic test system called NAATOS. Therefore, the design inputs for the nPOC-BB are a subset of the design inputs for NAATOS, and the RTM for the nPOC-BB is excerpted from the larger NAATOS RTM. As such, some of the excerpted User Needs and/or Requirements...
+The nPOC-BB was originally developed at GHL as the front-end of a prototype diagnostic test system called NAATOS. Therefore, the design inputs for the nPOC-BB are a subset of the design inputs for NAATOS, and the RTM for the nPOC-BB is excerpted from the larger NAATOS RTM. As such, some of the excerpted User Needs and/or Requirements:
 
 1. Contain NAATOS-specific references.
-    1. **Product** denotes the NAATOS system.
+    1. **Product** denotes the NAATOS system.Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.
     2. **SPM** is the abbreviated name of the nPOC-BB instrument in the NAATOS system.
     3. **SCC** is the abbreviated name of the swab used to collect a sample.
     4. **STC** is the abbreviated name of the dropper tube used in the nPOC-BB.

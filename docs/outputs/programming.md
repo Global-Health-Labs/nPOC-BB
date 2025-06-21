@@ -1,6 +1,6 @@
 # Programming Instructions
 
-## Config / Logs
+## Instruction for Config / Logs
 
 On an nPOC-BB (Gamma) unit running firmware v3.1 or later, the file system on the exposed mass storage device and NOR flash 1Gbit storage contains the two subdirectories `config` and `logs`, which contain the files for the configuration of the unit and all logs created by the unit, respectively. Below is an example filesystem from a nPOC-BB (Gamma) unit running firmware v3.5 that has been configured to operate four distinct cycles in a run and has logged two distinct runs.
 
@@ -48,19 +48,21 @@ The following table contains the header row and the first three data rows of an 
 | 2024-12-05 12:04:35 | 26.39 | 100.00 | 0.00 | 0.00 | 19 | 3.63 | 25.05 | |
 | 2024-12-05 12:04:36 | 29.77 | 100.00 | 0.00 | 0.00 | 19 | 3.64 | 25.60 | |
 
-## Firmware
+## Instruction for Programming Firmware
 
 ### Requirements
 
-- Segger Embedded Studio software version 5.34 was originally used to develop the firmware. Later versions may also work.
-- nRF Connect software was used to upload the firmware.
-- An nRF PCA10040/56 or a Segger programmer connected to a 6-pin JTAG programming cable was used to program and communicate to the boards via both Segger Embedded Studio and nRF Connect.
+- [Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio/) software version 5.34 was originally used to develop the firmware. Later versions may also work.
+- [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop) software is used to upload the firmware.
+- [`nrfutil`](https://www.nordicsemi.com/Products/Development-tools/nrf-util)
+- Source code for nPOC-BB firmware (shared as [NAATOS---Modules](https://github.com/Global-Health-Labs/NAATOS---Modules))
+- An nRF PCA10040/56 or a Segger programmer connected to a 6-pin JTAG programming cable is used to program and communicate to the boards via both Segger Embedded Studio and nRF Connect.
 
 ### Environment
 
-Open the code in Segger Embedded Studio go to `ProjectDir/application/solution/`. In this directory there should be `nPOC-BB_fw.emProject` which is the project file and can be double clicked to open the project inside of Segger Embedded Studio.
+Open the code in Segger Embedded Studio go to `application/solution/`. The firmware code base for nPOC-BB is shared with the NAATOS system. Therefore, in this directory there should be `naatos_fw.emProject` which is the project file and can be double clicked to open the project inside of Segger Embedded Studio.
 
-For opening the bootloader project, follow the same steps except follow the path `ProjectDir/bootloader/solution/` and open `nPOC-BB_bootloader.emProject`.
+For opening the bootloader project, follow the same steps except follow the path `bootloader/solution/` and open `naatos_bootloader.emProject`.
 
 ### Debug / Release Modes
 
@@ -105,17 +107,17 @@ When simple testing is required, and the bootloader is not needed on the board t
 
 Triple-press the start button for the board to enter the bootloader from the application firmware. Bootloader must be programmed onto the board of a unit to enter the mode, or the unit will end up in a hard fault state with the unit crashing.  
 
-There are four required files for full firmware programming of the unit:
+There are four required files for full firmware programming of the unit (found in `/sw/firmware_with_bootloader/`):
 
-- The [application firmware hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_fw.hex), `npoc-bb_fw.hex`, is the application code that we will be flashing onto the board and is generated with each revision of application firmware changes and can be overwritten.
-- The [bootloader firmware hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_bootloader_SG_compilerelease_NORELOC.hex), `npoc-bb_bootloader_SG_compilerelease_NORELOC.hex`, is the bootloader code that we will be flashing onto the board and is generated only once and cannot be overwritten.  
-- The [master boot record]({{ files_url }}/sw/firmware_with_bootloader/mbr_nrf52_24.1_mbr.hex), `mbr_nrf52_24.1_mbr.hex`, is the static record of the bootloader and is taken from the nRF52840 SDK and not modified for this application, this cannot be overwritten.
-- The [bootloader settings hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_bootloader_settings.hex), `npoc-bb_bootloader_settings.hex`, contains the settings for the bootloader to run on and tells the bootloader what to expect on a firmware upgrade. This can be regenerated to accommodate future changes to the bootloader.
+- The [application firmware hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_fw.hex), `npoc-bb_fw.hex`, is the application code, which is flashed onto the board, is generated with each revision of application firmware changes, and can be overwritten.
+- The [bootloader firmware hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_bootloader_SG_compilerelease_NORELOC.hex), `npoc-bb_bootloader_SG_compilerelease_NORELOC.hex`, is the bootloader code, which is flashed onto the board, is generated only once, and cannot be overwritten.  
+- The [master boot record]({{ files_url }}/sw/firmware_with_bootloader/mbr_nrf52_24.1_mbr.hex), `mbr_nrf52_24.1_mbr.hex`, is the static record of the bootloader, which is taken from the nRF52840 SDK, not modified for this application, and cannot be overwritten.
+- The [bootloader settings hex file]({{ files_url }}/sw/firmware_with_bootloader/npoc-bb_bootloader_settings.hex), `npoc-bb_bootloader_settings.hex`, contains the settings for the bootloader to run on, tells the bootloader what to expect on a firmware upgrade, and can be regenerated to accommodate changes to the bootloader.
 
 !!! note
     nRF Connect must be used to program the bootloader onto the unit. Segger Embedded Studio cannot program the bootloader onto the unit.  
 
-1. Open nRF Connect. is downloaded and opened, you will want to open the
+1. Open nRF Connect.
 
     ![nRF Connect](../img/sw-06-nrf_connect.png)
 
@@ -140,9 +142,9 @@ There are four required files for full firmware programming of the unit:
 
 ### Generate Upgrade Package
 
-To generate a package, first ```nrfutils``` must be installed which runs the entire firmware upgrade creation and flashing process. Can be downloaded here.
+To generate a package, first ```nrfutil``` must be installed which runs the entire firmware upgrade creation and flashing process.
 
-To create a package the following command must be run with ```nrfutils```:
+To create a package the following command must be run with ```nrfutil```:
 
     nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application-version 4 --application Path/To/Application/Hex/File --key-file Path/To/Key/File npoc-bb_dfu_package.zip 
 
@@ -162,7 +164,7 @@ The COM port for the bootloader should be named ‘nRF52 SDFU USB’, run the fo
 
 The firmware should then begin uploading to the unit and updating it.
 
-## Power Driver Program
+## Instruction for Programming Power Driver (PD) Controller
 
 ### Requirements
 

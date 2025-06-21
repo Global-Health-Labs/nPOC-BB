@@ -1,4 +1,4 @@
-# Introduction
+# Project Introduction
 
 ## Overview
 
@@ -73,7 +73,7 @@ GHL is the lead developer of the nPOC-BB device, having invested in several area
 
 [HIA](https://innovationadvisors.org/) is the user research and implementation science partner for the nPOC-BB and NAATOS systems.
 
-- Melissa Mugambi[^4]
+- Melissa Mugambi[^4] [:material-linkedin:](https://www.linkedin.com/in/melissamugambi/){:target="_blank"}
 
 [^1]: Corresponding contributor for CCG.
 [^2]: Corresponding contributor for Odic.

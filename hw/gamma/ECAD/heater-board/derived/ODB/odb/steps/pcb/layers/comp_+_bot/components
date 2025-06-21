@@ -1,0 +1,77 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+@2 .no_pop
+@3 .comp_ignore
+@4 .comp_variant_list
+
+#
+#Component attribute text strings
+#
+
+# CMP 0
+CMP 0 15.00000048 28.45999896 270 N C1 100nF ;0=1,1=0.5600
+PRP Case_Code_(Imperial) '0402'
+PRP Case_Code_(Metric) '1005'
+PRP Case/Package '0402'
+PRP Construction 'Flat'
+PRP Contact_Plating 'Tin'
+PRP Depth '0.5mm'
+PRP Dielectric 'X7R'
+PRP Height '0.5mm'
+PRP Install 'POP'
+PRP Lead_Free 'Lead Free'
+PRP Length '1mm'
+PRP Material 'Ceramic'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Mounting_Technology 'Surface Mount'
+PRP Package_Quantity '1'
+PRP Packaging 'Tape and Reel'
+PRP Radiation_Hardening 'No'
+PRP RoHS_Compliant 'Yes'
+PRP Series 'CL'
+PRP Thickness '0.022inch'
+PRP Tolerance '10%'
+PRP Value '100nF'
+PRP Voltage '16V'
+PRP Voltage_Rating '16V'
+PRP Voltage_Rating_(DC) '16V'
+PRP Width '0.02inch'
+TOP 0 15.00000048 27.95999996 270 N 5 7 1
+TOP 1 15.00000048 28.95999796 270 N 2 3 2
+#
+# CMP 1
+CMP 2 15.93200014 22.76199918 90 N U1 G-NICO-018 ;0=1,1=0.9000
+PRP Case/Package 'QFN'
+PRP Height '0.85mm'
+PRP Lead_Free 'Lead Free'
+PRP Length '4mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Max_Supply_Current '12.5uA'
+PRP Min_Operating_Temperature '-40°C'
+PRP Operating_Supply_Voltage '3.6V'
+PRP RoHS_Compliant 'Yes'
+PRP Sensor_Type 'Temperature'
+PRP Width '0.157inch'
+TOP 0 14.95700082 24.70509918 0 N 5 10 1
+TOP 1 15.60699952 24.70509918 0 N 5 9 2
+TOP 2 16.25700076 24.70509918 0 N 4 2 3
+TOP 3 16.90699946 24.70509918 0 N 3 2 4
+TOP 4 17.87510014 23.7369985 270 N 0 9 5
+TOP 5 17.87510014 23.0869998 270 N 0 8 6
+TOP 6 17.87510014 22.43699856 270 N 0 7 7
+TOP 7 17.87510014 21.78699986 270 N 0 6 8
+TOP 8 16.90699946 20.81889918 0 N 0 5 9
+TOP 9 16.25700076 20.81889918 0 N 0 4 10
+TOP 10 15.60699952 20.81889918 0 N 0 3 11
+TOP 11 14.95700082 20.81889918 0 N 0 2 12
+TOP 12 13.98890014 21.78699986 270 N 0 1 13
+TOP 13 13.98890014 22.43699856 270 N 0 0 14
+TOP 14 13.98890014 23.0869998 270 N 2 5 15
+TOP 15 13.98890014 23.7369985 270 N 2 4 16
+TOP 16 15.93200014 22.76199918 90 N 5 8 17
+#

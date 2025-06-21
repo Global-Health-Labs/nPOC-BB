@@ -5,6 +5,7 @@ theme:
   favicon: 'img/favicon.ico'
   icon:
     repo: fontawesome/brands/github
+    annotation: material/message-question-outline
   features:
     # - navigation.tabs
     # - navigation.tabs.sticky
@@ -33,7 +34,7 @@ theme:
         name: Switch to dark mode
   logo: 'img/favicon.svg'
 extra_css:
-  - etc/extra.css
+  - stylesheets/extra.css
 exclude_docs: |
   /readme.md
 markdown_extensions:
@@ -44,12 +45,12 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - admonition
   - pymdownx.details
-  # - pymdownx.superfences
+  - pymdownx.superfences
   - footnotes
   - pymdownx.snippets:
       base_path: !relative $config_dir  # Relative to the root directory with mkdocs.yml
       auto_append:
-        - docs/etc/abbreviations.txt
+        - docs/abbreviations.txt
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

@@ -1,0 +1,3 @@
+I2C=SCL,SDA
+Motor=Speed,CW/CCW,Speed Control,Brake
+Power Enables=Sensor,Motor,Heater

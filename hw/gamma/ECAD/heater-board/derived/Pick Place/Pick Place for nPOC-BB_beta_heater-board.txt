@@ -1,0 +1,16 @@
+Altium Designer Pick and Place Locations
+D:\AltiumShared\Documents\GHL NAATOS Sample Prep Heater Board RevB ODIC\Project Outputs for GHL NAATOS Sample Prep Heater Board RevB ODIC\Pick Place\Pick Place for GHL NAATOS Sample Prep Heater Board.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       28/05/25
+Time:       14:02
+Revision:   f7c881e8e5c7ac4e17f38bcf71357244ebba7e9a
+Variant:    No variations
+Units used: mil
+
+Designator Comment             Layer       Footprint                Center-X(mil) Center-Y(mil) Rotation Description                                                                                 
+J1         FH12A-40S-0.5SH(55) TopLayer    hirose_fh12a-40s-0p5sh55 625.000       2047.110      0        "Conn Ffc/fpc Connector Skt 40 Pos 0.5MM Solder Ra SMD T/r / Conn Ffc Top 40POS 0.50MM R/a" 
+C1         100nF               BottomLayer C0402                    590.551       1120.472      90       "Ceramic capacitor SMD 0402 100nF 16V X7R 10%"                                              
+U1         G-NICO-018          BottomLayer QFN16_4X4_P65mm          627.244       896.142       270      "TSYS01 Series 3.6 V -40 to +125 SMT Digital Temperature Sensor - QFN-16"                   

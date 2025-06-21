@@ -1,0 +1,4 @@
+I2C=SCL,SDA
+Motor=Speed,CW/CCW,Speed Control,Brake
+Power Enables=Sensor,Motor,Heater
+USB_DAT=USB_D_P,USB_D_N

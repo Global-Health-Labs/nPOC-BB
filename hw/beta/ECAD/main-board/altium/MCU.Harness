@@ -1,0 +1,6 @@
+CHARGER=CHG_STAT,FG_ALRT_N
+I2C=SCL,SDA
+Motor=Speed,CW/CCW,Speed Control,Brake
+Power Enables=Sensor,Motor,Heater
+RTC=RTC_INT,RTC_CLK
+USB_DAT=USB_D_P,USB_D_N

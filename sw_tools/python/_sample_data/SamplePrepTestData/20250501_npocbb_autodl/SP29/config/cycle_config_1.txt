@@ -1,0 +1,16 @@
+cycle_run_time_s:51.00
+accept_cycle_time_error_s:15.0
+cycle_delay_time_s:0
+ramp_to_temp_before_start_cycle:false
+ramp_to_temp_timeout:50.00
+yellow_grace_period_s:51.0
+heater_setpoint:100.00
+motor_setpoint:0
+run_heater_enable:true
+run_motor_enable:false
+heater_kp:20.000
+heater_ki:0.050
+heater_kd:50.000
+motor_kp:0.005
+motor_ki:0.0005
+motor_kd:0.020

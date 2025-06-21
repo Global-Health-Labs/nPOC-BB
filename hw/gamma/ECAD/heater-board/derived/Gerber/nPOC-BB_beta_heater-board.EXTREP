@@ -1,0 +1,18 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: GHL NAATOS Sample Prep Heater Board.GBR   5/28/2025  2:02:33 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTO                Top Silk Screen                         
+.GTP                Top Paste                               
+.GTS                Top Solder Mask                         
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GBS                Bottom Solder Mask                      
+.GBP                Bottom Paste                            
+.GBO                Bottom Silk Screen                      
+.GM                 Profile                                 
+------------------------------------------------------------------------------------------
