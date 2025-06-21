@@ -1,4 +1,4 @@
-name: nPOC-BB 
+name: ci
 on:
   push:
     branches:
