@@ -12,8 +12,8 @@ The nPOC-BB was originally developed at GHL as the front-end of a prototype diag
 2. Do not apply to the nPOC-BB parts of NAATOS and therefore state "N/A" in an adjacent cell.
 3. Apply to the specific manufacture and regulatory approval of a medical device and therefore state "**TBD**" in the cell.
 
-You can also [download a tabular version of this RTM in the ```*.csv``` format](./nPOC-BB_rtm.csv).
+You can also [download a tabular version of this RTM in the ```*.csv``` format](../tables/nPOC-BB_rtm.csv).
 
 ## Requirements Traceability Matrix
 
-{{ read_csv("docs/inputs/nPOC-BB_rtm.csv", na_filter = False) }}
+{{ read_csv("docs/tables/nPOC-BB_rtm.csv", na_filter = False) }}

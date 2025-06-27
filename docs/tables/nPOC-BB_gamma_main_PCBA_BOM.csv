@@ -1,0 +1,112 @@
+﻿Designator,Description,Name,Quantity,Install,Manufacturer,Manufacturer P/N
+C1,CAP CER 4.7UF 25V X5R 0603,4.7uF,1,POP,TDK,C1608X5R1E475M080AC
+"C2, C3, C46",Blank pads for future cap placements,"DNP, C0402 Footprint",3,DNP,,
+"C4, C18, C87",0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric),C0402_100n_16V_10pct,3,POP,Samsung,CL05B104KO5NNNC
+"C5, C11",CGA2B3X7R1H473K050BB,C0402_47n_50V_10pct,2,POP,TDK,CGA2B3X7R1H473K050BB
+"C6, C7, C8, C9, C12, C13, C14, C20, C24, C25, C86",GRM188R61E106KA73J,C0603_10u_25V_10pct,11,POP,Murata,GRM188R61E106KA73J
+"C10, C15, C21, C26, C47, C59, C61, C63",Cap Ceramic 0.1uF 25V X5R 10% Pad SMD 0402 Multi Layer Ceramic Capacitor (MLCC),"C0402_0u1_25V_10pct, 0.1uF",8,POP,TDK,C1005X5R1E104K050BC
+C16,Cap Ceramic 10uF 6.3V X5R 20% SMD 0402 85°C Paper T/R,C0402_10u_6V3_20pct,1,POP,Kyocera AVX,04026D106MAT2A
+"C17, C45",CAP CER 10000PF 25V 10% X7R 0402,C0402_10n_6V3_10pct,2,POP,KEMET,C0402C103K3RACTU
+"C19, C22","Ceramic capacitor SMD 0402 - 1000nF, 10V, +-10%, X5R",C0402_1u_10V_10pct,2,POP,Kyocera AVX,0402ZD105KAT2A
+"C23, C36",Cap Ceramic 4.7uF 10V X5R 20% SMD 0402 85°C Paper T/R,"C0402_4u7_10V_20pct, 4.7uF",2,POP,Taiyo Yuden,LMK105BBJ475MVLF
+C27,0402 1 nF 50V ±10 % Tolerance X7R Surface Mount Multilayer Ceramic Capacitor,C0402_1n_50V_10pct,1,POP,Kyocera AVX,04025C102KAT2A
+C28,Ceramic capacitor SMD-0402 470nF 6.3V X5R +/-10%,C0402_470n_6V3_10pct,1,POP,Taiyo Yuden,JMK105B7474KVHF
+"C29, C30, C31, C33",Ceramic capacitor SMD 0402 100nF 16V X7R 10%,"C0402_0u1_16V_10pct, 0.1uF",4,POP,Samsung,CL05B104KO5NNNC
+"C32, C62, C65",1206 22 uF 16 V ±10% Tolerance X5R SMT Multilayer Ceramic Capacitor,C1206_22u_16C_10pct,3,POP,Samsung,CL31A226KOHNNNE
+C34,Cap Aluminum Polymer 56uF 20VDC 20%( 5 X 5.9mm) SMD 0.03 Ohm 2800mA 5000h 105C T/R,20SVPF56MX,1,POP,Panasonic,20SVPF56MX
+"C35, C81, C82","Multilayer Ceramic Capacitor, 47 uF, 16 V, 10%, X5R, 1210 [3225 Metric]",C1210_47u_16V_10pct,3,POP,Samsung,CL32A476KOJNNNE
+C37,Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 91pF C0G 0402 5%,C0402_91p_50V_5pct,1,POP,Yageo,CC0402JRNPO9BN910
+"C38, C77",0402 12 nF 16 V ±10% Tolerance X7R SMT Multilayer Ceramic Capacitor,"C0402_12n_16V_10pct, 12nF",2,POP,KEMET,C0402C123K4RACTU
+"C39, C78, C79",Cap Tant Solid 68uF 35V V CASE 20% (7.3 X 6.1 X 3.45mm) SMD 7361-38 0.5 Ohm 125AHA T/R,TAJV686M035RNJ,3,,Kyocera AVX,TAJV686M035RNJ
+C40,"Multilayer Ceramic Capacitor, 22 uF, 35 V, ± 20%, X5R, 0805 [2012 Metric]",C0805_22u_35V_20pct,1,,TDK,C2012X5R1V226M125AC
+C41,"Multilayer Ceramic Capacitors (High dielectric type), 25V, 1 uF, ± 10 %, 0603, X5R/B, RoHS",C0603_1u_25V_10pct,1,POP,Samsung,CL10A105KA8NNNC
+C42,Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 50V 0603 RoHS,1uF,1,POP,Taiyo Yuden,MSASU168SB5105KTNA01
+"C43, C48, C53, C54",Ceramic capacitor SMD; 0402; 10uF; 10V; X5R; 20%,"10uF, C0402_10u_10V_20pct",4,POP,Samsung,CL05A106MP5NUNC
+"C44, C68, C80",Cap Ceramic 1uF 6.3V X5R 10% SMD 0402 85C Paper T/R,C0402_1u_6V3_10pct,3,POP,Taiyo Yuden,JMK105BJ105KV-F
+"C49, C50, C51, C52, C75","Multilayer Ceramic Capacitor, 0.01 uF, 35 V, ± 10%, X7R, 0402 [1005 Metric]",C0402_10n_35V_10pct,5,POP,TDK,CGA2B3X7R1V103K050BB
+"C55, C56",0402 330 pF 50 V ±5% Tolerance C0G SMT Multilayer Ceramic Capacitor,C0402_330p_50V_10pct,2,POP,Murata,GRM1555C1H331JA01D
+"C57, C58","Multilayer Ceramic Capacitor, 22 uF, 25 V, ± 20%, X5R, 0805 [2012 Metric]",C0805_22u_25V_20pct,2,POP,Samsung,CL21A226MAYNNNE
+"C60, C64",CAP CER 1UF 16V X5R 0402,1uF,2,POP,Kyocera AVX,0402YD105KAT2A
+C66,0402 8.2 nF 16 V ±10% Tolerance X7R SMT Multilayer Ceramic Capacitor,C0402_8n2_16V_10pct,1,POP,Murata,GRM155R71C822KA01D
+C67,DNP CAP,N/A,1,DNP,Samsung,CL10B104KB8NNWC
+"C69, C85",Cap Ceramic 10uF 35V X5R 20% Pad SMD 0603 85C T/R,10uF,2,"POP, DNP",Murata,GRM188R6YA106MA73D
+"C70, C71","Multilayer Ceramic Capacitor, 4.7 uF, 50 V, ± 10%, X5R, 0805 [2012 Metric]",C0805_4u7_50V_10pct,2,POP,Samsung,CL21A475KBQNNNE
+C72,CAP CER 0.1UF 50V X7R 0603,100nF,1,POP,Kyocera AVX,06035C104KAT4A
+C73,CAP CER 1UF 16V X5R 0603,1uF,1,POP,Kyocera AVX,0603YD105KAT2A
+C74,Cap Cer 0.1UF 25V X7R 0805,C0805_0u1_25V_10pct,1,,Kyocera AVX,KGM21NR71E104KT
+C76,Cap Ceramic 300pF 50V C0G 5% SMD 0402 125°C Paper T/R,C0402_300p_50V_5pct,1,,KEMET,C0402C301J5GACTU
+C83,"Multilayer Ceramic Capacitor, 4.7 uF, 16 V, ± 10%, X5R, 0805 [2012 Metric]",C0805_4u7_16V_10pct,1,POP,Samsung,CL21A475KOFNNNG
+C84,CAP CER 22UF 6.3V X5R 0603,C0603_22u_6V3_20pct,1,POP,Murata,GRT188C80J226ME13D
+D1,"MMSZ5254BT1G Zener Diode, 27V 5% 500 mW SMT 2-Pin SOD-123",MMSZ5254BT1G,1,,ON Semiconductor,MMSZ5254BT1G
+D2,Diode Schottky 20V 1A 2-Pin SOD-123FL T/R,SS1020FL_R1_00001,1,POP,Pan Jit,SS1020FL_R1_00001
+D3,22-V flat-clamp surge protection device 6-WSON -40 to 125,TVS2200DRVR,1,POP,Texas Instruments,TVS2200DRVR
+D4,"Quad 0.25-pF, ±3.6-V, ±12-kV ESD protection diode for USB 3.0, HDMI 2.0 & High Speed Signals",TPD4E02B04DQAR,1,POP,Texas Instruments,TPD4E02B04DQAR
+D7,Diode Schottky 40V 2A 2-Pin DO-214AC T/R,B240AE-13,1,POP,Diodes,B240AE-13
+J1,"Header B6B-ZR, 1.50mm, 6-contacts, top entry, THT, /2000/box",B6B-ZR,1,,JST,B6B-ZR
+J2,.50MM Ffc/fpc Connectors 40CKT R/a SMT Zif Botton Contact,54132-4097,1,,Molex,54132-4097
+"J3, J4",6 Pin Tag-Connect Header Footprint WITH HOLES FOR LEGS. Pads.,TC2030-FP-LEGS,2,DNP,,
+J7,"USB C Connector, 24 Contact(s), Female, Right Angle, Solder and Surface Mount Terminal, Locking, Receptacle",DX07S024XJ1R1100,1,POP,JAE Electronics,DX07S024XJ1R1100
+J8,6 Pin Tag-Connect Header Footprint. Pads.,EEPROM,1,DNP,,
+J9,"Board Connector, 2 Contact(s), 1 Row(s), Male, Straight, Solder Terminal",B2B-ZR,1,POP,JST,B2B-ZR
+L1,FIXED IND 2.2UH 5.8A 29 MOHM,0530CDMCCDS-2R2MC,1,POP,Sumida,0530CDMCCDS-2R2MC
+L2,Inductor Power Shielded Wirewound 4.7uH 20% 100KHz Powdered Iron 10A 15mOhm DCR 5050 T/R,IHLP5050CEER4R7M01,1,POP,Vishay Dale,IHLP5050CEER4R7M01
+L3,Ind Power Chip Shielded Wirewound 2.2uH 20% 1MHz Metal 2.2A 1008 Emboss T/R,DFE252012PD-2R2M=P2,1,POP,Murata,DFE252012PD-2R2M=P2
+L4,WE-LQSA SMT Semi-Shielded Power Inductor 1.5uH 6.1 A 13mOhm Max,78404064015,1,POP,Wurth Electronics,78404064015
+"LED1, LED2",Blue/Red/Green 100º 400/800/1000 mcd Clear Surface Mount LED Lamp,AAAF5060QBFSURZGS,2,POP,Kingbright,AAAF5060QBFSURZGS
+MD1,BMD-340 Series 3.6 V 2.5 GHz -96 dBm Stand-Alone Bluetooth 5 Low Energy Module,BMD-340-A-R,1,POP,u-blox,BMD-340-A-R
+"Q1, Q2","30-V, N channel NexFET™ power MOSFET, single SON 3 mm x 3 mm, 6.4 mOhm 8-VSONP -55 to 150",CSD17577Q3AT,2,POP,Texas Instruments,CSD17577Q3AT
+Q3,Trans MOSFET P-CH 40V 40A 3-Pin(2+Tab) DPAK,AOD4185,1,,Alpha & Omega Semiconductor,AOD4185
+"Q4, Q5",Trans Mosfet N-ch 30V 28A 8-PIN Dfn-a Ep,AON7524,2,POP,Alpha & Omega Semiconductor,AON7524
+Q6,Trans Mosfet N/p-ch 25V 0.5A/0.41A 6-PIN SC-70 T/r,FDG6321C,1,POP,ON Semiconductor / Fairchild,FDG6321C
+"R1, R12, R16, R20, R39, R63, R64, R65, R66, R67, R68, R72, R74, R77",RES 0 OHM JUMPER 1/16W 0402,"0R, R0402_0R",14,"POP, DNP",Stackpole Electronics,RMCF0402ZT0R00
+R2,Res Thkflm 0603 0 Ohm Jumper 1/10W 100Ppm/ C Smd Rohs Compliant: Yes,R0603_0R,1,POP,Stackpole Electronics,RMCF0603ZT0R00
+"R3, R4, R17, R19, R33, R38, R57, R58, R69",Res General Purpose Thick Film 0402 100K Ohm 1% 1/16W ±100ppm/°C Molded SMD Paper T/R,"100k, R0402_100k_1pct",9,POP,Yageo,RC0402FR-07100KL
+"R5, R6, R7, R8, R23, R35, R36",RES 4.7K OHM 1% 1/16W 0402,R0402_4k7_1pct,7,POP,Yageo,RC0402FR-074K7L
+"R9, R10","SMD Chip Resistor, 27 Ohm, ± 1%, 100 mW, 0402 [1005 Metric], Thick Film, Precision",27R,2,POP,Panasonic,ERJ-2RKF27R0X
+R11,Res Thick Film 0402 22K Ohm 1% 0.063W(1/16W) ±100ppm/C Pad SMD T/R,22k,1,POP,Yageo,RC0402FR-0722KL
+R13,"SMD Chip Resistor, 200 kOhm, ± 0.1%, 63 mW, 0402 [1005 Metric], Thin Film, Precision",R0402_200k_0.1pct,1,POP,TE Connectivity,CPF0402B200KE1
+R14,Res General Purpose Thick Film 0402 100 Ohm 1% 1/16W ±200ppm/°C Molded SMD Paper T/R,R0402_100R_1pct,1,POP,Vishay,CRCW0402100RFKEDC
+R15,"Res, 330K, 0.1W, 0402, Thin Film Rohs Compliant: Yes",R0402_330k_0p1pct,1,POP,Vishay BCcomponents,MCS0402MD3303BE000
+R18,NTC Thermistor 10k 0603 (1608 Metric),NCU18XH103F6SRB,1,POP,Murata,NCU18XH103F6SRB
+"R21, R24",Res Thick Film 0402 470 Ohm 1% 0.063W(1/16W) ±100ppm/C Pad SMD T/R,R0402_470R_1pct,2,POP,Yageo,RC0402FR-07470RL
+R22,"SMD Chip Resistor, 8.2 kOhm, ± 1%, 62.5 mW, 0402 [1005 Metric], Thick Film, General Purpose",R0402_8k2_1pct,1,POP,Yageo,RC0402FR-078K2L
+R25,Res General Purpose Thick Film 0402 2K Ohm 1% 1/16W ±100ppm/°C Molded SMD Paper T/R,R0402_2k_1pct,1,POP,Panasonic,ERJ-2RKF2001X
+"R26, R27, R28, R29, R41, R42, R43, R44, R45, R46, R48, R49, R50, R59, R62",Res Thick Film 0402 10K Ohm 1% 1/16W ±100ppm/°C Molded SMD SMD T/R,R0402_10k_1pct,15,"POP, DNP",Samsung,RC1005F103CS
+R31,Res Thick Film 0402 150K Ohm 1% 0.063W ±100ppm/°C Molded SMD Paper T/R,R0402_150k_1pct,1,POP,Stackpole Electronics,RMCF0402FT150K
+R32,Res Thick Film 0402 332K Ohm 1% 0.1W(1/10W) ±100ppm/°C Pad SMD Automotive T/R,R0402_332k_1pct,1,,KOA Speer,RK73H1ETTP3323F
+R34,Res Thick Film 0402 24.9K Ohm 1% 1/10W ±100ppm/|C SMD Punched Carrier T/R,24.9k,1,POP,Panasonic,ERJ-2RKF2492X
+R37,Res Thick Film 0402 1M Ohm 1% 0.063W(1/16W) ±100ppm/C Pad SMD T/R,1M,1,POP,Walsin Technologies,WR04X1004FTL
+R40,Res General Purpose Thick Film 0402 47K Ohm 1% 1/16W ±100ppm/°C Molded SMD Paper T/R,47k,1,POP,Yageo,RC0402FR-0747KL
+R51,"470 kOhms 0.1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Autom",R0402_470k_0p1pct,1,POP,Vishay BCcomponents,MCS0402MD4703BE000
+R52,Res Current Sense Metal Strip 2010 0.01 Ohm 1% 2W ±75ppm/°C Molded Emboss T/R,R2010_10m_1pct,1,POP,CGS,TLRP2H20WR010FTE
+R54,Res Thick Film 0402 267K Ohm 1% 0.063W ±100ppm/°C Molded SMD Paper T/R,R0402_267k_1pct,1,POP,Stackpole Electronics,RMCF0402FT267K
+R55,"Unpopulated 0402 pads. No part number associated with this ""component""",DNP,1,DNP,,
+R56,"SMD Chip Resistor, 36.5 kOhm, ï¿½ 1%, 63 mW, 0402 [1005 Metric], Thick Film, General Purpose",R0402_36k5_1pct,1,POP,Yageo,RC0402FR-0736K5L
+R60,"SMD Chip Resistor, 3.4 kOhm, ± 1%, 100 mW, 0402 [1005 Metric], Thick Film, Precision",3.4k,1,POP,Panasonic,ERJ-2RKF3401X
+R61,RN73H 0402 (1005Metric) Chip Resistor ±1% ±25ppm/C 14.5kOhm 0.063W 1/16W,R0402_14k5_1pct,1,,KOA Speer,RN73H1ETTP1452F25
+R70,"Fixed Resistor, Metal Glaze/thick Film, 0.063W, 50000ohm, 50V, 1% +/-Tol, 100ppm/Cel, Surface Mount, 0402",R0402_50k_1pct,1,POP,Vishay Dale,CRCW040250K0FKED
+R71,Res Thick Film 0402 680K Ohm 1% 1/16W ±100ppm/°C Molded SMD SMD Paper T/R,R0402_680k_1pct,1,POP,Stackpole Electronics,RMCF0402FT680K
+R73,"SMD Chip Resistor, 105 kOhm, ± 1%, 63 mW, 0402 [1005 Metric], Thick Film, General Purpose",R0402_105k_1pct,1,POP,Yageo,RC0402FR-07105KL
+R75,RC FIXED RESISTOR 0402 (1005Metric) Chip Resistor ±1% ±100ppm/C 619kOhm 0.063W 1/16W,R0402_619k_1pct,1,POP,Yageo,RC0402FR-07619KL
+R76,"SMD Chip Resistor, 137 kOhm, ± 1%, 63 mW, 0402 [1005 Metric], Thick Film, General Purpose",R0402_137k_1pct,1,POP,Yageo,RC0402FR-07137KL
+SB1,0 Ohm solder bridge jumper,Solder Bridge Jumper,1,DNP,,
+"SC1, SC2, SC3, SC4, SC5, SC6","Cylindrical Battery Contacts, Clips, Holders & Springs C Cell Negative Battery Contact",5241,6,POP,Keystone Electronics,5241
+SW1,Switch Tactile N.O. SPST Round Button Gull Wing 0.05A 12VDC 100000Cycles 1.57N SMD T/R,PTS645SM43SMTR92LFS,1,POP,ITT C&K,PTS645SM43SMTR92LFS
+"TP1, TP2, TP3, TP4, TP6, TP7, TP11, TP12, TP13, TP14, TP15, TP18, TP19, TP20, TP21, TP22, TP23, TP24, TP25, TP27, TP28, TP29",Test Point Circle 30,TPC30,22,DNP,,
+TP5,"Test point clip, SMT Phos Bronze/Silver 1000pc Tape & Reel",5016,1,POP,Keystone Electronics,5016
+U1,MAX17263 Series 4.9 V Single/Multi-Cell Ultra-Low Power Fuel-Gauge IC-TDFN-14EP,MAX17263LETD+T,1,POP,Maxim,MAX17263LETD+T
+U2,Fixed 5V LDO Voltage Regulators LDO CMOS LowCurr SOT25 TR 3K,AP7375-50W5-7,1,POP,Diodes,AP7375-50W5-7
+U3,IC RTC CLK/CALENDAR I2C 10-SON,"PCF85063ATL/1,118",1,POP,NXP Semiconductors,"PCF85063ATL/1,118"
+U4,"I2C Controlled, 1-4 Cell, 5-A Buck-Boost Battery Charger with Dual-Input",BQ25792RQMR,1,POP,Texas Instruments,BQ25792RQMR
+U5,"LDO Regulator, 150 mA, 38 V, 1 µA IQ, with PG 3.3V WDFNW6",NCV8730BMTW330TBG,1,POP,ON Semiconductor,NCV8730BMTW330TBG
+U6,Battery Protection Li-Ion/Li-Pol 6-Pin SOT-23 T/R,S-8252AAH-M6T1U,1,,ABLIC,S-8252AAH-M6T1U
+U7,IC REG BOOST ADJ 10A SYNC 20VQFN,TPS61088RHLR,1,POP,Texas Instruments,TPS61088RHLR
+"U8, U15, U17",IC LOAD SWITCH W/DIS 1.5A 4WLCSP,NCP333FCT2G,3,POP,ON Semiconductor,NCP333FCT2G
+U9,SENSOR HALL ANALOG SOT23-3 / Hall Effect Sensor Single Axis SOT-23-3,DRV5053VAQDBZR,1,,Texas Instruments,DRV5053VAQDBZR
+U10,Highly integrated USB Type-C® and USB PD controller with pre-configured GUI 38-WQFN -40 to 125,TPS25750DRJKR,1,POP,Texas Instruments,TPS25750DRJKR
+U11,MX66L1G45G Series 1 Gb (1 G x 1) 2.7 - 3.6 V SMT Serial Flash Memory - SOP-16,MX66L1G45GMI-08G,1,POP,Macronix,MX66L1G45GMI-08G
+U12,IC EEPROM 256KBIT 400KHZ 8SOIC,CAT24C256WI-GT3,1,POP,ON Semiconductor,CAT24C256WI-GT3
+U13,"3-V to 17-V, 1-A, high-efficiency, low-IQ, synchronous buck converter in SOT-583 package 8-SOT-5X3 -40 to 150",TPS629210DRLR,1,POP,Texas Instruments,TPS629210DRLR
+U14,6-Channel Light Effect LED Driver with I2C Interface 2.7V to 5.5V Input 20-Pin QFN T/R,IS31FL3196A-QFLS2-TR,1,POP,ISSI,IS31FL3196A-QFLS2-TR
+U16,"6A/4A, 50-V, 2.2-MHz wide VIN boost, flyback, & SEPIC converter with dual random spread spectrum 16-WQFN -40 to 125",LM5157RTER,1,POP,Texas Instruments,LM5157RTER
+"Y1, Y2",RT3215 Series 0.032768 ±20 ppm 9pF -40°C TO +85°C SMT Tuning Fork Crystal,"DNP, RT3215-32.768-9-TR",2,"DNP, POP",Raltron Electronics,RT3215-32.768-9-TR

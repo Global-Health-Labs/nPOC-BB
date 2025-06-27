@@ -26,13 +26,13 @@ The `config` subdirectory contains text files that configure the operation of an
 
 A single Run Configuration file will be in the `config` subdirectory. The Run Configuration file is named after the current firmware of the unit (e.g., `config_v3.5.txt` when the firmware version is `v3.5`). The Run Configuration file contains the parameters that configure unit operation for an entire run of one or more cycles (but does not configure the individual cycles; see below). The following table describes the firmware v3.5 Run Configuration parameters and lists their types, default values, and units.
 
-{{ read_csv("docs/outputs/nPOC-BB_config_run_params.csv") }}
+{{ read_csv("docs/tables/nPOC-BB_config_run_params.csv") }}
 
 #### Cycle Configuration
 
 One or more Cycle Configuration files will be found in the `config` subdirectory. The Cycle Configuration files are named for the cycle number (starting with `1` and proceeding in integer order, e.g., `cycle_config_1.txt`, `cycle_config_2.txt`, `cycle_config_3.txt`, and `cycle_config_4.txt`). Each Cycle Configuration file contains the parameters that apply to a single cycle. The default configuration for a nPOC-BB (Gamma) unit running firmware v3.5 uses four cycles defined by four Cycle Configuration files. The following table describes the firmware v 3.5 cycle parameters found in a Cycle Configuration file and lists their types, default values, and units.
 
-{{ read_csv("docs/outputs/nPOC-BB_config_cycle_params.csv") }}
+{{ read_csv("docs/tables/nPOC-BB_config_cycle_params.csv") }}
 
 ### Logs
 
@@ -52,10 +52,10 @@ The following table contains the header row and the first three data rows of an 
 
 ### Requirements
 
-- [Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio/) software version 5.34 was originally used to develop the firmware. Later versions may also work.
-- [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop) software is used to upload the firmware.
-- [`nrfutil`](https://www.nordicsemi.com/Products/Development-tools/nrf-util)
-- Source code for nPOC-BB firmware (shared as [NAATOS---Modules](https://github.com/Global-Health-Labs/NAATOS---Modules))
+- [Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio/){:target="_blank"} software version 5.34 was originally used to develop the firmware. Later versions may also work.
+- [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop){:target="_blank"} software is used to upload the firmware.
+- [`nrfutil`](https://www.nordicsemi.com/Products/Development-tools/nrf-util){:target="_blank"}
+- Source code for nPOC-BB firmware (shared as [NAATOS---Modules](https://github.com/Global-Health-Labs/NAATOS---Modules){:target="_blank"})
 - An nRF PCA10040/56 or a Segger programmer connected to a 6-pin JTAG programming cable is used to program and communicate to the boards via both Segger Embedded Studio and nRF Connect.
 
 ### Environment
@@ -173,7 +173,7 @@ The firmware should then begin uploading to the unit and updating it.
 - USB-C cable (×2)
 - [Adafruit FT232H breakout board](https://www.adafruit.com/product/2264){:target="_blank"}
 - 6-pin TAG-Connect cable, terminated with headers
-- [Zadig](https://zadig.akeo.ie/)
+- [Zadig](https://zadig.akeo.ie/){:target="_blank"}
 - `eeprom_flasher.py`
 - PyFTDI python module
 - `nPOC-BB_PD.bin`

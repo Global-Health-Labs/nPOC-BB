@@ -1,0 +1,14 @@
+﻿Command,Name,Takes Args,Examples,Explanation,Note
+`SETCLK`,RTC Time Setting,YES,"`SETCLK,2024-11-14 14:27:34`<br/>or<br/>`SETCLK,2024-11-14T14:27:34`","Set the RTC time to the specified timestamp. Before setting, a software reset will be issued to the RTC chip (same as `RSTCLK`)","convenient to use with YAT (yet another terminal) timestamp insertion: `SETCLK,\!(TimeStamp())`"
+`TSTCLK`,RTC Test,,"`TSTCLK,`",,
+`RSTCLK`,RTC Software Reset,,"`RSTCLK,`",Send a software reset the RTC chip.,
+`LSDIR`,Output listing of filesystem directories,,"`LSDIR,`","Output to serial port a summary listing of the filesystem root directory.
+Each folder will be entered and the file entries in that folder counted, and returned in this message.",
+`REBOOT`,Reboot MCU,,"`REBOOT,`",Reboot MCU (must be in MAIN_STANDBY state),
+`STATUS`,Output summary information,,"`STATUS,`","Output to serial port some Status and ID information. Examples:<br/>`14:07:51 - V=""3.5"" T=""PM"" ECL=0x00 TS=""2025-03-14 14:07:54"" MAIN_STATE=""MAIN_STANDBY"" SN=""DBF4CF86E4F8""`<br/>`14:07:51 - Vbatt=3.924000 SOC=70 Tbatt=27.917969 Tamp=69.151276 Tvalve=70.782478`","`V`=firmware version<br/>`T`=device type (`PM`=power module, `SP`=sample prep module)<br/>`ECL`=cumulative error flags in logger module<br/>`TS`=current rtc time<br/>`MAIN_STATE`=what state are we in<br/>`SN`=nordic-provided hardware mac address which can serve as a unique identifier for each board<br/>`Vbatt`=fuel gauge provided battery voltage<br/>`SOC`=fuel gauge provided state of charge"
+`CFGGET`,Config get,,"`CFGGET,`",Output to serial port a summary of the active run and cycle configurations.,"Behavior never tested with more than 4 cycles, there is some string limit that may be exceeded with >8 cycles"
+`CFGSET`,Config set,YES,"`CFGSET,`",,
+`TODFU`,Enter DFU mode,,"`TODFU,`","Enter DFU for firmware upgrade, by simulating 3 rapid button presses (must be in MAIN_STANDBY state)",
+`TOMSC`,Enter MSC mode,,"`TOMSC,`","Enter mass storage mode for USB file operations, by simulating long button press (must be in MAIN_STANDBY state)",
+`EXITMSC`,Exit MSC mode,,"`EXITMSC,`","Exit mass storage mode, by simulating a button press (must be in MAIN_FILE state); the firmware effectively performs a reboot as part of this transition",
+`REFORMAT`,Reformat filesystem and reboot,,"`REFORMAT,`","Perform a filesystem reset, much like holding down button while powering-up. Then system is rebooted.","On some devices , at some times, this needs to be issued more than once, followed by some reboots, perhaps. You may see the fast flashing magneta/yellow when this is happening and you need to try this again. Cause unknown / not investigated."

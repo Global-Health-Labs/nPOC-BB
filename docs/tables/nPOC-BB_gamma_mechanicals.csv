@@ -1,0 +1,57 @@
+﻿Specification,Description,Qty.,Manufacturer,Manufacturer P/N,Vendor,Vendor P/N,Manufacturing Procedure,QC Procedure
+Assembly,Prototype Engine Subassembly,1,CCG (custom part),GHL-1-22002,CCG,[GHL-1-22002](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-22002.pdf),TBD,TBD
+Component,DIX36B Eccentric,1,CCG (custom part),GHL-1-20004,CCG,[GHL-1-20004](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20004.pdf),TBD,TBD
+Assembly,Tube Holder Subassembly,1,CCG (custom part),GHL-1-22001,CCG,[GHL-1-22001](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-22001.pdf),TBD,TBD
+Component,Concept Bearing Block,1,CCG (custom part),GHL-1-20005,CCG,[GHL-1-20005](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20005.pdf),TBD,TBD
+Component,Heater Block,1,CCG (custom part),GHL-1-20007,CCG,[GHL-1-20007](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20007.pdf),TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread Size, 3/16"" Long",6,unknown,,McMaster-Carr,[92949A105](https://www.mcmaster.com/catalog/131/3445/92949A105),N/A,Incoming Inspection
+Component,"Ball Bearing, Permanently Lubricated, Stainless Steel, Sealed, Trade Number R3-2RS, for 3/16"" Shaft Diameter",1,unknown,,McMaster-Carr,[4668K11](https://www.mcmaster.com/catalog/131/1426/4668K11),N/A,Incoming Inspection
+Component,"Screw, Button Head Hex Drive, 6-32 Thread, 3/16"" Long",1,unknown,,McMaster-Carr,[92949A143](https://www.mcmaster.com/catalog/131/3445/92949A143),N/A,Incoming Inspection
+Component,"Brushless DC Motor, 5200 RPM, 7W, 24VDC",1,"NMB Technologies, A MinebeaMitsumi Group Company",DIX36B,Mouser Electronics,[472-DIX36B](https://www.mouser.com/ProductDetail/NMB/DIX36B?qs=amGC7iS6iy%2FFFBtZQYFVog%3D%3D),N/A,Incoming Inspection
+Component,Simple Snap Cap,1,CCG (custom part),GHL-1-20018,CCG,[GHL-1-20018](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20018.pdf),TBD,TBD
+Component,Silicone Insulator Sleeve,1,CCG (custom part),GHL-1-20023,CCG,[GHL-1-20023](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20023.pdf),TBD,TBD
+Component,Sample Prep Module Heater PCA,1,Odic (custom PCB assembly),GHL-1-21001,CCG,[GHL-1-21001](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-21001.pdf),TBD,TBD
+Component,Custom 8127A82,1,CCG (custom part),GHL-1-20024,CCG,[GHL-1-20024](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20024.pdf),TBD,TBD
+Component,Sample Prep Module Base,1,CCG (custom part),GHL-1-20001,CCG,[GHL-1-20001](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20001.pdf),TBD,TBD
+Component,Sample Prep Module Housing Top,1,CCG (custom part),GHL-1-20002,CCG,[GHL-1-20002](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20002.pdf),TBD,TBD
+Component,Sample Prep Module Battery Access Cover,1,CCG (custom part),GHL-1-20020,CCG ,[GHL-1-20020](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20020.pdf),TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 10-24 Thread, 1/2"" Long",2,unknown,,McMaster-Carr,[92196A242](https://www.mcmaster.com/catalog/131/3567/92196A242),N/A,Incoming Inspection
+Component,Offset Door,1,CCG (custom part),GHL-1-20003,CCG,[GHL-1-20003](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20003.pdf),TBD,TBD
+Component,"Cylinder Magnet, Neodymium, D44, 0.25"" Diameter, 0.25"" Thickness",2,unknown,,KJ Magnetics,[D44](https://www.kjmagnetics.com/d44-neodymium-cylinder-magnet),N/A,Incoming Inspection
+Component,Door Gibb,2,CCG (custom part),GHL-1-20015,CCG,[GHL-1-20015](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20015.pdf),TBD,TBD
+Component,"Compression Spring, 316 Stainless Steel, Corrosion-Resistant, 0.25"" Long, 0.088"" OD, 0.064"" ID",2,unknown,,McMaster-Carr,[8969T108](https://www.mcmaster.com/catalog/131/1537/8969T108),N/A,Incoming Inspection
+Component,"Dowel Pin, 18-8 Stainless Steel, 1/8"" Diameter, 9/16"" Long",2,unknown,,McMaster-Carr,[90145A483](https://www.mcmaster.com/catalog/131/3824/90145A483),N/A,Incoming Inspection
+Component,Door Window,1,CCG (custom part),GHL-1-20011,CCG,[GHL-1-20011](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20011.pdf),TBD,TBD
+Component,"Dowel Pin, 416 Stainless Steel, 0.25"" Diameter, 0.344"" Long",1,CCG (custom part),GHL-1-20009,CCG,[GHL-1-20009](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20009.pdf),TBD,TBD
+Component,"Linear Shaft, Delrin-AF",2,CCG (custom part),GHL-1-20008,CCG,[GHL-1-20008](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20008.pdf),TBD,TBD
+Component,"*Linear Shaft, Stainless Steel",0,GHL (custom part),,,,TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Hex Drive Flat Head, 4-40 Thread, 3/8"" Long",10,unknown,,McMaster-Carr,[92210A108](https://www.mcmaster.com/catalog/131/3486/92210A108),,
+Component,Button Extension,1,CCG (custom part),GHL-1-20010,CCG,[GHL-1-20010](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20010.pdf),TBD,TBD
+Component,Light Pipe,2,CCG (custom part),GHL-1-20012,CCG,[GHL-1-20012](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20012.pdf),TBD,TBD
+Component,Laminate Button Cap,1,CCG (custom part),GHL-1-20013,CCG,[GHL-1-20013](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20013.pdf),TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread, 1/4"" Long",2,unknown,,McMaster-Carr,[92196A106](https://www.mcmaster.com/catalog/131/3566/92196A106),N/A,Incoming Inspection
+Component,"Cable, Premo-Flex 15166, 40 Position FFC, FPC Cable 0.020"" (0.50mm) 6.000"" (152.40mm)",1,Molex,151660436,Digikey ,[WM19594-ND](https://www.digikey.com/en/products/detail/molex/0151660436/3281317),N/A,Incoming Inspection
+Component,Motor Bracket,1,CCG (custom part),GHL-1-20014,CCG,[GHL-1-20014](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20014.pdf),TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Socket Head, M3 × 0.5 mm Thread, 5 mm Long",4,unknown,,McMaster-Carr,[91292A110](https://www.mcmaster.com/catalog/131/3570/91292A110),N/A,Incoming Inspection
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread Size, 1-5/8"" Long",2,unknown,,McMaster-Carr,[92196A215](https://www.mcmaster.com/catalog/131/3567/92196A215),N/A,Incoming Inspection
+Component,"Laser Label, Weather-Resistant, 3"" x 1""",1,unknown,,Uline,[S-21907](https://www.uline.com/Product/Detail/S-21907/Laser-Labels/Uline-Weather-Resistant-Laser-Labels-3-x-1),,
+Component,*Sample Prep Module Main PCA,0,Odic (custom PCB assembly),GHL-1-21002,CCG,[GHL-1-21002](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-21002.pdf),TBD,TBD
+Assembly,"Sample Prep Module Main PCA, Reworked",1,Odic (custom PCB assembly reworked by GHL),,CCG,,TBD,TBD
+Component,"Rubber Protective Foot, 1"" Diameter x 5/16"" High Base with 1/4"" Long 8-32 Threading",4,unknown,,McMaster-Carr,[53535A11](https://www.mcmaster.com/catalog/131/1701/53535A11),N/A,Incoming Inspection
+Component,FFC Stiffener,1,CCG (custom part),GHL-1-20019,CCG,[GHL-1-20019](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20019.pdf),TBD,TBD
+Component,Rocker Switch,1,ZF Electronics,PRK22J5DBBNN,Digikey ,[CH865-ND](https://www.digikey.com/en/products/detail/zf-electronics/PRK22J5DBBNN/1083858),,
+Component,21700 Battery,6,Molicel,INR21700-P45B,18650BatteryStore.com,[molicel-p45b](https://www.18650batterystore.com/products/molicel-p45b),,
+Component,"Washer, Nylon, #10 Screw Size, 0.193"" ID, 0.438"" OD",2,unknown,,McMaster-Carr ,[90295A420](https://www.mcmaster.com/catalog/131/3694/90295A420),N/A,Incoming Inspection
+Component,Custom Standoff,2,CCG (custom part),GHL-1-20027,CCG,[GHL-1-20027](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20027.pdf),TBD,TBD
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 10-32 Thread, 7/8"" Long",2,unknown,,McMaster-Carr,[92196A273](https://www.mcmaster.com/catalog/131/3567/92196A273),N/A,Incoming Inspection
+Component,3× Bus Bar,2,CCG (custom part),GHL-1-20022,CCG,[GHL-1-20022](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20022.pdf),TBD,TBD
+Assembly,Bus Wire Subassembly,2,CCG (custom part),GHL-1-22003,CCG,[GHL-1-22003](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-22003.pdf),TBD,TBD
+Component,"Ring Terminal, 90 Degree, Nylon Insulated, for 12-10 Gauge and #8 Screw Size",2,unknown,,McMaster-Carr,[7113K219](https://www.mcmaster.com/catalog/131/877/7113K219),,
+Component,"Stranded Wire, 300V AC, 10 Wire Gauge, 6""",2,unknown,,McMaster-Carr,[8054T19](https://www.mcmaster.com/catalog/131/992/8054T19),,
+Component,"Screw, 18-8 Stainless Steel, Pan Head, with External-Tooth Lock Washer, 8-32 Thread, 3/8"" Long",2,unknown,,McMaster-Carr,[95345A530](https://www.mcmaster.com/catalog/131/3477/95345A530),,
+Component,21700 holder 3× bracket,2,CCG (custom part),GHL-1-20021,CCG,[GHL-1-22003](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20021.pdf),,
+Component,"Screw, 18-8 Stainless Steel, Socket Head, 4-40 Thread, 1-3/8"" Long",8,unknown,,McMaster-Carr,[92196A118](https://www.mcmaster.com/catalog/131/3567/92196A118),,
+Component,"Screw, 18-8 Stainless Steel, Button Head Hex Drive, 4-40 Thread, 1/8"" Long",2,unknown,,McMaster-Carr,[92949A103](https://www.mcmaster.com/catalog/131/3445/92949A103),N/A,Incoming Inspection
+Component,"Cable Assembly, 6-Position, Rectangular Socket to Socket, Reversed 0.167' (50.80mm, 2.00"")",1,JST Sales America Inc.,A06ZR06Z-R28H51A,Digikey ,[455-3023-ND](https://www.digikey.com/en/products/detail/jst-sales-america-inc/A06ZR06ZR28H51A/6009399?s=N4IgTCBcDaICwFYEFoDMAGMrkDkAiIAugL5A),N/A,Incoming Inspection
+Component,Thin Blocker,1,CCG (custom part),GHL-1-20026,CCG,[GHL-1-20026](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20026.pdf),TBD,TBD
+Component,Top Insulator Sleeve,1,CCG (custom part),GHL-1-20025,CCG,[GHL-1-20025](https://github.com/Global-Health-Labs/nPOC-BB/blob/main/hw/gamma/CAD/derived/drawings/GHL-1-20025.pdf),TBD,TBD

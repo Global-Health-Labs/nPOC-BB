@@ -4,7 +4,7 @@
 
 The Near-Point-of-Care Bead Beater (nPOC-BB) is a portable laboratory instrument designed to prepare challenging samples for nucleic acid amplification tests by efficiently releasing amplifiable genomic DNA from difficult-to-lyse microorganisms.
 
-This repository contains the design and data files related to development and evaluation of the nPOC-BB in the context of `Mycobacterium tuberculosis` (Mtb) detection in tongue swab or sputum specimens.
+This repository contains the design and data files related to development and evaluation of the nPOC-BB in the context of *Mycobacterium tuberculosis* (Mtb) detection in tongue swab or sputum specimens.
 
 ## Documentation
 

@@ -1,10 +1,10 @@
 nav:
   - Design Overview:
     - Project Introduction: index.md
-    - Quick Start Guide: quickstart.md
-    - Development History: history.md
+    - Quick Start Guide: prelim/quickstart.md
+    - Development History: prelim/history.md
   - Design Inputs: inputs
   - Design Outputs: outputs
-  - Design Verification: verification
+  - Design Verification: verifications
   - Design Changes: changes
-  - glossary.md
+  - prelim/glossary.md

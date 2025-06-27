@@ -2,7 +2,7 @@
 
 ## Overview
 
-![nPOC-BB Gamma version](img/gamma-09.jpg){ align=right }
+![nPOC-BB Gamma version](./img/gamma-09.jpg){ align=right }
 
 The Near Point-Of-Care Bead Beater (nPOC-BB) is a portable sample preparation instrument that is designed to:
 

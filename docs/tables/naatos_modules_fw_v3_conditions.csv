@@ -1,0 +1,11 @@
+﻿Context,Bitfield,Explanation
+start run,`temperature_zones_in_range`,"In standby mode temperatures are refreshed once a second. If `config.min_run_zone_temp_en` is TRUE, the latest temperature of any zone must be < `config.min_run_zone_temp`. Essentially requires the temperatures in the device to have cooled down sufficiently, and show above zero. The latest temperature of any zone must be > 0.1 ºC (this checks for something really wrong with sensor communication)."
+start run,`battery_charge_level_acceptable`,"Battery charge level must not be ""red."""
+start run,`machine_can_run`,"All machine conditions must be true (see ""device ok"" conditions in this table)"
+unit ok,`configs_loaded_and_validated`,"Checked once at bootup. Configs could be loaded from filesystem without error. Inside `read_filesystem_and_configurations`, 
+if `get_naatos_configuration_parameters()` and `get_cycle_configurations_parameters()` do not return okay, this will be false."
+unit ok,`filesystem_deemed_okay`,"Checked once at bootup. After all startup filesystem operations, check `is_naatos_storage_okay()` which will return a `naatos_storage_initalized` local variable from the `naatos_storage.c` compilation unit."
+unit ok,`battery_has_stayed_cool`,Checked every standby cycle (at `samplerate`). Battery temperature thermistor (as measured by fuel gauge chip) must be < 59.0 ºC.
+unit ok,`canary_value_noninitializer`,"The active master config value `config.canary` was not 999; when default configs are written out, it would be 12345; so this is a type of canary in the coalmine situation to indicate a filesystem problem, and also test the notification scheme easily."
+unit ok,`canary_value_nondefault`,"The active master config value `config.canary` was not 999; when default configs are written out, it would be 12345; so this is a type of canary in the coalmine situation to indicate a filesystem problem, and also test the notification scheme easily."
+unit ok,`norflash_could_mount_filesystem`,Checked once at bootup. If `nor_flash_could_mount_filesystem` in `naatos_storage.c` compilation unit is TRUE.

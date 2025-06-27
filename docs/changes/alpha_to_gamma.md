@@ -7,7 +7,7 @@ The following table provides an overview of design differences between the nPOC-
 !!! note
     The nPOC-BB (Beta) prototype has a nearly identical mechanical design to the nPOC-BB (Gamma) prototype, but the nPOC-BB (Beta) prototype has serious flaws in its electrical design, which are addressed by the nPOC-BB (Gamma) prototype and the v3.5 firmware. Therefore, the table below addresses the overall changes that exist between the nPOC-BB (Alpha) prototype and the nPOC-BB (Gamma) prototype, skipping over the nPOC-BB (Beta) prototype.
 
-{{ read_csv("docs/changes/version_compare.csv") }}
+{{ read_csv("docs/tables/nPOC-BB_version-compare.csv") }}
 
 ## Main PCB Changes
 
