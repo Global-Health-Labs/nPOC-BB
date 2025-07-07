@@ -8,4 +8,4 @@ This repository contains the design and data files related to development and ev
 
 ## Documentation
 
-Please [read the docs](https://global-health-labs.github.io/nPOC-BB) to find out more about the nPOC-BB project and its history of development at Global Health Labs. Another overview of this project and other projects developed at Global Health Labs are collected at [Gates Open Research](https://gatesopenresearch.org/gateways). **INSERT LINK TO GATEWAY?**
+Please [read the docs](https://global-health-labs.github.io/nPOC-BB) to find out more about the nPOC-BB project and its history of development at Global Health Labs. Another overview of this project and other projects developed at Global Health Labs will be collected at [Gates Open Research](https://gatesopenresearch.org/gateways).
