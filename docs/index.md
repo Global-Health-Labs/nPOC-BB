@@ -37,6 +37,7 @@ GHL is the lead developer of the nPOC-BB device, having invested in several area
 - Bryan Norton [:material-linkedin:](https://www.linkedin.com/in/bryanjnorton/){:target="_blank"}
 - Julie Pendergraft [:material-linkedin:](https://www.linkedin.com/in/julielpendergraft/){:target="_blank"}
 - Jamie Purcell [:material-linkedin:](https://www.linkedin.com/in/jamie-purcell-phd-098aa65a/){:target="_blank"}
+- Amy Steadman [:material-linkedin:](https://www.linkedin.com/in/amy-steadman-aa80578b/){:target="_blank"}
 
 ### Central Centerless Grinding (CCG)/Scitus Engineering
 
