@@ -1,0 +1,1247 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../quickstart/">
+      
+      
+        <link rel="next" href="../../inputs/rtm/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Development History - Near-Point-Of-Care Bead Beater</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%202H4c-1.1%200-2%20.9-2%202v18l4-4h14c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2m0%2014H5.2L4%2017.2V4h16zM12.2%205.5c-.9%200-1.6.2-2.1.5-.6.4-.9%201-.8%201.7h2q0-.45.3-.6c.2-.1.4-.2.7-.2s.6.1.8.3.3.4.3.7-.1.5-.2.7c-.2.2-.4.4-.6.5-.5.3-.9.6-1.1.8-.4.3-.5.6-.5%201.1h2c0-.3.1-.5.1-.7.1-.2.3-.3.5-.5.5-.2.8-.5%201.1-.9s.4-.8.4-1.2c0-.7-.3-1.3-.8-1.7-.4-.3-1.2-.5-2.1-.5M11%2012v2h2v-2z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#development-history" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-header__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Near-Point-Of-Care Bead Beater
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Development History
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-nav__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    Near-Point-Of-Care Bead Beater
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Development History
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development History
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuberculosis-specific-challenges-of-sample-preparation-for-in-vitro-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuberculosis-specific challenges of sample preparation for in vitro diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tongue-swabs-as-an-alternative-specimen-type-to-sputum-in-tuberculosis-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tongue swabs as an alternative specimen type to sputum in tuberculosis diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice-coil-bead-beater" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voice-Coil Bead Beater
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Inputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Inputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/rtm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements Traceability Matrix (RTM)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usability / Formative Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Outputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design Outputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gamma version (2025Q1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/userguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notification Specification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batteries Specification and Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Programming Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha version (2024Q2)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Verification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Verification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20250409/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250409 Technical Review (Gamma)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240821/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240821 Technical Review (Alpha)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240212/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240212 Technical Review (VCBB)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Changes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Design Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/alpha_to_gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha to Gamma Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firmware v3.x Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary / Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuberculosis-specific-challenges-of-sample-preparation-for-in-vitro-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuberculosis-specific challenges of sample preparation for in vitro diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tongue-swabs-as-an-alternative-specimen-type-to-sputum-in-tuberculosis-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tongue swabs as an alternative specimen type to sputum in tuberculosis diagnostics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice-coil-bead-beater" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voice-Coil Bead Beater
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="development-history">Development History</h1>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>Health care providers and patients in low- and middle-income country (<abbr title="Low- and Middle-Income Country">LMIC</abbr>) point-of-care (POC) settings need a rapid diagnostic test for tuberculosis (<abbr title="tuberculosis">TB</abbr>) that provides an accurate bacteriological confirmation of <abbr title="tuberculosis">TB</abbr> during the same clinical encounter for effective linkage of care. Patients need a non-invasive and efficient testing experience, while health care providers need a test that can rapidly and accurately diagnose <abbr title="tuberculosis">TB</abbr>, allowing for timely treatment and prevention of disease transmission.</p>
+<p>However, health system levels at Level 0 (community), Level I (primary health care facilities with limited lab capabilities), and Level II (first referral health facilities with basic lab capabilities) lack a viable rapid diagnostic test for <abbr title="tuberculosis">TB</abbr> that offers high sensitivity at low cost which does not require maintenance. Molecular diagnostic solutions exist in <abbr title="Low- and Middle-Income Countries">LMICs</abbr>, but are mostly off-site, expensive to run and maintain, and often incur long waits for results from providers and patients. Antigen-based diagnostic solutions are typically more available and cost-effective, but lack the sensitivity and sophistication needed to improve case-finding in endemic regions.</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>“<abbr title="tuberculosis">TB</abbr> is killing our people down there because when you look at the access to testing if I am to say we are in XXX, apart from microscopy which we mostly use for follow-up; here at the hub but we have only two facilities in the entire district that have GeneXpert and we are overwhelmed with samples.”</p>
+<p>&mdash; <em>Provider from <abbr title="Global Health Labs. A non-profit organization responsible for development of the Near-Point-of-Care Bead Beater (nPOC-BB) prototypes.">GHL</abbr> and The Better Lab study (Using Human-Centered Design to Design a Novel COVID-19 Nucleic Acid Amplification Test among End-Users in Uganda)</em></p>
+</div>
+<p>The global problem and the opportunity for diagnostic test developers are succinctly illustrated by the following statistics:</p>
+<ul>
+<li><strong>10.6 million</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> people fell sick with <abbr title="tuberculosis">TB</abbr> in 2022</li>
+<li><strong>30%</strong><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup> gap between the incident and notified cases of <abbr title="tuberculosis">TB</abbr>, 2018</li>
+<li><strong>8%</strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <abbr title="Compound Annual Growth Rate">CAGR</abbr> from 2020 to 2027</li>
+<li><strong>325 million USD</strong><sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <abbr title="Lateral Flow Assay. A type of diagnostic format comprising biochemical assay reagents dried into porous materials arranged into a strip. An LFA user will wet the input end of the strip with a liquid sample, such as urine, diluted mucus, or blood, which then transports along the strip, rehydrating and reacting with the reagents in order to yield a visual signal of the presence or absence of a specific analyte in the sample. Also sometimes referred to as a lateral flow test (LFT) or lateral flow immunoassay (LFIA), the latter due to antibodies being common assay reagents for capture and labeling of an analyte on the strip. The canonical example of an LFA is the pregnancy test strip, which is used on human urine to detect human chorionic gonadotropin (hCG).">LFA</abbr> based <abbr title="tuberculosis">TB</abbr> market by 2027</li>
+<li><strong>10.7%</strong> <abbr title="Compound Annual Growth Rate">CAGR</abbr> from 2020 to 2027 for STIs ($798 M <abbr title="Lateral Flow Assay. A type of diagnostic format comprising biochemical assay reagents dried into porous materials arranged into a strip. An LFA user will wet the input end of the strip with a liquid sample, such as urine, diluted mucus, or blood, which then transports along the strip, rehydrating and reacting with the reagents in order to yield a visual signal of the presence or absence of a specific analyte in the sample. Also sometimes referred to as a lateral flow test (LFT) or lateral flow immunoassay (LFIA), the latter due to antibodies being common assay reagents for capture and labeling of an analyte on the strip. The canonical example of an LFA is the pregnancy test strip, which is used on human urine to detect human chorionic gonadotropin (hCG).">LFA</abbr> based STI market by 2027) – Platform Expansion</li>
+</ul>
+<p>Some of the most imposing technical challenges presented to <em>in vitro</em> diagnostic test developers by tuberculosis infections are related to the difficulties of sampling <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> from humans and then preparing the sample to work with a biochemical assay. In this context, the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> originated from a sample preparation method targeted to the tuberculosis-specific challenges of sample preparation and to tongue swabs as an easier-to-manage alternative specimen type to sputum for <abbr title="Nucleic Acid Amplification Test, also called a molecular test. A diagnostic test that can detect the presence of a molecular target, often a nucleic acid sequence specific to a pathogen or other diagnostic target, in very low quantities (down to a single molecule), often through a biochemical amplification of the molecular target. Such testing is often only possible to perform in a well-resourced diagnostic laboratory setting.">NAAT</abbr>-type assays. This page gives an overview of these topics as they relate to the history of <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> product development.</p>
+<h2 id="tuberculosis-specific-challenges-of-sample-preparation-for-in-vitro-diagnostics">Tuberculosis-specific challenges of sample preparation for <em>in vitro</em> diagnostics</h2>
+<p><abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> cells are very difficult to lyse and are therefore resistant to common lysis techniques, which typically include heat treatment (often boiling of cells)and sometimes include enzymes or chemicals that can increase the disruption of cell walls and hasten lysis. These thermal and (bio)chemical techniques require significant cleanup to allow detection of those targets by biochemical assays and/or take too long to release molecular targets from <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr>. Sputum, the most common specimen type for <abbr title="tuberculosis">TB</abbr> diagnostics, adds its own challenges to sample preparation, as it is a highly viscous sample matrix containing mucins and other natural biochemical inhibitors. Therefore, alternate sample preparation techniques, and even alternate specimen types, are desirable innovations in the context of sample preparation for <abbr title="tuberculosis">TB</abbr> diagnostics. A summary of the high-level design criteria for the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr>, and other <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> sample preparation innovations, follows, but a full set of original <a href="../../inputs/rtm/">design inputs for the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr></a> also exists.</p>
+<ul>
+<li>Account for specimen matrix effects<ul>
+<li>Biological inhibitors present in matrix inhibit amplification</li>
+<li>Complex and varied mixture of non-target microbes</li>
+<li>Nucleases degrade DNA/RNA targets</li>
+<li>Proteases degrade proteins</li>
+</ul>
+</li>
+<li>Access the nucleic acid template<ul>
+<li>Lysis conditions balanced to liberate nucleic acid from the target microbe but not so harsh that it damages the resultant nucleic acid</li>
+</ul>
+</li>
+<li>Account for sample-to-sample variability<ul>
+<li>Platforms need to accommodate multiple specimen types</li>
+<li>High sample-to-sample variability</li>
+</ul>
+</li>
+<li>Account for volume differences<ul>
+<li>Same target, different matrix, different volume: mucus/sputum, blood, stool, various swab, urine, CSF, etc.</li>
+</ul>
+</li>
+<li>Accommodate point-of- care workflow<ul>
+<li>Easy to use</li>
+<li>Low cost</li>
+<li>Render specimen biosafe</li>
+<li>Stable/long shelf-life</li>
+</ul>
+</li>
+</ul>
+<figure>
+<p><img alt="01" src="../../img/history-01.png" /></p>
+<figcaption>
+<p>Figure 1: Challenges of, and high-level design criteria for, <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> sample preparation methods.</p>
+</figcaption>
+</figure>
+<h2 id="tongue-swabs-as-an-alternative-specimen-type-to-sputum-in-tuberculosis-diagnostics">Tongue swabs as an alternative specimen type to sputum in tuberculosis diagnostics</h2>
+<p>Global Health Labs has actively participated in a global research effort to establish the diagnostic accuracy of dorsal tongue swabs because sputum-based testing is a barrier to access for <abbr title="tuberculosis">TB</abbr> diagnostics. Sputum can be difficult or impossible to produce, especially for children and people living with HIV; sputum collection can be difficult to manage safely and can introduce contamination to the test or others; and sputum processing increases assay complexity, time, and cost.</p>
+<p>The following references describe more of the work by Global Health Labs on tongue swabs for <abbr title="tuberculosis">TB</abbr>, including detailed protocols for evaluating the quantitative performance of these methods.</p>
+<ul>
+<li>Alfred Andama, Amy E Steadman, Charlotte Ahls, Gerard Cangelosi, Anura David, Margaretha de Vos, Karen Heichman, Midori Kato-Maeda, Adam Penn-Nicholson, Alaina Olson, Lesley Scott, Lindsey Turnbull, Rachel Wood, Kris Weigel, Adithya Cattamanchi (2024). "<a href="https://dx.doi.org/10.17504/protocols.io.kxygxyw54l8j/v1" target="_blank">Consensus standard operating procedure for collection of tongue swabs for <abbr title="tuberculosis">TB</abbr> diagnostics</a>." Protocols.io, 29 Jul 2024.</li>
+<li>Rachel C. Wood, Alfred Andama, Gleda Hermansky, Stephen Burkot, Lucy Asege, Mukwatamundu Job, David Katumba, Martha Nakaye, Sandra Z. Mwebe, Jerry Mulondo, Christine M. Bachman, Kevin P. Nichols, Anne-Laure M. Le Ny, Corrie Ortega, Rita N. Olson, Kris M. Weigel, Alaina M. Olson, Damian Madan, David Bell, Adithya Cattamanchi, William Worodria, Fred C. Semitala, Akos Somoskovi, Gerard A. Cangelosi, Kyle J. Minch (2021). "<a href="https://doi.org/10.1371/journal.pone.0251422" target="_blank">Characterization of oral swab samples for diagnosis of pulmonary tuberculosis</a>." PLoS ONE 16(5): e0251422.</li>
+<li>Amy Steadman, Alfred Andama, Alexey Ball, Job Mukwatamundu, Khushboo Khimani, Tessa Mochizuki, Lucy Asege, Alice Bukirwa, John Baptist Kato, David Katumba, Esther Kisakye, Wilson Mangeni, Sandra Mwebe, Martha Nakaye, Irene Nassuna, Justine Nyawere, Annet Nakaweesa, Catherine Cook, Patrick Phillips, Talemwa Nalugwa, Christine M Bachman, Fred Collins Semitala, Bernhard H Weigl, John Connelly, William Worodria, Adithya Cattamanchi (2024). "<a href="https://doi.org/10.1093/cid/ciae041" target="_blank">New Manual Quantitative Polymerase Chain Reaction Assay Validated on Tongue Swabs Collected and Processed in Uganda Shows Sensitivity That Rivals Sputum-based Molecular Tuberculosis Diagnostics</a>." Clinical Infectious Diseases, Volume 78, Issue 5, 15 May 2024, Pages 1313–1320.</li>
+</ul>
+<figure>
+<p><img alt="03" src="../../img/history-02.png" /></p>
+<figcaption>
+<p>Figure 2: Overview of protocol for generation of contrived tongue swab specimens, which can be used to evaluate <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> lysis efficiency of various sample preparation methods on this specimen type.</p>
+</figcaption>
+</figure>
+<p>In parallel, Global Health Labs has worked on evaluating established and novel sample preparation methods for <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> cells from tongue swab specimens, with the goal of maximizing amplifiable nucleic acids for direct transfer to molecular diagnostics. The outcome of this work is the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr>, but also the observation that sufficient mechanical agitation combined with heating will efficiently lyse <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> cells, although simultaneous thermal and mechanical treatment is more efficient than serial thermal then mechanical treatment. However, even hand shaking after heating gives relatively good performance! (Although it does get tiring to rapidly shake a tube for 5 full minutes).</p>
+<figure>
+<p><img alt="02" src="../../img/history-03.png" /></p>
+<figcaption>
+<p>Figure 3: Comparison of lysis efficiency, on contrived tongue swab specimens (that included a fixed number of cultured <abbr title="Mycobacterium tuberculosis. A species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of the infectious disease tuberculosis.">Mtb</abbr> cells), across various sample preparation methods. Heat only and no treatment controls sit in contrast to methods that combine heating and mechanical agitation of the cells. The <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> condition gave the best performance (126% lysis efficiency as measured relative to the laboratory benchtop control, a Biospec bead beater), but more optimized solutions may yet exist.</p>
+</figcaption>
+</figure>
+<h2 id="voice-coil-bead-beater">Voice-Coil Bead Beater</h2>
+<p>An early version of heated bead beating technology developed at <abbr title="Global Health Labs. A non-profit organization responsible for development of the Near-Point-of-Care Bead Beater (nPOC-BB) prototypes.">GHL</abbr> used a voice coil to mechanically shake a tube with beads. A <a href="../../reviews/20240212%20TR%20NAATOS%20v1%20VCBB%20Technical%20Review.pdf" target="_blank">Technical Review</a> of this early version, known as the Voice Coil Bead Beater (VCBB), offers additional development history for the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>WHO. <a href="https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2024" target="_blank">Global Tuberculosis Report 2024</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Markets and Markets. <a href="https://www.marketsandmarkets.com/Market-Reports/lateral-flow-assay-components-market-45058941.html" target="_blank">Lateral Flow Assay Components Market - Global Forecast to 2027</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../quickstart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick Start Guide">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Quick Start Guide
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../inputs/rtm/" class="md-footer__link md-footer__link--next" aria-label="Next: Requirements Traceability Matrix (RTM)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Requirements Traceability Matrix (RTM)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.tracking", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

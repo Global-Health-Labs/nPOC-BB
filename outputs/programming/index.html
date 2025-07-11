@@ -1,0 +1,2120 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../batteries/">
+      
+      
+        <link rel="next" href="../alpha/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Programming Instructions - Near-Point-Of-Care Bead Beater</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%202H4c-1.1%200-2%20.9-2%202v18l4-4h14c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2m0%2014H5.2L4%2017.2V4h16zM12.2%205.5c-.9%200-1.6.2-2.1.5-.6.4-.9%201-.8%201.7h2q0-.45.3-.6c.2-.1.4-.2.7-.2s.6.1.8.3.3.4.3.7-.1.5-.2.7c-.2.2-.4.4-.6.5-.5.3-.9.6-1.1.8-.4.3-.5.6-.5%201.1h2c0-.3.1-.5.1-.7.1-.2.3-.3.5-.5.5-.2.8-.5%201.1-.9s.4-.8.4-1.2c0-.7-.3-1.3-.8-1.7-.4-.3-1.2-.5-2.1-.5M11%2012v2h2v-2z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming-instructions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-header__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Near-Point-Of-Care Bead Beater
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Programming Instructions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-nav__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    Near-Point-Of-Care Bead Beater
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development History
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Inputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Inputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/rtm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements Traceability Matrix (RTM)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usability / Formative Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Outputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design Outputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gamma version (2025Q1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../userguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notification Specification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batteries Specification and Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Programming Instructions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Programming Instructions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-config-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Config / Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Config / Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cycle Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-programming-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Programming Firmware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Programming Firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-release-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug / Release Modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-upgrade-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Upgrade Package
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-upgrade-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Upgrade Package
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-programming-power-driver-pd-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Programming Power Driver (PD) Controller
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Programming Power Driver (PD) Controller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-adafruit-ft232h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Adafruit FT232H
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wire-tag-connect-and-adafruit-ft232h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wire TAG-Connect and Adafruit FT232H
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-tps25750" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure TPS25750
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha version (2024Q2)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Verification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Verification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20250409/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250409 Technical Review (Gamma)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240821/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240821 Technical Review (Alpha)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240212/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240212 Technical Review (VCBB)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Changes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Design Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/alpha_to_gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha to Gamma Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firmware v3.x Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary / Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-config-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Config / Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Config / Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cycle Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-programming-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Programming Firmware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Programming Firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-release-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug / Release Modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootloader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-upgrade-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Upgrade Package
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing-upgrade-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flashing Upgrade Package
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instruction-for-programming-power-driver-pd-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruction for Programming Power Driver (PD) Controller
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruction for Programming Power Driver (PD) Controller">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-adafruit-ft232h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup Adafruit FT232H
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wire-tag-connect-and-adafruit-ft232h" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wire TAG-Connect and Adafruit FT232H
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-tps25750" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure TPS25750
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="programming-instructions">Programming Instructions</h1>
+<h2 id="instruction-for-config-logs">Instruction for Config / Logs</h2>
+<p>On an <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit running firmware v3.1 or later, the file system on the exposed mass storage device and NOR flash 1Gbit storage contains the two subdirectories <code>config</code> and <code>logs</code>, which contain the files for the configuration of the unit and all logs created by the unit, respectively. Below is an example filesystem from a <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit running firmware v3.5 that has been configured to operate four distinct cycles in a run and has logged two distinct runs.</p>
+<pre><code>\
+├─ config
+│   ├─ config_v3.5.txt
+│   ├─ cycle_config_1.txt
+│   ├─ cycle_config_2.txt
+│   ├─ cycle_config_3.txt
+│   └─ cycle_config_4.txt
+└─ logs
+    ├─ sample_05-21-25_121449.csv
+    └─ sample_05-22-25_120343.csv
+</code></pre>
+<h3 id="config">Config</h3>
+<p>The <code>config</code> subdirectory contains text files that configure the operation of an <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> unit. The configuration files contain configuration parameters that either apply to the entire run, which may comprise one or more independent cycles, or to cycles, the number of which is configurable. A standard run on a <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit running firmware v3.5 is four cycles: startup; heating; heating and shaking, and passive cooling and shaking.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When a new firmware version is flashed onto a unit, the unit will compare the current firmware version to the Run Configuration file version in storage. If the Run Configuration file name (e.g., <code>config_v3.4</code>) does do not match the flashed firmware version (e.g., <code>v3.5</code>), the unit will delete all configuration files from storage and create new configuration files that match the current version and contains default values. This functionality exists in the firmware to guarantee compatibility with the configuration files.</p>
+</div>
+<h4 id="run-configuration">Run Configuration</h4>
+<p>A single Run Configuration file will be in the <code>config</code> subdirectory. The Run Configuration file is named after the current firmware of the unit (e.g., <code>config_v3.5.txt</code> when the firmware version is <code>v3.5</code>). The Run Configuration file contains the parameters that configure unit operation for an entire run of one or more cycles (but does not configure the individual cycles; see below). The following table describes the firmware v3.5 Run Configuration parameters and lists their types, default values, and units.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+<th style="text-align: left;">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>sample_rate</code></td>
+<td style="text-align: left;">The rate at which sensors are polled during a run. <strong>Do not use values below 0.2.</strong> Default value is recommended.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.2</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>logging_rate</code></td>
+<td style="text-align: left;">The rate at which sensor data is written to a new log line in the log file during a run. <strong>Do not use values below 1.</strong> Default value is recommended.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>low_power_threshold</code></td>
+<td style="text-align: left;">The battery charge percentage below which the unit will enter a non-operational, low-power mode and will not start a new run.</td>
+<td style="text-align: left;">uint16</td>
+<td style="text-align: left;">46</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>recovery_power_threshold</code></td>
+<td style="text-align: left;">The battery charge percentage above which the unit will return to an operational mode from a non-operational, low-power mode.</td>
+<td style="text-align: left;">uint16</td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>sample_valid_timeout_s</code></td>
+<td style="text-align: left;">The duration for which a sample is considered valid after a run while the sample is not removed (i.e., the lid is not opened), after which the unit will alert.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">3600</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>alert_timeout_time_s</code></td>
+<td style="text-align: left;">The duration of an alert condition.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>debug_to_com_en</code></td>
+<td style="text-align: left;">The enable for sending all debug messages from the unit to the serial COM port.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>min_run_zone_temp_en</code></td>
+<td style="text-align: left;">The enable for checking the minimum heater board ("run zone") temperature before a run.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>min_run_zone_temp</code></td>
+<td style="text-align: left;">If enabled, the minimum heater board ("run zone") temperature required to start a run.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">80</td>
+<td style="text-align: left;">°C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>do_automatic_runs</code></td>
+<td style="text-align: left;">The enable for lifetime or other burn-in tests. <strong>Normal operation shuld be FALSE.</strong> If set to true, unit will run automatically without user intervention (regardless of sample removal or insertion), pausing for 2×<code>sample_valid_timeout_s</code> seconds between runs.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>accept_run_time_error_s</code></td>
+<td style="text-align: left;">The acceptable timing error for each cycle, as well as the entire run. Time is measured and compared using real-time clock (RTC) as well as cpu-ticks. If the time difference between these two exceeds this value, then an error occurs, the run exits, and the unit notifies the user that the sample is now invalid (red lights). This condition is checked during each cycle, as well as at the conclusion of the entire run (all cycles were completed).</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>heater_max_temp</code></td>
+<td style="text-align: left;">The maximum heater board temperature allowed, beyond which the unit will alert.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">120</td>
+<td style="text-align: left;">°C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>max_heater_pid_pwm</code></td>
+<td style="text-align: left;">The maximum PWM allowed to be set by the heater PID controller.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>switch_motor_ccw_cw</code></td>
+<td style="text-align: left;">The enable for switching the polarity of the motor in alternating runs, which reduces directional wear in the drive shaft.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>hal_sensor_thresh</code></td>
+<td style="text-align: left;">The threshold for the Hall effect sensor, which detects the open/close state of the lid.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.3</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_stall_percent</code></td>
+<td style="text-align: left;">The percent change in the motor RPM used to detect a stalled motor, above which the unit will alert.  The motor setpoint must be reached before this setting takes effect.</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">% (of RPM)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_stall_pwm</code></td>
+<td style="text-align: left;">The maximum motor PWM control signal that will be allowed. If exceeded, an error will occur. <strong>Not disabled by<code>motor_stall_en</code> and is always active regardless of the <code>motor_stall_en</code> setting.</strong></td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">65</td>
+<td style="text-align: left;">% (PWM)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_stall_en</code></td>
+<td style="text-align: left;">The enable for <code>motor_stall_percent</code>, which checks for a motor stall condition during a run.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>canary</code></td>
+<td style="text-align: left;">The value that signals the default config values have been restored.</td>
+<td style="text-align: left;">uint16</td>
+<td style="text-align: left;">747</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>mmddyy</code></td>
+<td style="text-align: left;">If enabled, the date to write to the real-time clock.</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">100124</td>
+<td style="text-align: left;">mmddyy</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>hhmmss</code></td>
+<td style="text-align: left;">If enabled, the time to write to the real-time clock.</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">120000</td>
+<td style="text-align: left;">hhmmss</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>set_time_date</code></td>
+<td style="text-align: left;">The enable to set the real-time clock when the device goes back into normal operation mode.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cycle-configuration">Cycle Configuration</h4>
+<p>One or more Cycle Configuration files will be found in the <code>config</code> subdirectory. The Cycle Configuration files are named for the cycle number (starting with <code>1</code> and proceeding in integer order, e.g., <code>cycle_config_1.txt</code>, <code>cycle_config_2.txt</code>, <code>cycle_config_3.txt</code>, and <code>cycle_config_4.txt</code>). Each Cycle Configuration file contains the parameters that apply to a single cycle. The default configuration for a <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit running firmware v3.5 uses four cycles defined by four Cycle Configuration files. The following table describes the firmware v 3.5 cycle parameters found in a Cycle Configuration file and lists their types, default values, and units.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
+<th style="text-align: left;">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>cycle_run_time_s</code></td>
+<td style="text-align: left;">The duration of the cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">51</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>accept_cycle_time_error_s</code></td>
+<td style="text-align: left;">The acceptable timing error for the cycle, evaluated at the conclusion of the cycle. Time is measured by real-time clock (RTC) and cpu-ticks, which are then compared. If the measured time differential exceeds this value, then an error occurs, the run exits, and the unit notifies the user that the sample is now invalid (red lights notification). **This condition is evaluated in addition to the global condition <code>accept_run_time_error_s</code>.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cycle_delay_time_s</code></td>
+<td style="text-align: left;"><strong>DO NOT USE. Leave at 0.</strong></td>
+<td style="text-align: left;">uint16</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ramp_to_temp_before_start_cycle</code></td>
+<td style="text-align: left;">The enable for starting the cycle duration timer after the heater board has reached the heater setpoint in the cycle.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ramp_to_temp_timeout</code></td>
+<td style="text-align: left;">The duration allowed for the heater board temperature to reach the heater setpoint in this cycle, beyond which the unit will alert. <strong>This parameter will take effect regardless of <code>ramp_to_temp_before_start_cycle</code> TRUE or FALSE.</strong></td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>yellow_grace_period_s</code></td>
+<td style="text-align: left;">The duration for this cycle in which an error will not cause the sample to be invalid (i.e., yellow lights notification instead of red lights notification).</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">51</td>
+<td style="text-align: left;">s</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>heater_setpoint</code></td>
+<td style="text-align: left;">The target temperature of the heater board for the heater PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">100</td>
+<td style="text-align: left;">°C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_setpoint</code></td>
+<td style="text-align: left;">The target speed of the motor for the motor PID controller in this cycle.</td>
+<td style="text-align: left;">uint16</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">RPM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>run_heater_enable</code></td>
+<td style="text-align: left;">The enable for running the heater in this cycle.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>run_motor_enable</code></td>
+<td style="text-align: left;">The enable for running the motor in this cycle.</td>
+<td style="text-align: left;">bools</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>heater_kp</code></td>
+<td style="text-align: left;">The proportional control constant used by the heater PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>heater_ki</code></td>
+<td style="text-align: left;">The integral control constant used by the heater PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.05</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>heater_kd</code></td>
+<td style="text-align: left;">The derivative control constant used by the heater PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_kp</code></td>
+<td style="text-align: left;">The proportional control constant used by the motor PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.005</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_ki</code></td>
+<td style="text-align: left;">The integral control constant used by the motor PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.0005</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>motor_kd</code></td>
+<td style="text-align: left;">The derivative control constant used by the motor PID controller in this cycle.</td>
+<td style="text-align: left;">float</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logs">Logs</h3>
+<p>The <code>logs</code> subdirectory contains log files in <code>*.csv</code> format. A new log file is generated for every power-on event and every run. A log file is named after the date and time of the event or run (e.g., <code>sample_05-21-25_121449.csv</code>).</p>
+<p>A log file containers a header row and one or more data rows. Each data row is a single line of comma-delineated text that begins with a timestamp followed by the most recent sensor data gathered at <code>sample_rate</code> (a configuration parameter set in the Run Configuration file) and an <code>Event</code>, if one has occurred. <code>Event</code>-based log entries are generated at the time of the event. Non-<code>Event</code> log entries are generated at the <code>logging_rate</code> (a configuration parameter set in the Run Configuration file).</p>
+<p>The following table contains the header row and the first three data rows of an example log file:</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>HeaterTemp</th>
+<th>HeaterPWM</th>
+<th>MotorSpeed</th>
+<th>MotorPWM</th>
+<th>Battery</th>
+<th>BatteryV</th>
+<th>BatteryT</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-12-05 12:04:34</td>
+<td>24.01</td>
+<td>100.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>19</td>
+<td>3.57</td>
+<td>25.03</td>
+<td>Cycle 1 Started</td>
+</tr>
+<tr>
+<td>2024-12-05 12:04:35</td>
+<td>26.39</td>
+<td>100.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>19</td>
+<td>3.63</td>
+<td>25.05</td>
+<td></td>
+</tr>
+<tr>
+<td>2024-12-05 12:04:36</td>
+<td>29.77</td>
+<td>100.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>19</td>
+<td>3.64</td>
+<td>25.60</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="instruction-for-programming-firmware">Instruction for Programming Firmware</h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li><a href="https://www.segger.com/downloads/embedded-studio/" target="_blank">Segger Embedded Studio</a> software version 5.34 was originally used to develop the firmware. Later versions may also work.</li>
+<li><a href="https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop" target="_blank">nRF Connect</a> software is used to upload the firmware.</li>
+<li><a href="https://www.nordicsemi.com/Products/Development-tools/nrf-util" target="_blank"><code>nrfutil</code></a></li>
+<li>Source code for <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> firmware (shared as <a href="https://github.com/Global-Health-Labs/NAATOS---Modules" target="_blank"><abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr>---Modules</a>)</li>
+<li>An nRF PCA10040/56 or a Segger programmer connected to a 6-pin JTAG programming cable is used to program and communicate to the boards via both Segger Embedded Studio and nRF Connect.</li>
+</ul>
+<h3 id="environment">Environment</h3>
+<p>Open the code in Segger Embedded Studio go to <code>application/solution/</code>. The firmware code base for <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> is shared with the <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr> system. Therefore, in this directory there should be <code>naatos_fw.emProject</code> which is the project file and can be double clicked to open the project inside of Segger Embedded Studio.</p>
+<p>For opening the bootloader project, follow the same steps except follow the path <code>bootloader/solution/</code> and open <code>naatos_bootloader.emProject</code>.</p>
+<h3 id="debug-release-modes">Debug / Release Modes</h3>
+<p>Switching the project between Debug and Release can be done inside of the Project Explorer tab of Segger Embedded Studio.  </p>
+<p>In most cases, the project should be inside of Debug mode when building the firmware. The only time the Release mode should be used for would be when creating final firmware builds to keep the optimization as high as possible and memory usage as low as possible.  </p>
+<p>For the bootloader, ONLY the release mode should be used and not the debug mode. Building and using the bootloader inside of Debug mode will lead to the Bootloader not working and unable to update firmware properly.  </p>
+<p>When building the application code, certain memory spaces may have to be changed depending on whether the resulting .hex file being produced will be used with or without a bootloader. The two cases being one where the bootloader is being used on the unit and one that is not. Depending on this the memory map for the unit will need to be changed.  </p>
+<p>When simple testing is required, and the bootloader is not needed on the board the memory space for the unit needs to be modified so that it does not expect bootloader code within its memory.  This is done by modifying the linker options of the project. Follow these steps to modify the linker options:</p>
+<ol>
+<li>Right-click the project in the Project Explorer tab of Segger Embedded studios and select Options.  </li>
+<li>Choose the build type for the Options, and set it to Common.  </li>
+<li>Select Linker in the Options.  </li>
+<li>Double-click on the Section Placement Macros  </li>
+<li>A property editor should then come up on the screen.  </li>
+<li>
+<p>Replace the Text with the following to make the application run without the need of a bootloader flashed onto the unit:</p>
+<pre><code>FLASH_PH_START=0x0
+FLASH_PH_SIZE=0x100000
+RAM_PH_START=0x20000000
+RAM_PH_SIZE=0x40000
+FLASH_START=0x0000
+FLASH_SIZE=0xF3000
+RAM_START=0x20000000
+RAM_SIZE=0x40000
+</code></pre>
+<p>If the unit is being programmed and the firmware image is expecting to have a bootloader on the unit and contain the full firmware the following options need to be set:  </p>
+<pre><code>FLASH_PH_START=0x0 
+FLASH_PH_SIZE=0x100000 
+RAM_PH_START=0x20000000 
+RAM_PH_SIZE=0x40000 
+FLASH_START=0x1000 
+FLASH_SIZE=0xF3000 
+RAM_START=0x20000008 
+RAM_SIZE=0x3FFF8
+</code></pre>
+</li>
+</ol>
+<h3 id="bootloader">Bootloader</h3>
+<p>Triple-press the start button for the board to enter the bootloader from the application firmware. Bootloader must be programmed onto the board of a unit to enter the mode, or the unit will end up in a hard fault state with the unit crashing.  </p>
+<p>There are four required files for full firmware programming of the unit (found in <code>/sw/firmware_with_bootloader/</code>):</p>
+<ul>
+<li>The <a href="https://github.com/Global-Health-Labs/nPOC-BB/blob/main/sw/firmware_with_bootloader/npoc-bb_fw.hex">application firmware hex file</a>, <code>npoc-bb_fw.hex</code>, is the application code, which is flashed onto the board, is generated with each revision of application firmware changes, and can be overwritten.</li>
+<li>The <a href="https://github.com/Global-Health-Labs/nPOC-BB/blob/main/sw/firmware_with_bootloader/npoc-bb_bootloader_SG_compilerelease_NORELOC.hex">bootloader firmware hex file</a>, <code>npoc-bb_bootloader_SG_compilerelease_NORELOC.hex</code>, is the bootloader code, which is flashed onto the board, is generated only once, and cannot be overwritten.  </li>
+<li>The <a href="https://github.com/Global-Health-Labs/nPOC-BB/blob/main/sw/firmware_with_bootloader/mbr_nrf52_24.1_mbr.hex">master boot record</a>, <code>mbr_nrf52_24.1_mbr.hex</code>, is the static record of the bootloader, which is taken from the nRF52840 SDK, not modified for this application, and cannot be overwritten.</li>
+<li>The <a href="https://github.com/Global-Health-Labs/nPOC-BB/blob/main/sw/firmware_with_bootloader/npoc-bb_bootloader_settings.hex">bootloader settings hex file</a>, <code>npoc-bb_bootloader_settings.hex</code>, contains the settings for the bootloader to run on, tells the bootloader what to expect on a firmware upgrade, and can be regenerated to accommodate changes to the bootloader.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>nRF Connect must be used to program the bootloader onto the unit. Segger Embedded Studio cannot program the bootloader onto the unit.  </p>
+</div>
+<ol>
+<li>
+<p>Open nRF Connect.</p>
+<p><img alt="nRF Connect" src="../../img/sw-06-nrf_connect.png" /></p>
+</li>
+<li>
+<p>Select the Programmer Tool, then select <code>nRF52 DK</code> as the programmer (top left).</p>
+<p><img alt="Programmer Tool &gt; nRF52 DK" src="../../img/sw-07-nrf52_dk.png" /></p>
+</li>
+<li>
+<p>Add all four firmware files into the Programmer Tool.</p>
+<p><img alt="File memory" src="../../img/sw-08-file_memory.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure that the application firmware hex file is generated with the correct memory layout and expects the bootloader to be there.  </p>
+</div>
+</li>
+<li>
+<p>When the firmware files are loaded into the programmer the <code>Erase and Write</code> button can be pressed to write the full firmware to the unit.</p>
+<p><img alt="Erase and Write" src="../../img/sw-09-completed.png" /></p>
+<p>There should be no red messages in the console log and the finishing programming line should be <code>Reading readback protection status for Application core completed</code>.</p>
+</li>
+<li>
+<p>The unit has been fully programmed and has both the bootloader and the application firmware on the unit and is ready for operation and future upgrades via the bootloader.  </p>
+</li>
+</ol>
+<h3 id="generate-upgrade-package">Generate Upgrade Package</h3>
+<p>To generate a package, first <code>nrfutil</code> must be installed which runs the entire firmware upgrade creation and flashing process.</p>
+<p>To create a package the following command must be run with <code>nrfutil</code>:</p>
+<pre><code>nrfutil pkg generate --hw-version 52 --sd-req 0x00 --application-version 4 --application Path/To/Application/Hex/File --key-file Path/To/Key/File npoc-bb_dfu_package.zip
+</code></pre>
+<p>This command takes in the newly created application firmware hex and our Odic generated key file which will be provided to create a .zip upgrade package with the given application firmware hex file.  </p>
+<p>A script will also be provided which can be run to create a firmware upgrade package when the correct paths are set inside of it.  </p>
+<h3 id="flashing-upgrade-package">Flashing Upgrade Package</h3>
+<p>Now to flash the unit, it must first be put into bootloader mode via clicking the button 3 times on the unit. The unit should then open a COM port on the computer which can be seen inside of the unit manager for Windows.  </p>
+<p><img alt="img01" src="../../img/sw-01.png" /></p>
+<p>The COM port for the bootloader should be named ‘nRF52 SDFU USB’, run the following command with the COM port replacing COM_PORT:</p>
+<pre><code>nrfutil dfu usb-serial -pkg npoc-bb_dfu_package.zip -p COM_PORT -b 115200
+</code></pre>
+<p>The firmware should then begin uploading to the unit and updating it.</p>
+<h2 id="instruction-for-programming-power-driver-pd-controller">Instruction for Programming Power Driver (PD) Controller</h2>
+<h3 id="requirements_1">Requirements</h3>
+<ul>
+<li><abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main printed circuit board (PCB)</li>
+<li><abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit battery pack</li>
+<li>USB-C cable (×2)</li>
+<li><a href="https://www.adafruit.com/product/2264" target="_blank">Adafruit FT232H breakout board</a></li>
+<li>6-pin TAG-Connect cable, terminated with headers</li>
+<li><a href="https://zadig.akeo.ie/" target="_blank">Zadig</a></li>
+<li><code>eeprom_flasher.py</code></li>
+<li>PyFTDI python module</li>
+<li><code>nPOC-BB_PD.bin</code></li>
+<li>[Optional] Microsoft Visual Studio Code (vscode)</li>
+<li>[Optional] <a href="https://dev.ti.com/gallery/view/USBPD/TPS25750_Application_Customization_Tool/ver/7.0.4/" target="_blank">TI TPS2570 Application Customization Tool</a></li>
+</ul>
+<h3 id="setup">Setup</h3>
+<h4 id="setup-adafruit-ft232h">Setup Adafruit FT232H</h4>
+<p>Adafruit <a href="https://learn.adafruit.com/circuitpython-on-any-computer-with-ft232h/windows" target="_blank">has provided detailed instructions</a> on using the Adafruit FT232H on Windows because Windows does not allow driverless devices. The driver must be updated manually, but only once per FT232H per computer. A summary of the Adafruit instructions is below.</p>
+<ol>
+<li>Connect only the Adafruit FT232H to your PC. Disconnect all other USB to serial devices (this includes Arduinos).</li>
+<li>Launch Zadig.</li>
+<li>Under <code>Options &gt; List All Devices</code>, find <code>USB Serial Converter</code>.</li>
+<li>Replace the default driver with <code>libusbK</code>.</li>
+</ol>
+<h4 id="wire-tag-connect-and-adafruit-ft232h">Wire TAG-Connect and Adafruit FT232H</h4>
+<p>Connect the TAG-Connect to the Adafruit FT232H board as follows:</p>
+<table>
+<thead>
+<tr>
+<th>FT232H Pin</th>
+<th>TAG-Connect Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GND</td>
+<td>4</td>
+</tr>
+<tr>
+<td>D0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Note that when looking at the header side of the TAG-Connect cable, it has the following pin numbering:</p>
+<p><img alt="TAG-Connect pins" src="../../img/sw-02.png" /></p>
+<h4 id="configure-tps25750">Configure TPS25750</h4>
+<p>The <code>nPOC-BB_PD.bin</code> and <code>nPOC-BB_TPS25750_config.json</code> files were generated using the <a href="https://dev.ti.com/gallery/view/USBPD/TPS25750_Application_Customization_Tool/ver/7.0.4/" target="_blank">TI TPS2570 Application Customization Tool</a>. It should not be necessary, but to regenerate the <code>nPOC-BB_PD.bin</code> and <code>nPOC-BB_TPS25750_config.json</code> files, follow the steps below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The TI TPS2570 Application Customization Tool requires free registration to use. The tool will suggest to download and install software, but the <code>Esc</code> key can be pressed to avoid that step.</p>
+</div>
+<ol>
+<li>
+<p>Answer the questions about your desired configuration using the values in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Configuration</td>
+<td>Power Sink only (second box) with BQ and integrated switch (upper left option)</td>
+</tr>
+<tr>
+<td>2. N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>3. What Sink Power is Required?</td>
+<td>60W</td>
+</tr>
+<tr>
+<td>4. N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>5. What is the supported USB Highest Speed?</td>
+<td>USB 2</td>
+</tr>
+<tr>
+<td>6. Do you have a preferred data role?</td>
+<td>Device</td>
+</tr>
+<tr>
+<td>7. Do you have a vendor ID supplied by the USB-IF?</td>
+<td>No</td>
+</tr>
+<tr>
+<td>8. Do you have a desired product ID?</td>
+<td>No</td>
+</tr>
+<tr>
+<td>9. Select the battery charger component to integrate</td>
+<td>BQ25792</td>
+</tr>
+<tr>
+<td>10. Battery charging voltage</td>
+<td>8.4V</td>
+</tr>
+<tr>
+<td>11. Battery charging current</td>
+<td>3.3A</td>
+</tr>
+<tr>
+<td>12. Charge termination current</td>
+<td>0.12A</td>
+</tr>
+<tr>
+<td>13. Pre-charge current</td>
+<td>0.32A</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <code>Export Settings</code>, type the file name <code>nPOC-BB_TPS25750_config</code>, and click <code>Export</code> to download the <code>nPOC-BB_TPS25750_config.json</code> file.</p>
+</li>
+<li>Click <code>Generate Full Flash Binary</code>, choose the format <code>Binary</code>, type the file name <code>nPOC-BB_PD</code>, and click <code>Download</code> to download the <code>nPOC-BB_PD.bin</code> file.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The TPS25750 has GPIOs that can be configured under <code>Advanced Configuration</code>. Reference the TPS25750 Host Interface Technical Reference Manual for more information.</p>
+</div>
+<h3 id="programming">Programming</h3>
+<ol>
+<li>If not already installed, install PyFTDI from vscode (or other Python-enabled terminal) with <code>pip install pyftdi</code>.</li>
+<li>Change directory to the location of the <code>eeprom_flasher.py</code> and <code>nPOC-BB_PD.bin</code> files.</li>
+<li>Connect a USB-C cable between the PC running the Python script and the Adafruit FT232H board.</li>
+<li>
+<p>Connect the battery pack to the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB. First connect black (battery pack ground), then red (battery pack positive), and finally purple (battery pack center-tap).</p>
+<p><img alt="Battery connections" src="../../img/sw-03.jpg" /></p>
+</li>
+<li>
+<p>Attach alligator clip to <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB at J9.</p>
+<p><img alt="Alligator clip" src="../../img/sw-04.jpg" /></p>
+</li>
+<li>
+<p>Connect a USB-C cable between the PC and the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB.</p>
+</li>
+<li>
+<p>Connect the TAG-Connect to the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB at J8.</p>
+<p><img alt="TAG-Connect" src="../../img/sw-05.jpg" /></p>
+</li>
+<li>
+<p>Run <code>python eeprom_flasher.py</code>.</p>
+<ul>
+<li>It will take approximately 15 seconds to program the board.</li>
+<li>When the script reads back what it programmed to the board, it should print out <code>bytearray(b'\x00\x08\x00\x00\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff')</code>.</li>
+</ul>
+</li>
+<li>Disconnect the TAG-Connect cable.</li>
+<li>Disconnect the USB-C cable attached to the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB.</li>
+<li>Disconnect the battery pack from the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> (Gamma) unit main PCB. First disconnect the purple wire (battery pack center-tap), then the red wire (battery pack positive), then the black wire (battery pack negative).</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../batteries/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Batteries Specification and Instructions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Batteries Specification and Instructions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../alpha/" class="md-footer__link md-footer__link--next" aria-label="Next: Alpha version (2024Q2)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Alpha version (2024Q2)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.tracking", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

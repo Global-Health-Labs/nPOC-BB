@@ -1,0 +1,1819 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../prelim/history/">
+      
+      
+        <link rel="next" href="../risk/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Requirements Traceability Matrix (RTM) - Near-Point-Of-Care Bead Beater</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%202H4c-1.1%200-2%20.9-2%202v18l4-4h14c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2m0%2014H5.2L4%2017.2V4h16zM12.2%205.5c-.9%200-1.6.2-2.1.5-.6.4-.9%201-.8%201.7h2q0-.45.3-.6c.2-.1.4-.2.7-.2s.6.1.8.3.3.4.3.7-.1.5-.2.7c-.2.2-.4.4-.6.5-.5.3-.9.6-1.1.8-.4.3-.5.6-.5%201.1h2c0-.3.1-.5.1-.7.1-.2.3-.3.5-.5.5-.2.8-.5%201.1-.9s.4-.8.4-1.2c0-.7-.3-1.3-.8-1.7-.4-.3-1.2-.5-2.1-.5M11%2012v2h2v-2z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requirements-traceability-matrix-rtm" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-header__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Near-Point-Of-Care Bead Beater
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Requirements Traceability Matrix (RTM)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-nav__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    Near-Point-Of-Care Bead Beater
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development History
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Inputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Inputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Requirements Traceability Matrix (RTM)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements Traceability Matrix (RTM)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-traceability-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Traceability Matrix
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usability / Formative Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Outputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design Outputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gamma version (2025Q1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/userguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notification Specification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batteries Specification and Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Programming Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha version (2024Q2)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Verification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Verification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20250409/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250409 Technical Review (Gamma)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240821/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240821 Technical Review (Alpha)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240212/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240212 Technical Review (VCBB)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Changes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Design Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/alpha_to_gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha to Gamma Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changes/firmware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firmware v3.x Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary / Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-traceability-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements Traceability Matrix
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="requirements-traceability-matrix-rtm">Requirements Traceability Matrix (<abbr title="Requirements Traceability Matrix">RTM</abbr>)</h1>
+<h2 id="overview">Overview</h2>
+<p>The <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> was originally developed at <abbr title="Global Health Labs. A non-profit organization responsible for development of the Near-Point-of-Care Bead Beater (nPOC-BB) prototypes.">GHL</abbr> as the front-end of a prototype diagnostic test system called <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr>. Therefore, the design inputs for the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> are a subset of the design inputs for <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr>, and the <abbr title="Requirements Traceability Matrix">RTM</abbr> for the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> is excerpted from the larger <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr> <abbr title="Requirements Traceability Matrix">RTM</abbr>. As such, some of the excerpted User Needs and/or Requirements:</p>
+<ol>
+<li>Contain <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr>-specific references.<ol>
+<li><strong>Product</strong> denotes the <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr> system.Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (<abbr title="Global Health Labs. A non-profit organization responsible for development of the Near-Point-of-Care Bead Beater (nPOC-BB) prototypes.">GHL</abbr>) that combines the low-cost and availability of lateral flow assay (<abbr title="Lateral Flow Assay. A type of diagnostic format comprising biochemical assay reagents dried into porous materials arranged into a strip. An LFA user will wet the input end of the strip with a liquid sample, such as urine, diluted mucus, or blood, which then transports along the strip, rehydrating and reacting with the reagents in order to yield a visual signal of the presence or absence of a specific analyte in the sample. Also sometimes referred to as a lateral flow test (LFT) or lateral flow immunoassay (LFIA), the latter due to antibodies being common assay reagents for capture and labeling of an analyte on the strip. The canonical example of an LFA is the pregnancy test strip, which is used on human urine to detect human chorionic gonadotropin (hCG).">LFA</abbr>) testing with nucleic acid amplification (i.e., molecular) testing.</li>
+<li><strong><abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr></strong> is the abbreviated name of the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> instrument in the <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr> system.</li>
+<li><strong><abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr></strong> is the abbreviated name of the swab used to collect a sample.</li>
+<li><strong><abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr></strong> is the abbreviated name of the dropper tube used in the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr>.</li>
+</ol>
+</li>
+<li>Do not apply to the <abbr title="Near-Point-of-Care Bead Beater. A portable sample preparation instrument designed to prepare Mycobacterium tuberculosis from human tongue swab specimens for detection of TB via molecular testing in low-resource settings. Will also work with liquified human sputum specimens and may be useful in other sample preparation applications. Originally a component of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL), it also called the Sample Preparation Module (SPM) in some documentation.">nPOC-BB</abbr> parts of <abbr title="Nucleic Acid Amplification Test On a Strip. A technology under development at Global Health Labs (GHL) that combines the low-cost and availability of lateral flow assay (LFA) testing with nucleic acid amplification (i.e., molecular) testing.">NAATOS</abbr> and therefore state "N/A" in an adjacent cell.</li>
+<li>Apply to the specific manufacture and regulatory approval of a medical device and therefore state "<strong>TBD</strong>" in the cell.</li>
+</ol>
+<p>You can also <a href="../../tables/nPOC-BB_rtm.csv">download a tabular version of this <abbr title="Requirements Traceability Matrix">RTM</abbr> in the <code>*.csv</code> format</a>.</p>
+<h2 id="requirements-traceability-matrix">Requirements Traceability Matrix</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">User Needs</th>
+<th style="text-align: left;">Product Requirements</th>
+<th style="text-align: left;">Subsystem Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>01 Enable health care workers in primary health care to confirm the presence of pulmonary M. tuberculosis at the peripheral level during the same clinical encounter for effective linkage to patient care.</strong></td>
+<td style="text-align: left;"><strong>01 Time to result</strong>. The Product must produce a result within 60 min (including sample prep time).</td>
+<td style="text-align: left;"><strong>001 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Time to result</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall measure time continuously.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>002 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Time to result</strong>. When "system-run-heat" sub-state begins, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall ramp heating zone temperature up to a configurable temperature setpoint (default 95 °C) in under 2 min.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>003 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Time to result</strong>. While "system-run-hold" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall maintain heating zone temperature for a configurable heating duration (default 4 mins).</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>004 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Time to result</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall maintain tube holder shaking speed for a configurable shaking duration (default 2 mins).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>02 Availability</strong></td>
+<td style="text-align: left;"><strong>02 Component availability</strong>. The Product must use components and raw materials that can be procured from more than one supplier.</td>
+<td style="text-align: left;"><strong>005 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Component availability</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall use components and raw materials that can be procured from more than one supplier.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>006 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Component availability</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall use components and raw materials that can be procured from more than one supplier.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>007 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Component availability</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall use components and raw materials that can be procured from more than one supplier.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>03 Demand</strong>. The Product must package kit components in quantities sufficient to fulfill the demand of testing services in target settings.</td>
+<td style="text-align: left;"><strong>008 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Demand</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be provided one per test kit.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>009 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Demand</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be provided one per test kit.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>010 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Demand</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>04 Manufacturability</strong>. The Product must be manufactured at scale of 10 million tests per year.</td>
+<td style="text-align: left;"><strong>011 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Manufacturability</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be able to be manufactured at minimal volume of 10 million units per year.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>012 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Manufacturability</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall be able to be manufactured at minimal volume of 2000 units per year.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>013 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Manufacturability</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be able to be manufactured at minimal volume of 10 million units per year.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>05 Multi-disease platform</strong>. The Product must be capable of supporting tests for other disease targets.</td>
+<td style="text-align: left;"><strong>[<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Multi-disease platform</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>03 Compliance with local rules and regulations</strong></td>
+<td style="text-align: left;"><strong>06 Data system standard</strong>. The Product must comply with ISO IEC 62304 Medical Device Data Systems standard on manufacturing of the assay and system.</td>
+<td style="text-align: left;"><strong>[<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Data system standard</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>07 Electrical safety</strong>. The Product must comply with IEC 61010 and 61326 or higher standards or regulations on electrical equipment for laboratory use.</td>
+<td style="text-align: left;"><strong>014 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Electrical safety - electrical disconnect</strong>. When the "power" switch is switched to off, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall electrically disconnect the battery.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>015 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Electrical safety - IEC 61010-1</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with IEC 61010-1.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>016 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Electrical safety - IEC 61010-2-101</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with IEC 61010-2-101.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>017 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Electrical safety - IEC 61326-1</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with IEC 61326-1.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>018 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Electrical safety - IEC 61326-2-6</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with IEC 61326-2-6.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>08 Manufacturing facility certification</strong>. The Product must be manufactured in a facility certified and authorized under ISO 13485 or certified under MDSAP.</td>
+<td style="text-align: left;"><strong>[<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Manufacturing facility certification</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>09 Regulatory</strong>. The Product must comply with ISO EN 13485 or higher standards or regulations on manufacturing of assay and system.</td>
+<td style="text-align: left;"><strong>[<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Regulatory</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>04 Affordability</strong></td>
+<td style="text-align: left;"><strong>10 Cost per test</strong>. The Product must not exceed cost per test of $5 USD. (Price of individual test is cost of consumables only and amortized capital costs of any instrumentation; after scale-up; ex works [manufacturing costs only, excluding shipping].)</td>
+<td style="text-align: left;"><strong>019 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Cost per test</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall cost less than $0.80 EXW at required scale.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>020 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Cost per test</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall cost less than $200 EXW at required scale.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>021 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Cost per test</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall cost less than $1.00 EXW at required scale.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>05 Durability under transport and storage</strong></td>
+<td style="text-align: left;"><strong>11 Storage stability</strong>. The Product must not exceed required non-actionable rate after storage at 0 °C to 40 °C and at 15% to 90% RH for required shelf life in final packaging.</td>
+<td style="text-align: left;"><strong>022 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Storage stability</strong>. While in transport and storage, the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be sealed with an air tight seal to inhibit leakage and evaporation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>12 Transport</strong>. The Product must not exceed required non-actionable rate after transportation at 50 °C and 90% RH for 72 hours</td>
+<td style="text-align: left;"><strong>023 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Transport</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall not be damaged during transport conditions of 50 °C and 90% RH for 72 hours.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>024 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Transport</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with transportation regulations related to electronic devices containing batteries<br>or<br>The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall be tested in accordance with the UN Manual of Tests and Criteria Part III, Subsection 38.3.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>06 Compatibility with health infrastructure</strong></td>
+<td style="text-align: left;"><strong>13 Mains power time</strong>. The Product must require no more than 8 hours of mains power per day.</td>
+<td style="text-align: left;"><strong>025 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Mains power time</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall take no longer than 6 hours to charge.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>14 Power requirements</strong>. The Product must not rely on mains power during test operation.</td>
+<td style="text-align: left;"><strong>026 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall detect USB plugged-in/unplugged state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>027 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall compensate for battery temperature during charge/discharge cycle.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>028 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall measure battery state of charge (SoC).</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>029 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. While "stand-by" state is active, if battery SoC is below a configurable threshold, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "battery-low" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>030 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have a battery.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>031 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Power requirements</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall detect USB charging on/off state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>15 Product workspace dimensions</strong>. The Product must fit on a table within a space ≤ 60 cm deep, 90 cm wide, and 45 cm high.</td>
+<td style="text-align: left;"><strong>032 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Product workspace dimensions</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be no larger than 30 cm deep, 30 cm wide, and 45 cm high.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>033 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Product workspace dimensions</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall be no larger than 30 cm deep, 45 cm wide, and 45 cm high.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>034 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Product workspace dimensions</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be no larger than 30 cm deep, 30 cm wide, and 45 cm high.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>07 Conformity with clinical workflows</strong></td>
+<td style="text-align: left;"><strong>16 Data display</strong>. The Product must have a visual read out of the test result.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>17 Imaging-compatible read out</strong>. The Product must present results compatible with imaging-based reader(s) [model(s) TBD] for electronic data recording.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>18 Patient identification</strong>. The Product must include designated space to accurately record and display patient identifiers.</td>
+<td style="text-align: left;"><strong>035 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Patient identification</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> include designated space to accurately record and display patient identifiers that is writeable with gel pen, ballpoint pen, or volatile solvent markers and proof or resistant to moisture and wiping.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>036 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Test identification</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain a label that minimally identifies the product name, part name, part number, and <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> expiration date.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>19 Post-opening stability</strong>. The Product must have open package stability of at least 60 minutes in maximum required operating environment temperature and humidity.</td>
+<td style="text-align: left;"><strong>037 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Post-opening stability</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall have open package stability of at least 60 minutes in maximum required operating environment temperature and humidity.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>038 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Post-opening stability</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall have open package stability of at least 60 minutes in maximum required operating environment temperature and humidity.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>20 Random access</strong>. The Product must offer random access capability to run parallel analyses of tests.</td>
+<td style="text-align: left;"><strong>[<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Random access</strong>. <strong>TBD</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>21 User interactions</strong>. The Product must not require more than 3 user interactions after collecting the specimen and before recording the result.</td>
+<td style="text-align: left;"><strong>039 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have a "run" button.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>040 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "stand-by" state is active and the lid is closed and the board temperature is &lt; 60 °C and sufficient battery power is available, when the "run" button is pressed, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>041 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall allow configuration of sensor threshold for lid open/close detection.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>042 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall detect lid open/close state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>043 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. When "system-run-complete" sub-state begins, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "stand-by" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>044 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall shake tube holder with a minimum throw of 7 ± TBD mm.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>045 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall maintain tube holder shake speed using a configurable motor speed (default 3925 RPM / 60 s/min = 65 Hz shake speed).</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>046 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-shake" sub-state is active, when a configurable shaking duration elapses, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "run-complete" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>047 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall control the heating zone temperature to a configurable setpoint (default = 95 ºC).</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>048 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-hold" sub-state is active, when the heating duration elapses, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-shake" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>049 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. While "system-run-heat" sub-state is active, when the temperature setpoint - TBD °C is reached, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to the "system-run-hold" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>050 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions</strong>. When "system-run" state begins, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall start in "system-run-heat" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>051 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions - power-off" state</strong>. When the "power" switch is switched to off, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to the "power-off" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>052 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] User interactions - power switch</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have a "power" switch.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>22 Visual read out</strong>. The Product must present results for visual read out and manual data recording.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>23 Waste disposal - infectious</strong>. The Product must render infectious samples biosafe such that they can be disposed of as non-infectious waste when appropriate per local rules and regulations.</td>
+<td style="text-align: left;"><strong>053 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Waste disposal - infectious</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be single use.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>054 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Waste disposal - infectious</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall maintain sample temperature above 75 °C.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>055 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Waste disposal - infectious</strong>. When processed in the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>, the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall render infectious samples biosafe such that they can be disposed of as non-infectious waste when appropriate per local rules and regulations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>056 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Waste disposal - infectious</strong>. While "system-run" state is active, if heating zone exceeds a configurable max temperature, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-abort" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>057 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Waste disposal - infectious</strong>. While "system-run" state is active and "system-run-heat" or "system-run-hold" or "system-run-shake" sub-state is active, when the "run" button is pressed, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-abort" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>058 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Waste disposal - infectious</strong>. While "system-run" state is active, if the lid is opened, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-abort" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>08 Scalability to support patient throughput</strong></td>
+<td style="text-align: left;"><strong>24 Daily throughput</strong>. The Product must be able to support a daily throughput of 10-25 tests per 6-hour day.</td>
+<td style="text-align: left;"><strong>059 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Daily throughput</strong>. While using battery power at room temperature, when "battery-full" state is indicated, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall run 24 tests before "battery-low" indication.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>09 Usability</strong></td>
+<td style="text-align: left;"><strong>25 Automate assay transfer</strong>. The Product must automate assay transfer from amplification to detection.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>26 Indications</strong>. The Product must visually communicate progress and completion of system processes.</td>
+<td style="text-align: left;"><strong>060 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall prevent access to configuration or logs while the device is in "system-run" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>061 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. While "system-run" state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall log events with UTC timestamps, including battery state, board temperature, heating zone temperature, and motor speed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>062 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall allow configurable notifications (defined in the <a href="../../outputs/notifications/">notifications</a> table) of states and sub-states via indicators.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>063 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. While "power-off" state is not active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall ad-hoc log events with UTC timestamps, including state start, state end, change in battery sufficient/insufficient charge state, and errors/alerts.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>064 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall store a log file on non-volatile storage.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>065 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Indications</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall allow configuration of event logging rate.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>27 Language support</strong>. The Product kit must include Instructions for Use (IFU) with in-country context and language and any language mandated by local regulatory or trade compliance requirements.</td>
+<td style="text-align: left;"><strong>066 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Language support</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be included in the Instructions for Use (IFU) with in-country context and language and any language mandated by local regulatory or trade compliance requirements.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>067 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Language support</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall be included in the Instructions for Use (IFU) with in-country context and language and any language mandated by local regulatory or trade compliance requirements.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>068 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Language support</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be included in the Instructions for Use (IFU) with in-country context and language and any language mandated by local regulatory or trade compliance requirements.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>28 Manual preparation of samples</strong>. The Product must not require precise measuring of volume or time required for any step and should instead require number of drops or visual markers.</td>
+<td style="text-align: left;"><strong>069 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Manual preparation of samples - filter cap</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain a filter of sufficient pore size to remove inert microbeads from solution when dispensing sample into TC.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>070 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Manual preparation of samples - squeezable tube</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be made of squeezable material.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>29 Packaging</strong>. The Product must be packaged to ensure protection and maintain product integrity.</td>
+<td style="text-align: left;"><strong>071 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Packaging</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be individually packaged.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>072 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Packaging</strong>. While the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> is being shipped, the battery shall be electrically disconnected.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>30 Portability</strong>. The Product must be a hand transportable product that weighs less than &lt; 1 kg.</td>
+<td style="text-align: left;"><strong>073 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Portability</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall weigh ≤ 0.6 kg.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>31 Ready to use</strong>. The Product must be ready to use without the need for additional components or accessories.</td>
+<td style="text-align: left;"><strong>074 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Ready to use - <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> non-inhibition</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall not inhibit reactions in the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> or TC.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>075 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Ready to use - <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> with <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr></strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall have an integrated designated breakpoint within a distance from the end of the swab head that is less than the interior height of the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>076 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Ready to use</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain a resealable, leak-proof dropper cap that is compatible with direct sample transfer from <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> to TC without any ancillary tools, consumables, aides, or additional user steps.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>077 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Ready to use - free-standing</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> tube shall be free-standing on a flat surface and not require any type of rack or ancillary aid for proper function.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>078 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Ready to use - <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> integrity</strong>. When heated to an internal liquid temperature of 95 +/- 2 °C, the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall not melt, deform, or leach reaction inhibitors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>079 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Ready to use - <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> with TC</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall load sample into the TC at a mutually defined interface.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>32 Reagent integration</strong>. The Product must store all chemical and biological reagents required for completing all diagnostic steps of the assay must be integrated into single-use disposable(s), including reagents for amplification, lysis, detection, and internal controls.</td>
+<td style="text-align: left;"><strong>080 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - bead-beating</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain inert microbeads to support bead-beating.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>081 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer flow rate</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that is capable of transport in porous materials at a flow rate within 50% of Tris buffer, pH 8.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>082 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer lysis compatibility</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that is compatible with bacterial cell lysis.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>083 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer reaction compatibility</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that does not inhibit reactions in the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> or TC.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>084 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer rehydration compatibility</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that is capable of rehydrating dried amplification reagents.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>085 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer single use</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain a buffer fill volume sufficient for a single use only.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>086 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer temperature compatibility</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that is compatible with TC materials at temperatures ≤ 100 °C.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>087 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Reagent integration - buffer valve compatibility</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain an aqueous buffer that is compatible with any valves or valving materials contained within the test consumable at temperatures up to and including the max System temp..</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>33 Sample type</strong>. The Product must support testing with a noninvasive tongue swab.</td>
+<td style="text-align: left;"><strong>088 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample type - access</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall have a shaft at least 5 cm long.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>089 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample type - bacteria</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be compatible with bacterial testing.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>090 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample type - collection</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall contain a regular, nylon-flocked head.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>091 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample type - swab integrity</strong>. While in the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> during processing by the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>, the <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall retain structural integrity.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>092 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample type - validation</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be validated as a diagnostic specimen wherein it collects a sample from the dorsal area of the human tongue.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>093 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Sample type</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall be of sufficient height to completely enclose the swab head when sealed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>34 Training and education</strong>. The Product must be able to be operated by a user after reading IFU.</td>
+<td style="text-align: left;"><strong>094 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Training and education</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have graphics that indicate a method for opening the lid.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>095 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Training and education</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have graphics that indicate the correct placement of the tube in the tube holder.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>10 Reliability</strong></td>
+<td style="text-align: left;"><strong>35 Calibration</strong>. The Product must operate without the need for calibration during its intended lifespan.</td>
+<td style="text-align: left;"><strong>096 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Calibration</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall measure motor speed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>097 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Calibration</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall measure heating zone temperature.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>098 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Calibration</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall operate without the need for calibration during its required lifespan.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>36 Maintenance</strong>. The Product must operate without the need for maintenance during its intended lifespan.</td>
+<td style="text-align: left;"><strong>099 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Maintenance</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall operate without the need for maintenance during its required lifespan.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>11 Confidence in test performance (tongue swab)</strong></td>
+<td style="text-align: left;"><strong>37 Amplification contamination</strong>. The Product must prevent the escape of amplifiable material into the testing area.</td>
+<td style="text-align: left;"><strong>100 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Sample pre safety</strong>. While in use within the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>, the <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall remain sealed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>38 Analytical specificity (tongue swabs)</strong>. The Product must achieve an analytical specificity ≥ 98%.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>39 Clinical sensitivity (tongue swabs)</strong>. The Product must achieve a clinical sensitivity ≥ 80%.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>40 Clinical specificity (tongue swabs)</strong>. The Product must achieve a clinical specificity ≥ 98%.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>12 Confidence in test quality</strong></td>
+<td style="text-align: left;"><strong>41 Controls</strong>. The Product must use controls to account for any processing errors (from sample to result)</td>
+<td style="text-align: left;"><strong>101 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Controls - sample prep</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall use a control reagent to account for processing errors in sample preparation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>102 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Controls - SPC</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall contain a sample processing control (SPC) that can report failure of sample processing, amplification, or detection steps.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>42 Non-actionable indication</strong>. The Product must indicate to users when a test result is non-actionable (indeterminant or invalid).</td>
+<td style="text-align: left;"><strong>103 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Non-actionable indication</strong>. While "system-run-abort" sub-state is active, when a configurable abort duration elapses, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-standby" state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>104 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Non-actionable indication - max temp abort</strong>. While "system-run" state is active, if the board temperature exceeds 60 °C, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-abort" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>105 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Non-actionable indications - motor control abort</strong>. While "system-run-shake" sub-state is active, if motor speed is not within TBD RPM of motor speed setpoint, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to "system-run-abort" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>106 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Non-actionable indications - temp control abort</strong>. While "system-run-hold" sub-state is active, if heating zone is not within TBD °C of temperature setpoint, then the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall transition to the "system-run-abort" sub-state.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>43 Non-actionable rate</strong>. The Product non-actionable (indeterminate + invalid) rate must not exceed 5%.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>44 Result validity window</strong>. The Product must have a result validity window of 2 hours after test completion in which test signals allow one interpretation.</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>45 Shock and vibration resistance</strong>. The Product must withstand resistance to shocks and vibrations from drops by users of 90 cm TBR height without performance failures.</td>
+<td style="text-align: left;"><strong>107 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Shock and vibration resistance</strong>. While "system-run-shake" state is active, and the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> is suspended perpendicularly to the carriage direction, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall experience accelerations less than TBD m/s^2.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>13 Confidence in test safety</strong></td>
+<td style="text-align: left;"><strong>46 Burn safety</strong>. The Product must not cause skin temperature above 60 °C after five seconds of contact to any surface.</td>
+<td style="text-align: left;"><strong>108 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Burn safety</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall not have any areas accessible by a user's finger (defined as sphere of 1 cm diameter) with temperatures above 60 °C.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>47 Sample prep safety</strong>. The Product must reduce the risk of transmission of infectious agent of <abbr title="tuberculosis">TB</abbr> from potentially infectious sample to operator.</td>
+<td style="text-align: left;"><strong>109 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Sample prep safety</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall be sterile packaged.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>110 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Sample prep safety</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall not melt the tube.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>111 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Sample prep safety - <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> interface</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall fit a specified Tube (SPC) in a tube holder.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>112 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Sample prep safety - <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shaking</strong>. While "system-run-shake" sub-state is active, the <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall not allow the tube to lose its fit in the tube holder.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>14 Robustness to environmental conditions</strong></td>
+<td style="text-align: left;"><strong>48 Contaminate and dust protection</strong>. The Product must be designed to effectively protect against dust and contaminants, ensuring its functionality and integrity.</td>
+<td style="text-align: left;"><strong>113 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Contaminate and dust protection</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall comply with IEC 60529 at IP64 rating.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>49 Operating humidity level</strong>. The Product must operate within the humidity range of 70% to 90% non-condensing humidity without exceeding the required non-actionable rate.</td>
+<td style="text-align: left;"><strong>114 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Operating humidity level</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall operate within the humidity range of 70% to 90% non-condensing humidity without exceeding the required non-actionable rate.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>50 Operating temperature</strong>. The Product must operate within a temperature range of +5 °C to +45 °C without exceeding the required non-actionable rate.</td>
+<td style="text-align: left;"><strong>115 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Operating temperature</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall operate within a temperature range of +5 °C to +45 °C without exceeding the required non-actionable rate.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>15 Longevity</strong></td>
+<td style="text-align: left;"><strong>51 Cycle life</strong>. The Product must have a cycle life of 12,000 tests.</td>
+<td style="text-align: left;"><strong>116 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Cycle life</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have a use life of 12 000 cycles.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>52 Single-use consumable lifespan</strong>. The Product must have a lifespan ≥ 18 months for any single-use consumables.</td>
+<td style="text-align: left;"><strong>117 [<abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr>] Single-use consumable lifespan</strong>. The <abbr title="Sample Collection Consumable: A consumable device, such as a nylon-flocked swab, used to collect a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB).">SCC</abbr> shall have a packaged shelf life of at least 18 months from date of manufacture.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>118 [<abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr>] Single-use consumable lifespan</strong>. The <abbr title="Sample Tube Consumable: A squeezable dropper tube used to contain a sample for preparation in the Near-Point-of-Care Bead Beater (nPOC-BB) and to transfer prepared sample to the consumable of a nucleic acid amplification test.">STC</abbr> shall have a packaged stability of no less than 2 years when stored at the maximum environment temperature and humidity storage conditions.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>16 Environmental responsibility</strong></td>
+<td style="text-align: left;"><strong>53 Instrumentation lifespan</strong>. The Product must have a lifespan ≥ 24 months for any instrumentation (no calibration or servicing).</td>
+<td style="text-align: left;"><strong>119 [<abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr>] Instrumentation lifespan</strong>. The <abbr title="Sample Preparation Module. Another name for the Near-Point-of-Care Bead Beater (nPOC-BB) used in the context of the Nucleic Acid Amplification Test On a Strip (NAATOS) diagnostic test system developed at Global Health Labs (GHL).">SPM</abbr> shall have a shelf life of 2 y.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>17 Minimal instrumentation</strong></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../prelim/history/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Development History">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Development History
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../risk/" class="md-footer__link md-footer__link--next" aria-label="Next: Risk Evaluation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Risk Evaluation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.tracking", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

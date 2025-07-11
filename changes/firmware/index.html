@@ -1,0 +1,2471 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../alpha_to_gamma/">
+      
+      
+        <link rel="next" href="../../prelim/glossary/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Firmware v3.x Updates - Near-Point-Of-Care Bead Beater</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%202H4c-1.1%200-2%20.9-2%202v18l4-4h14c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2m0%2014H5.2L4%2017.2V4h16zM12.2%205.5c-.9%200-1.6.2-2.1.5-.6.4-.9%201-.8%201.7h2q0-.45.3-.6c.2-.1.4-.2.7-.2s.6.1.8.3.3.4.3.7-.1.5-.2.7c-.2.2-.4.4-.6.5-.5.3-.9.6-1.1.8-.4.3-.5.6-.5%201.1h2c0-.3.1-.5.1-.7.1-.2.3-.3.5-.5.5-.2.8-.5%201.1-.9s.4-.8.4-1.2c0-.7-.3-1.3-.8-1.7-.4-.3-1.2-.5-2.1-.5M11%2012v2h2v-2z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#firmware-v3x-design-updates" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-header__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Near-Point-Of-Care Bead Beater
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Firmware v3.x Updates
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Near-Point-Of-Care Bead Beater" class="md-nav__button md-logo" aria-label="Near-Point-Of-Care Bead Beater" data-md-component="logo">
+      
+  <img src="../../img/favicon.svg" alt="logo">
+
+    </a>
+    Near-Point-Of-Care Bead Beater
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Global-Health-Labs/nPOC-BB" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development History
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Inputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Inputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/rtm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements Traceability Matrix (RTM)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Risk Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inputs/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usability / Formative Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Outputs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design Outputs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gamma version (2025Q1)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/userguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notification Specification
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batteries Specification and Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Programming Instructions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outputs/alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha version (2024Q2)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Verification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Verification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20250409/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20250409 Technical Review (Gamma)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240821/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240821 Technical Review (Alpha)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verifications/tr-20240212/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    20240212 Technical Review (VCBB)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Changes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Design Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alpha_to_gamma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Alpha to Gamma Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Firmware v3.x Updates
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Firmware v3.x Updates
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Log
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prelim/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary / Abbreviations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git Log
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="firmware-v3x-design-updates">Firmware v3.x Design Updates</h1>
+<h2 id="version-summary">Version Summary</h2>
+<p>The version summary table (<a href="../../tables/naatos_modules_fw_v3_versionsummary.csv">.csv</a>) lists the updates made in the minor revisions of firmware v3.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">VersionTag</th>
+<th style="text-align: left;">Change Summary</th>
+<th style="text-align: left;">Tech Review Slide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">V3.1</td>
+<td style="text-align: left;">LAST ODIC TOUCHPOINT</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging for low-battery transitions</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging on bootup</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">rework USB to allow simultaneous CDC and MSC modes</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">change powermodule run-start conditions to require state change</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">fix problem where powermodule was rebooting after successful run completion</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">add powermodule buzzer support</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">add USB cdc commands</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">fix RTC reset issue seen when batteries first plug in</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">fix sampleprep issue which manifested with subsequent runs after stall could terminate early with erroneous stall message; add I2C retry counter logging</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc3</td>
+<td style="text-align: left;">fix typo with powermodule configuration table</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">make powermodule also support do_automatic_runs</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">fix powermodule usage of front led set</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: speed up all breathing patterns</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: rework framework, add double-yellow graceperiod, solid-red sample invalidation</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add powermodule buzzer support</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: add solid-yellow run startability capability; and red-magenta flashing for device cannot run</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">fix bug transitioning from power-module cycle 3 to power-module cycle 4 related to temperature sensor reading</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">led notifications: led driver re-write, always show battery on the BATTERY led</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add check for total run time taken within tolerance</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">use RTC time for run state machine</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">fix powermodule issue with valve power supply, we are now reinitializing the chip completely every sensor sample cycle</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">catch at the cycle-level if the cycle took too long to complete</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">set default config</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">handle occasional RTC bad date through retry mechanism</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">catch in the middle of a cycle if our runtime according to cputicks has a severe disagreement from the rtc time we are using to measure the cycle runtime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">improve reliability of DFU entry</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">add a retry mechanism in powermodule sensors data collection to deal with valve power supply workaround</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">fixed issue with battery overtemperature error, where it would not have been handled appropriately</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="conditions">Conditions</h2>
+<p>The conditions table (<a href="../../tables/naatos_modules_fw_v3_conditions.csv">.csv</a>) lists the status checks, performed in standby and prior to a run, that ensure a unit is healthy and able to complete a run. Last updated in firmware v3.5.</p>
+<ul>
+<li>Conditions that allow "start run"<ul>
+<li>Check failure causes solid yellow <a href="../../outputs/notifications/">notification</a> in standby</li>
+<li>Stored in <code>conditions_for_run</code> bitfield struct union</li>
+</ul>
+</li>
+<li>Conditions that declare "unit ok"<ul>
+<li>Check failure causes fast flashing yellow/purple <a href="../../outputs/notifications/">notification</a> in standby</li>
+<li>Stored in <code>conditions_for_machine</code> bitfield struct union</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Context</th>
+<th style="text-align: left;">Bitfield</th>
+<th style="text-align: left;">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">start run</td>
+<td style="text-align: left;"><code>temperature_zones_in_range</code></td>
+<td style="text-align: left;">In standby mode temperatures are refreshed once a second. If <code>config.min_run_zone_temp_en</code> is TRUE, the latest temperature of any zone must be &lt; <code>config.min_run_zone_temp</code>. Essentially requires the temperatures in the device to have cooled down sufficiently, and show above zero. The latest temperature of any zone must be &gt; 0.1 ºC (this checks for something really wrong with sensor communication).</td>
+</tr>
+<tr>
+<td style="text-align: left;">start run</td>
+<td style="text-align: left;"><code>battery_charge_level_acceptable</code></td>
+<td style="text-align: left;">Battery charge level must not be "red."</td>
+</tr>
+<tr>
+<td style="text-align: left;">start run</td>
+<td style="text-align: left;"><code>machine_can_run</code></td>
+<td style="text-align: left;">All machine conditions must be true (see "device ok" conditions in this table)</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>configs_loaded_and_validated</code></td>
+<td style="text-align: left;">Checked once at bootup. Configs could be loaded from filesystem without error. Inside <code>read_filesystem_and_configurations</code>,</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">if <code>get_naatos_configuration_parameters()</code> and <code>get_cycle_configurations_parameters()</code> do not return okay, this will be false.</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>filesystem_deemed_okay</code></td>
+<td style="text-align: left;">Checked once at bootup. After all startup filesystem operations, check <code>is_naatos_storage_okay()</code> which will return a <code>naatos_storage_initalized</code> local variable from the <code>naatos_storage.c</code> compilation unit.</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>battery_has_stayed_cool</code></td>
+<td style="text-align: left;">Checked every standby cycle (at <code>samplerate</code>). Battery temperature thermistor (as measured by fuel gauge chip) must be &lt; 59.0 ºC.</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>canary_value_noninitializer</code></td>
+<td style="text-align: left;">The active master config value <code>config.canary</code> was not 999; when default configs are written out, it would be 12345; so this is a type of canary in the coalmine situation to indicate a filesystem problem, and also test the notification scheme easily.</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>canary_value_nondefault</code></td>
+<td style="text-align: left;">The active master config value <code>config.canary</code> was not 999; when default configs are written out, it would be 12345; so this is a type of canary in the coalmine situation to indicate a filesystem problem, and also test the notification scheme easily.</td>
+</tr>
+<tr>
+<td style="text-align: left;">unit ok</td>
+<td style="text-align: left;"><code>norflash_could_mount_filesystem</code></td>
+<td style="text-align: left;">Checked once at bootup. If <code>nor_flash_could_mount_filesystem</code> in <code>naatos_storage.c</code> compilation unit is TRUE.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="errors">Errors</h2>
+<p>The errors table (<a href="../../tables/naatos_modules_fw_v3_errors.csv">.csv</a>) lists the reasons a run would abort before successful completion. Last updated in firmware v3.5.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Cycle error enums</th>
+<th style="text-align: left;">Explanation</th>
+<th style="text-align: left;">When Does NOT Apply</th>
+<th style="text-align: left;">Example Logfile Event Text</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_ACTUAL_RUNTIME_HAD_A_MISMATCH</code></td>
+<td style="text-align: left;">When cycle is completed, the rtctime or cputicktime difference to <code>cycle_config.cycle_run_time</code> is within <code>cycle_config.accept_cycle_time_error</code>.</td>
+<td style="text-align: left;">If any cycles in the run have a <code>cycle_config.ramp_to_temp_before_start_cycle</code> set to TRUE (would imply variable time behavior).<br/> If <code>cycle_config.accept_cycle_time_error</code> is 0.</td>
+<td style="text-align: left;">Cycle run time error was beyond the configured threshold of 7.5 seconds.</td>
+<td style="text-align: left;">Catches a severe time mismatch at the cycle level.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_FINISHED_BUT_ACTUAL_RUNTIME_HAD_A_MISMATCH</code></td>
+<td style="text-align: left;">When the whole run is completed otherwise successfully (right when the last cycle ends), but the whole run <code>rtctime</code> or <code>cputicktime</code> difference to the sum of all <code>cycle_config.cycle_run_time</code> s is greater than <code>config.accept_run_time_error_s</code>.</td>
+<td style="text-align: left;">If any cycles in the run have a <code>cycle_config.ramp_to_temp_before_start_cycle</code> set to TRUE (would imply variable time behavior).<br/>If <code>config.accept_run_time_error_s</code> is 0.</td>
+<td style="text-align: left;">Total run time taken error was beyond the configured threshold of 30 seconds.</td>
+<td style="text-align: left;">Catches a severe time mismatch at the run level.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_TIME_ERROR_BETWEEN_RTC_AND_CPUTICKS_DURING_RUN</code></td>
+<td style="text-align: left;">When a cycle is running and the <code>rtcelapsed</code> has diverged from <code>tickelapsed</code> by greater than <code>config.accept_run_time_error_s</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Caught time-error beyond 30 sec between <code>RTCelapsed_s:50</code> &amp; <code>TICKelapsed_s:4</code> while <code>cycle_run_time_s</code> was 30 sec</td>
+<td style="text-align: left;">Catches the cycle never stopping problem we saw.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_BUTTON_EXIT</code></td>
+<td style="text-align: left;">When the pushbutton is actuated during run.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Cycle cancled via button.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_SENSOR_BREAK</code></td>
+<td style="text-align: left;">When the hall effect and/or optical sensor is switched during the run.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Optical sensor interrupted.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_TIMEOUT_DURING_RAMP</code></td>
+<td style="text-align: left;">When ((time in the cycle elapsed) &gt; <code>cycle_config.ramp_to_temp_timeout</code>) and any of the temperatures have not yet met or exceeded their respective setpoints in this cycle.</td>
+<td style="text-align: left;">If <code>cycle_configs.ramp_to_temp_timeout</code> is 0.</td>
+<td style="text-align: left;">Ramp to temp timed out. Stopping cycle.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_OVER_TEMP_BATTERY</code></td>
+<td style="text-align: left;">When battery temperature thermistor reading &gt;= 59.0 degC</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Battery over temperature error.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ERR_TEMP_SENSOR_READ</code> / <code>CYCLE_ERROR_I2C_FAIL</code></td>
+<td style="text-align: left;">When temperature sensor could not be read correctly (in respective <code>sensor.c</code> file).</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">I2C sensor read error.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ERR_OVERTEMP_EVENT</code> / <code>CYCLE_ERROR_OVER_TEMP</code></td>
+<td style="text-align: left;">When a temperature reading in a respective sensor zone is greater than it's configured setup (<code>config.heater_max_temp</code>)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Sample over temperature error.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_MOTOR_STALLED_PERCENT</code></td>
+<td style="text-align: left;">When motor RPM drops this PERCENT below the motor setpoint.</td>
+<td style="text-align: left;">If motor is not configured to run in the cycle.<br/>If measured motor RPM has not yet met or exceeded the motor RPM setpoint in the current cycle.<br/>If <code>config.motor_stall_en</code> is FALSE.</td>
+<td style="text-align: left;">Motor stalled detected due to drop in motor speed.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CYCLE_ERROR_MOTOR_STALLED_PWM</code></td>
+<td style="text-align: left;">When motor PWM control value exceeds <code>config.motor_stall_pwm</code>.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Motor stalled detected due to an increase in PWM.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Not a defined error / a watchdog reboot</td>
+<td style="text-align: left;">Other uncaught error conditions or programming bugs. This will not show any explanation in logfile (because it's uncaught) but result in a reboot triggered by the hardware watchdog timer.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="commands">Commands</h2>
+<p>The commands table (<a href="../../tables/naatos_modules_fw_v3_commands.csv">.csv</a>) lists the USB CDC Serial Commands.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The comma after many of these commands is important! The string parser won't treat them as commands with that trailing comma (on commands that don't take arguments).</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Takes Args</th>
+<th style="text-align: left;">Examples</th>
+<th style="text-align: left;">Explanation</th>
+<th style="text-align: left;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SETCLK</code></td>
+<td style="text-align: left;">RTC Time Setting</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;"><code>SETCLK,2024-11-14 14:27:34</code><br/>or<br/><code>SETCLK,2024-11-14T14:27:34</code></td>
+<td style="text-align: left;">Set the RTC time to the specified timestamp. Before setting, a software reset will be issued to the RTC chip (same as <code>RSTCLK</code>)</td>
+<td style="text-align: left;">convenient to use with YAT (yet another terminal) timestamp insertion: <code>SETCLK,\!(TimeStamp())</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TSTCLK</code></td>
+<td style="text-align: left;">RTC Test</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>TSTCLK,</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RSTCLK</code></td>
+<td style="text-align: left;">RTC Software Reset</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>RSTCLK,</code></td>
+<td style="text-align: left;">Send a software reset the RTC chip.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LSDIR</code></td>
+<td style="text-align: left;">Output listing of filesystem directories</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>LSDIR,</code></td>
+<td style="text-align: left;">Output to serial port a summary listing of the filesystem root directory.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Each folder will be entered and the file entries in that folder counted, and returned in this message.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>REBOOT</code></td>
+<td style="text-align: left;">Reboot MCU</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>REBOOT,</code></td>
+<td style="text-align: left;">Reboot MCU (must be in MAIN_STANDBY state)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>STATUS</code></td>
+<td style="text-align: left;">Output summary information</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>STATUS,</code></td>
+<td style="text-align: left;">Output to serial port some Status and ID information. Examples:<br/><code>14:07:51 - V="3.5" T="PM" ECL=0x00 TS="2025-03-14 14:07:54" MAIN_STATE="MAIN_STANDBY" SN="DBF4CF86E4F8"</code><br/><code>14:07:51 - Vbatt=3.924000 SOC=70 Tbatt=27.917969 Tamp=69.151276 Tvalve=70.782478</code></td>
+<td style="text-align: left;"><code>V</code>=firmware version<br/><code>T</code>=device type (<code>PM</code>=power module, <code>SP</code>=sample prep module)<br/><code>ECL</code>=cumulative error flags in logger module<br/><code>TS</code>=current rtc time<br/><code>MAIN_STATE</code>=what state are we in<br/><code>SN</code>=nordic-provided hardware mac address which can serve as a unique identifier for each board<br/><code>Vbatt</code>=fuel gauge provided battery voltage<br/><code>SOC</code>=fuel gauge provided state of charge</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CFGGET</code></td>
+<td style="text-align: left;">Config get</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CFGGET,</code></td>
+<td style="text-align: left;">Output to serial port a summary of the active run and cycle configurations.</td>
+<td style="text-align: left;">Behavior never tested with more than 4 cycles, there is some string limit that may be exceeded with &gt;8 cycles</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CFGSET</code></td>
+<td style="text-align: left;">Config set</td>
+<td style="text-align: left;">YES</td>
+<td style="text-align: left;"><code>CFGSET,</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TODFU</code></td>
+<td style="text-align: left;">Enter DFU mode</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>TODFU,</code></td>
+<td style="text-align: left;">Enter DFU for firmware upgrade, by simulating 3 rapid button presses (must be in MAIN_STANDBY state)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TOMSC</code></td>
+<td style="text-align: left;">Enter MSC mode</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>TOMSC,</code></td>
+<td style="text-align: left;">Enter mass storage mode for USB file operations, by simulating long button press (must be in MAIN_STANDBY state)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EXITMSC</code></td>
+<td style="text-align: left;">Exit MSC mode</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EXITMSC,</code></td>
+<td style="text-align: left;">Exit mass storage mode, by simulating a button press (must be in MAIN_FILE state); the firmware effectively performs a reboot as part of this transition</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>REFORMAT</code></td>
+<td style="text-align: left;">Reformat filesystem and reboot</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>REFORMAT,</code></td>
+<td style="text-align: left;">Perform a filesystem reset, much like holding down button while powering-up. Then system is rebooted.</td>
+<td style="text-align: left;">On some devices , at some times, this needs to be issued more than once, followed by some reboots, perhaps. You may see the fast flashing magneta/yellow when this is happening and you need to try this again. Cause unknown / not investigated.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="git-log">Git Log</h2>
+<p>The git log (<a href="../../tables/naatos_modules_fw_v3_gitlog.csv">.csv</a>) lists the history of git commits made after the update to firmware v3. The log was generated using the command:</p>
+<p><code>git log --since='02-11-2025 9:00AM' --pretty=format:"%H,%ad,%an,%ae,%x22%(decorate:prefix=,suffix=,)%x22,%x22%s%x22" --date=format:"%Y-%m-%d %H:%M:%S" --reverse &gt; gitlog.csv</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Commit Hash</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Author</th>
+<th style="text-align: left;">Tags</th>
+<th style="text-align: left;">Full Commit Message</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Short Commit Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">dc38f5ef30fee8f28d99935b1772dcd98eefda61</td>
+<td style="text-align: left;">2/11/2025 17:17</td>
+<td style="text-align: left;">Liam Sullivan</td>
+<td style="text-align: left;">tag: V3.1_and_odic_splitpoint, odic/V3.1, ghlgit/GHL_V3.1, GHL_V3.1</td>
+<td style="text-align: left;">Merge remote-tracking branch 'origin/GHL_PM_V3.1_ghlRC4' into V3.1</td>
+<td style="text-align: left;">V3.1</td>
+<td style="text-align: left;">LAST ODIC TOUCHPOINT</td>
+</tr>
+<tr>
+<td style="text-align: left;">93d14f8a9eecd61b4370049766772f11ffacb659</td>
+<td style="text-align: left;">2/12/2025 11:27</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">set for JLINK debug, sample-prep, and MOTOR_FG_REWORK (unit56 board)</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">28a97125c71b660b64b7d03dec809d015de5126e</td>
+<td style="text-align: left;">11/15/2024 12:22</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><abbr title="Global Health Labs. A non-profit organization responsible for development of the Near-Point-of-Care Bead Beater (nPOC-BB) prototypes.">GHL</abbr> add basic CDC serial command handling for SETCLK to allow setting the datetime through serial</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">bdee8f51afb11a4ea5335e9a662cfac22553f52d</td>
+<td style="text-align: left;">2/12/2025 16:05</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">double the size of the logger queue, to allow more debug and event log messages to be processed</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">2ae17d2465bc1347d216b2845dccf750bc5c2cfa</td>
+<td style="text-align: left;">2/12/2025 16:07</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">changes to low battery logging, re-write message to file when above recovery" voltage"</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging for low-battery transitions</td>
+</tr>
+<tr>
+<td style="text-align: left;">1e371f5160c163c85448156fb2e186eb35862b9c</td>
+<td style="text-align: left;">2/12/2025 16:16</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">changes power-on message and make applicable to all bootups or resets</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging on bootup</td>
+</tr>
+<tr>
+<td style="text-align: left;">74c0f5425228e96ee13722c50cfd0058e613fb24</td>
+<td style="text-align: left;">2/14/2025 12:54</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">CDC serial command GETVER</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">e60af5cb79d97dce4604e9389ac4092243abed85</td>
+<td style="text-align: left;">2/14/2025 16:17</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">WIP: remap usb endpoints, to have simultaneous MSC and CDC. kind-of works, but when doing a sample-prep run there are pretty frequent NOR flash errors and reboots in the middle of runs :-(</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">rework USB to allow simultaneous CDC and MSC modes</td>
+</tr>
+<tr>
+<td style="text-align: left;">bb5568f43d571ff2dfca32ccb420c75de518e9f3</td>
+<td style="text-align: left;">2/18/2025 20:26</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">move cdc serial port rx parsing out of logger task and into main_task</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">d765d4ac7fea6cc89e3366082ca607f45c43f4ed</td>
+<td style="text-align: left;">2/18/2025 20:58</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add USB CDC COM commands STATUS and CFGGET</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">af01f6d752cb12da57af5151516383549233190a</td>
+<td style="text-align: left;">2/18/2025 21:38</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_usb_work_msc_and_cdc_simultaneous, GHL_usb_work_msc_and_cdc_simultaneous</td>
+<td style="text-align: left;">add reboot log-message that includes reset-reasons from NRF registers</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging on bootup</td>
+</tr>
+<tr>
+<td style="text-align: left;">0632d77aa9590249a5e7a27ce754ef3a45b9ff38</td>
+<td style="text-align: left;">2/20/2025 16:52</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">set compile for powermodule</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">cb987298aee358245e91f78ee978a5fdf2a6819a</td>
+<td style="text-align: left;">2/20/2025 16:52</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">make GETCFG compile for power module</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">9085db652d770c39e904a2a86608abb309127aff</td>
+<td style="text-align: left;">2/21/2025 10:33</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">work on USB-CDC commands, move to a separate new task</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">cdce1de7fe647a8fe7524190075d78a1e5d93dac</td>
+<td style="text-align: left;">2/21/2025 11:18</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">trigger power module only on low-&gt;high transition (don't begin run when powered on with cassette installed)</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">change powermodule run-start conditions to require state change</td>
+</tr>
+<tr>
+<td style="text-align: left;">ce62a1f614a2e129d9773f297360477205ed22bd</td>
+<td style="text-align: left;">2/21/2025 11:58</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add software watchdog debug statements to try to debug watchdog resets</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">e8dd5386399758cac2f2a90078ed061b8c2b6abb</td>
+<td style="text-align: left;">2/21/2025 12:15</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix the consistent software watchdog reset in heater_task on powermodule run completion on the first successful run after bootup</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">fix problem where powermodule was rebooting after successful run completion</td>
+</tr>
+<tr>
+<td style="text-align: left;">8c494d43837662a66ac2d19b6e597c33391b8873</td>
+<td style="text-align: left;">2/21/2025 12:16</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">start simple GPREGRET2 usage and logging on first boot-up</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add additional logging on bootup</td>
+</tr>
+<tr>
+<td style="text-align: left;">3ca23b56032b70cb778970a201e3b3a94d29e589</td>
+<td style="text-align: left;">2/21/2025 12:56</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">make USB CDC command REFORMAT work</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">5ab1cd874d28a188d7f29f11fc7efa1370ef40d6</td>
+<td style="text-align: left;">2/21/2025 13:11</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">USB CDC status command add uniqueid (device mac address)</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">f3588d340fa4fd08e70562d4bc50850f58639cf8</td>
+<td style="text-align: left;">2/21/2025 13:34</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">set to bootloader linker</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">b5bd57e54fde8dfbee35e519a42e16df20109165</td>
+<td style="text-align: left;">2/21/2025 13:35</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: PM_V3.2rc1, ghlgit/GHL_PM_debug_reboot_after_goodrun, ghlgit/GHL_PM_V3.2rc1, GHL_PM_debug_reboot_after_goodrun, GHL_PM_V3.2rc1</td>
+<td style="text-align: left;">bump version string to 3.2rc1 and set defaults according to chin's testing</td>
+<td style="text-align: left;">V3.2rc1</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">082b9425fd65b9b9affdd8aaa58ef2c7eac286e9</td>
+<td style="text-align: left;">2/21/2025 16:13</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Power Module buzzer capability hacked-in, with simple tones on error and on completion</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">add powermodule buzzer support</td>
+</tr>
+<tr>
+<td style="text-align: left;">175495f974a0527896eb35edb4f922060aeddb14</td>
+<td style="text-align: left;">2/21/2025 21:02</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_PM_bringup_buzzer_and_other_leds, GHL_PM_bringup_buzzer_and_other_leds</td>
+<td style="text-align: left;">better CFGGET formatting</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">f3c5d54e109bfe3529a6a24a4e87b9f50b04d3b6</td>
+<td style="text-align: left;">2/11/2025 14:12</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">WIP: add some query to the RTC</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">fix RTC reset issue seen when batteries first plug in</td>
+</tr>
+<tr>
+<td style="text-align: left;">d405fc23fbf9ac2903b18e081272c790e529b74f</td>
+<td style="text-align: left;">2/21/2025 22:57</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_better_clockcalendar_inits, GHL_better_clockcalendar_inits</td>
+<td style="text-align: left;">fix RTC not ticking problem on some units by always reset RTC when setting time, and add a USB CDC function to read and return some RTC status register</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">fix RTC reset issue seen when batteries first plug in</td>
+</tr>
+<tr>
+<td style="text-align: left;">004a3cf817e5aad86d21cf2e6473ac3aa882617e</td>
+<td style="text-align: left;">2/22/2025 10:17</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">WIP kv store implementation</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+</tr>
+<tr>
+<td style="text-align: left;">b49bb587bbb7001d08a17a73b2f7afb86e9b45b4</td>
+<td style="text-align: left;">2/22/2025 17:44</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Power module add short sound on startup</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">add powermodule buzzer support</td>
+</tr>
+<tr>
+<td style="text-align: left;">61c2378c25b19b6b4569aa36a1ea8b0492d9439a</td>
+<td style="text-align: left;">2/22/2025 17:49</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Merge branch 'GHL_V3.2rc2' into GHL_rework_storage_to_keyvalue_pairs</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+</tr>
+<tr>
+<td style="text-align: left;">77bfbe4824b5a00ace952c0d6637918bf863c3e0</td>
+<td style="text-align: left;">2/22/2025 22:47</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">WIP: master and cycle configs now being read with key value system, powermodule tested but not SP yet</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+</tr>
+<tr>
+<td style="text-align: left;">7276c338b7aad3b080a7dee9aaf660ea1a7a49e9</td>
+<td style="text-align: left;">2/23/2025 13:33</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change storage to create master config file from the key-value table, add powermodule sound volume to config</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+</tr>
+<tr>
+<td style="text-align: left;">5656ca5c2b0bc8ed623152fe770a7427366c3c59</td>
+<td style="text-align: left;">2/23/2025 20:42</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">tested key-value store on sampleprep</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">rework configuration file framework to use key-value tables</td>
+</tr>
+<tr>
+<td style="text-align: left;">015b2ecbc64b06c0f8676c909632572f97245bb2</td>
+<td style="text-align: left;">2/24/2025 7:29</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">bump version to V3.2rc2 (works SP and PM); do_automatic_runs now config item for sampleprep</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">05da0701283b36f52ff87c02e7bc10486849f238</td>
+<td style="text-align: left;">2/24/2025 13:59</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: V3.2rc2, ghlgit/GHL_rework_storage_to_keyvalue_pairs, ghlgit/GHL_V3.2rc2, GHL_rework_storage_to_keyvalue_pairs, GHL_V3.2rc2</td>
+<td style="text-align: left;">handle issue for motor-stall where mainErrorQueue has &gt; 1 items on stall condition; add I2C retry counter and message in log</td>
+<td style="text-align: left;">v3.2rc2</td>
+<td style="text-align: left;">fix sampleprep issue which manifested with subsequent runs after stall could terminate early with erroneous stall message; add I2C retry counter logging</td>
+</tr>
+<tr>
+<td style="text-align: left;">8795ac0f96244010d51d28677e8934197bcd9904</td>
+<td style="text-align: left;">2/25/2025 6:31</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_V3.2</td>
+<td style="text-align: left;">add decorators to naatos_config_File.c</td>
+<td style="text-align: left;">v3.2rc3</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">915ba1fd4e83b5e5d01a2e664d5692bde95233da</td>
+<td style="text-align: left;">2/25/2025 15:39</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix typo in the power module config for valve zone PID values (Swapped KI and KD)</td>
+<td style="text-align: left;">v3.2rc3</td>
+<td style="text-align: left;">fix typo with powermodule configuration table</td>
+</tr>
+<tr>
+<td style="text-align: left;">53eee6a8a880f4180bb6b39cdf7e22e5abe23cad</td>
+<td style="text-align: left;">2/25/2025 15:41</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: PM_V3.2rc3, ghlgit/GHL_V3.2rc3, GHL_V3.2rc3</td>
+<td style="text-align: left;">version string to V3.2rc3</td>
+<td style="text-align: left;">v3.2rc3</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">00001088fca87c68061839015d393ed694c09ef3</td>
+<td style="text-align: left;">2/25/2025 16:40</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">bump version to 3.2rc4; make do_automatic_runs work for power module as well</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">make powermodule also support do_automatic_runs</td>
+</tr>
+<tr>
+<td style="text-align: left;">d228f7034bf4315a3f3ac29ff2de40e859ed9922</td>
+<td style="text-align: left;">2/26/2025 12:36</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change CFGGET command to dump more information about config; typo in a PM config parameter</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">8b70ef4382cc68b4e188b36c43150e5f5521e8f6</td>
+<td style="text-align: left;">2/26/2025 12:59</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">PM make choice of top or front led's configurable through config file</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">fix powermodule usage of front led set</td>
+</tr>
+<tr>
+<td style="text-align: left;">7c9f56609d5aba2a8c4440233c704f1169dfaf33</td>
+<td style="text-align: left;">2/26/2025 13:30</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">speed up breathing led driver pattern</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: speed up all breathing patterns</td>
+</tr>
+<tr>
+<td style="text-align: left;">d9543dc8f8f452bc9deaeb25554226ac7de0a350</td>
+<td style="text-align: left;">2/27/2025 7:18</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add REBOOT serial command</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">da6bb1f4f74ca5b3ec6eeab4d2f4bf970c9377af</td>
+<td style="text-align: left;">2/27/2025 15:23</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">major: add double-yellow, add graceperiod config parameter, update default config, re-work FSM to allow temperature not reached terminations, add solid-red sample invalidation logic</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: rework framework, add double-yellow graceperiod, solid-red sample invalidation</td>
+</tr>
+<tr>
+<td style="text-align: left;">39f11de9204190be98055061d9369aceff483547</td>
+<td style="text-align: left;">2/27/2025 19:06</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix with temperature setpoint reached messages being sent upon stopping heaters, where not appropriate</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: rework framework, add double-yellow graceperiod, solid-red sample invalidation</td>
+</tr>
+<tr>
+<td style="text-align: left;">f486a1c1cff4bd3f00d45e7f62515f88590e2fa2</td>
+<td style="text-align: left;">2/28/2025 10:10</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">PM add additional audio alert, mario song, and accompanying config parameters</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add powermodule buzzer support</td>
+</tr>
+<tr>
+<td style="text-align: left;">cc04c601b1ad3a7df8729a0d1963b6eb9e05ddc7</td>
+<td style="text-align: left;">2/28/2025 10:50</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Add capability to main_task to receive low-rate temperature data in MAIN_STANDBY state; planning to use this to determine if we can start a run</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: add solid-yellow run startability capability; and red-magenta flashing for device cannot run</td>
+</tr>
+<tr>
+<td style="text-align: left;">549c84a8f9e6e6c337b4a3eb8935da182d56fae8</td>
+<td style="text-align: left;">2/28/2025 14:07</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">strip out min_run_zone_temp handling from powermoduleheater and sampleprepheater tasks; plan to re-implement at higher level</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: add solid-yellow run startability capability; and red-magenta flashing for device cannot run</td>
+</tr>
+<tr>
+<td style="text-align: left;">9e1e2dee232a7e0af2d6db6159c1b48f03c5f46d</td>
+<td style="text-align: left;">2/28/2025 14:12</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">prepare to start using global flags to track whether or not we can start a run or the device is working well</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: add solid-yellow run startability capability; and red-magenta flashing for device cannot run</td>
+</tr>
+<tr>
+<td style="text-align: left;">523dc339b7c598ecc77b06075fb7110b0a868820</td>
+<td style="text-align: left;">2/28/2025 15:46</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_rework_if_run_possible_during_standby, GHL_rework_if_run_possible_during_standby</td>
+<td style="text-align: left;">reworked alert system and run-start system to show yellow led if starting is not possible, yellow-red cycling if device error has occurred</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: add solid-yellow run startability capability; and red-magenta flashing for device cannot run</td>
+</tr>
+<tr>
+<td style="text-align: left;">fe979ef983fa6a923f477e80cd446c8b4eee79da</td>
+<td style="text-align: left;">2/28/2025 16:11</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add some additional tracking information to help trace logging errors</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">75ce61af2c7c7358c059fa20438a45ddb1f628e8</td>
+<td style="text-align: left;">2/28/2025 16:26</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix issue with battery level led updating, after all the changes to the led indications</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">led notifications: rework framework, add double-yellow graceperiod, solid-red sample invalidation</td>
+</tr>
+<tr>
+<td style="text-align: left;">fde22a98fc520361aed3eef8cfac50f8f953e79a</td>
+<td style="text-align: left;">2/28/2025 16:47</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">GHL_SG_working_rc4</td>
+<td style="text-align: left;">add a canary global configuration parameter, to help detect if we could load a config properly</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">68623fe7fa5b1705f35cea87b5c6e8183b4fcd48</td>
+<td style="text-align: left;">3/1/2025 12:02</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">changed mkfs fat filesystem arguments (2k allocation unit instead of the default), added some additional error checking in nand and storage initialization which would result in yellow-red alternating</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">9fba97a74e077944aedc3bd4d65bf3385429424d</td>
+<td style="text-align: left;">3/2/2025 8:47</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add more info to STATUS USBCDC message</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">c30424144e0507093171f750c104e606c8346a50</td>
+<td style="text-align: left;">3/3/2025 10:27</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix for some corner case of sensor reading failures on power-module transition from valve/amp=TRUE to amp=TRUE/VALVE=TRUE (cycle 3-4 transition)</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">fix bug transitioning from power-module cycle 3 to power-module cycle 4 related to temperature sensor reading</td>
+</tr>
+<tr>
+<td style="text-align: left;">9b432264ee93f97cf38cc2d1faebd89c79f03c5e</td>
+<td style="text-align: left;">3/3/2025 13:53</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">addressing some SERIAL message lines getting lost when sending from device</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">d0f199e08e6f7f5e27a8151baa85a9560efa6eba</td>
+<td style="text-align: left;">3/3/2025 14:49</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change power module defaults before release for test</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">9410e3f560c76cc9c8f091bb85b703c35c7a4374</td>
+<td style="text-align: left;">3/3/2025 15:30</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">move global config initialization earlier in naatos_storage, and revert to AUTO block size for mkfs()</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">improve robustness, reduce bugs, add debug outputs</td>
+</tr>
+<tr>
+<td style="text-align: left;">582ab962e6a3b67b048d68ba6f29524be0689917</td>
+<td style="text-align: left;">3/3/2025 21:05</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">ghlgit/GHL_V3.2rc4</td>
+<td style="text-align: left;">fix compilation for sampleprep</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">87a022ead61d138d793c6aed90337432915dc7c6</td>
+<td style="text-align: left;">3/4/2025 7:43</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: PM_V3.2rc4, GHL_V3.2rc4</td>
+<td style="text-align: left;">new CDC command LSDIR, add delay to REFORMAT</td>
+<td style="text-align: left;">v3.2rc4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">df8a6097adbd346636263ba73f4cf42befb78764</td>
+<td style="text-align: left;">3/6/2025 9:25</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Major LED driver and notification rework to support new LED scheme (battery led2 always show batter, everything else on led1); new approach to IS31FL3196 LED driver using local register values and bitfields</td>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">led notifications: led driver re-write, always show battery on the BATTERY led</td>
+</tr>
+<tr>
+<td style="text-align: left;">465660271b29cb4fbff0760c2d4c3907b62b71bd</td>
+<td style="text-align: left;">3/6/2025 10:25</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change defaults for sampleprep for new fw features</td>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">914df64db320a19230c9279fd2e9726ce6c0b348</td>
+<td style="text-align: left;">3/6/2025 10:27</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">bump version to V3.3</td>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">cd5c6f3fca15407a9a1327ca6ab540b593dcc87e</td>
+<td style="text-align: left;">3/6/2025 16:50</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: V3.3, ghlgit/GHL_V3.3, GHL_V3.3</td>
+<td style="text-align: left;">changed a default for sampleprep</td>
+<td style="text-align: left;">v3.3</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">e742aedeb28a68c83a9312770783aacef7131084</td>
+<td style="text-align: left;">3/7/2025 12:33</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">refactor: move and organize all USB CDC commands into own compilation unit/files, and modularize command handlers with a lookup table</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">078f00326347c987ddd59cfc13816ef3bc18236e</td>
+<td style="text-align: left;">3/7/2025 13:43</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">USB CDC command CFGGET new formatting</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">9c476fb49c1c1528cdddc4ee784fcbb21be80f79</td>
+<td style="text-align: left;">3/7/2025 13:54</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">handle com_write() situation where NRF_ERROR_BUSY was returned from Nordic USB driver; will now delay shortly and yield to other threads during that delay; handles nicely missing output when lots of data sent to the com port</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">84e3b41060df036e59beb4b174e96ba295abeaa9</td>
+<td style="text-align: left;">3/7/2025 15:37</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">added USB CDC command CFGSET with global and writeglobal subcommands</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">07c0bea1013b490fec60f3676358a5c1e05cb4c3</td>
+<td style="text-align: left;">3/7/2025 20:43</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">USB CDC LSDIR" command</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">f8f319a432e9fe94db88dcaf504e71f68b00bb22</td>
+<td style="text-align: left;">3/9/2025 13:51</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">bump to V3.4; add to segger project build-configurations for sample prep, power module (preprocessor definitions set there now not naatos_config.h) and bootloader/jlink linker selections; set batch-build options</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;"><devops></td>
+</tr>
+<tr>
+<td style="text-align: left;">ac222da59af30d323b6c9df144bd7c97c87e95f7</td>
+<td style="text-align: left;">3/10/2025 14:44</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix issue with USB CDC command CFGSET parsing floating point value string, refactored key-value configuration table to use functions from naatos_config_file.c</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add USB cdc commands</td>
+</tr>
+<tr>
+<td style="text-align: left;">bd0f0eb9b25fc472b698101c5afcaddbc0a8726c</td>
+<td style="text-align: left;">3/10/2025 15:40</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">upon run completion, verify that the run took the expected amount of time in order to exit with solid green/success, add c standard library mktime and difftime support for RTC handling</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">add check for total run time taken within tolerance</td>
+</tr>
+<tr>
+<td style="text-align: left;">2a97de710842f99e560d7a6c4ba6268c1fd6d70a</td>
+<td style="text-align: left;">3/10/2025 21:32</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add option to use RTC-queried time for cycle running state-machine (option: FSM_USE_RTC_FOR_CYCLE_TIME)</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">use RTC time for run state machine</td>
+</tr>
+<tr>
+<td style="text-align: left;">4a2ff8115fe39d219434a7fe7dc8bc997fa364e9</td>
+<td style="text-align: left;">3/11/2025 13:43</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fix issue where tps55288 valve power supply was occasionally not being set to 6V settings; redid the TPS55288 handling</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">fix powermodule issue with valve power supply, we are now reinitializing the chip completely every sensor sample cycle</td>
+</tr>
+<tr>
+<td style="text-align: left;">9525b7619626000d77d5f70c53bdb6660e62d86a</td>
+<td style="text-align: left;">3/11/2025 15:30</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add per-cycle run-time checking and a cycle parameter</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">catch at the cycle-level if the cycle took too long to complete</td>
+</tr>
+<tr>
+<td style="text-align: left;">d2a92546a116d43c3c7f9ef901b2021017e13641</td>
+<td style="text-align: left;">3/12/2025 14:47</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">tag: V3.4</td>
+<td style="text-align: left;">update defaults</td>
+<td style="text-align: left;">v3.4</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">c909567595079684f32a77625e419a6dfe2ebadd</td>
+<td style="text-align: left;">3/13/2025 20:56</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change default for powermodule cycle2 to allow longer rtc vs tick time-error</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">374f031a61f26dadc959e88126a9cc9a483c1ae3</td>
+<td style="text-align: left;">3/13/2025 21:00</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">added rtc calendar query retry mechanism and checking for known bad dates (day=00, month=00, year=2080) which became a problem for us when switching the cycle state machine to use RTC time</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">handle occasional RTC bad date through retry mechanism</td>
+</tr>
+<tr>
+<td style="text-align: left;">fededd94d223fb3a997989eb23e3d4bc9415a209</td>
+<td style="text-align: left;">3/13/2025 21:08</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add catch for high error between cputick and rtc cycle timer to abort at inner-cycle-level if time is beyond config.accept_run_time_error_s</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">catch in the middle of a cycle if our runtime according to cputicks has a severe disagreement from the rtc time we are using to measure the cycle runtime</td>
+</tr>
+<tr>
+<td style="text-align: left;">c65236d95be5833b3efd4a6d6760fa659b3270f1</td>
+<td style="text-align: left;">3/13/2025 21:10</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">kick hardware watchdog just prior to resetting for DFU-entry</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">improve reliability of DFU entry</td>
+</tr>
+<tr>
+<td style="text-align: left;">cf9676cc7ce91dd2a879ed74d982323b33be893a</td>
+<td style="text-align: left;">3/14/2025 7:26</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">add an additional TPS55288 retry mechanism for valve supply workaround in sensors.c</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">add a retry mechanism in powermodule sensors data collection to deal with valve power supply workaround</td>
+</tr>
+<tr>
+<td style="text-align: left;">af599fdccaeba70c29128127e2741a682f30ef10</td>
+<td style="text-align: left;">3/14/2025 7:31</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fixed issue with battery overtemperature error, where it would not have been handled appropriately</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">fixed issue with battery overtemperature error, where it would not have been handled appropriately</td>
+</tr>
+<tr>
+<td style="text-align: left;">d500503564d621335d432fa2427fb2ce99be481c</td>
+<td style="text-align: left;">3/14/2025 8:15</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">bump version to 3.5</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">02cca2bbe32ad0e865123255ad13c6d1dc84618b</td>
+<td style="text-align: left;">3/14/2025 10:21</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">change power module defaults to modify timing error allowances and grace periods, only timeout during cycle2 if timing error occurred</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+<tr>
+<td style="text-align: left;">74c22ab54ec15a315d87e29c930018ecfd71f487</td>
+<td style="text-align: left;">3/14/2025 11:00</td>
+<td style="text-align: left;">Simon Ghionea</td>
+<td style="text-align: left;">HEAD -&gt; GHL_nextver, tag: V3.5, ghlgit/GHL_nextver</td>
+<td style="text-align: left;">change sample prep cycle defaults</td>
+<td style="text-align: left;">v3.5</td>
+<td style="text-align: left;">set default config</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../alpha_to_gamma/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Alpha to Gamma Updates">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Alpha to Gamma Updates
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../prelim/glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary / Abbreviations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Glossary / Abbreviations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.path", "navigation.tracking", "content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
