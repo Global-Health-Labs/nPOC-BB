@@ -24,14 +24,17 @@ The goal of this documentation is to describe the nPOC-BB instrument as a stand-
 
 GHL is the lead developer of the nPOC-BB device, having invested in several areas of early stage research related to new tools and technologies for diagnosis of tuberculosis (and other endemic infectious disease) in low-resource settings.
 
+- Lex Ball [:material-linkedin:](https://www.linkedin.com/in/lex-ball-a0041219/){:target="_blank"}
 - [Josh Bishop](https://github.com/jdbishop) [:material-linkedin:](https://www.linkedin.com/in/josh-bishop-ph-d-6207324/){:target="_blank"}
 - [Stephen Burkot](https://github.com/sburkot24) [:material-linkedin:](https://www.linkedin.com/in/stephenburkot/){:target="_blank"}
 - [Ryan Calderon](https://github.com/rcalderon04) [:material-linkedin:](https://www.linkedin.com/in/ryan-calderon-a6a02625/){:target="_blank"}
 - [Simon Ghionea](https://github.com/sghionea) [:material-linkedin:](https://www.linkedin.com/in/simonghionea/){:target="_blank"}
 - [Chin Ng Hei](https://github.com/ngchei) [:material-linkedin:](https://www.linkedin.com/in/chin-ng-ph-d-21522013/){:target="_blank"}
 - Isabel Izek [:material-linkedin:](https://www.linkedin.com/in/isabel-izek/){:target="_blank"}
+- [Matt Keller](https://github.com/mkeller99) [:material-linkedin:](https://www.linkedin.com/in/matt-keller-a360b483/){:target="_blank"}
 - Khushboo Khimani [:material-linkedin:](https://www.linkedin.com/in/khushboo-khimani/){:target="_blank"}
 - [Andrew Miller](https://github.com/andrewmiller-ghl) [:material-linkedin:](https://www.linkedin.com/in/andrew-miller-78938520/){:target="_blank"}
+- Bryan Norton [:material-linkedin:](https://www.linkedin.com/in/bryanjnorton/){:target="_blank"}
 - Julie Pendergraft [:material-linkedin:](https://www.linkedin.com/in/julielpendergraft/){:target="_blank"}
 - Jamie Purcell [:material-linkedin:](https://www.linkedin.com/in/jamie-purcell-phd-098aa65a/){:target="_blank"}
 
@@ -59,12 +62,12 @@ GHL is the lead developer of the nPOC-BB device, having invested in several area
 
 [MAA](https://www.marketaccess.africa/) is the African healthcare market research partner for the nPOC-BB and NAATOS systems.
 
-- Olawale Ajose[^3]
+- Olawale Ajose[^3] [:material-linkedin:](https://www.linkedin.com/in/olawale-ajose-1521b975/){:target="_blank"}
 - Obakeng Bagopi
 - Zipporah Bundi
 - Nancy Njoku-Attah
 - Wambui Nyabero
-- Pam Pillay[^3]
+- Pam Pillay[^3] [:material-linkedin:](https://www.linkedin.com/in/pam-pillay-a7b5ba65/){:target="_blank"}
 - Newton Runyowa
 - Chris Smit
 - Shabnam Zavahir
