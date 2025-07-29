@@ -48,6 +48,27 @@ The following table contains the header row and the first three data rows of an 
 | 2024-12-05 12:04:35 | 26.39 | 100.00 | 0.00 | 0.00 | 19 | 3.63 | 25.05 | |
 | 2024-12-05 12:04:36 | 29.77 | 100.00 | 0.00 | 0.00 | 19 | 3.64 | 25.60 | |
 
+## Instruction for Flashing Firmware
+
+Download the latest [firmware build (v3.5)](https://github.com/Global-Health-Labs/nPOC-BB/tree/main/sw/firmware_with_bootloader) or build from source code in [firmware repository](https://github.com/Global-Health-Labs/NAATOS-V1-Modules-FW).
+
+1. On PC, open `Device Manager` window.
+2. In the `Device Manager` window, click `View` => `Show hidden devices`.
+3. Connect nPOC-BB unit to PC via USB-C cable.
+4. On nPOB-BB unit, With its lid opened, press its start/stop button (top of unit) at least 3 times (4/5 presses may be necessary in case some presses are not registered).
+5. Verify in `Device manager` window that two new COM ports have appeared.
+   - One "current" port
+   - One "hidden" port (with a grey out icon). Remember the number of this port.
+6. On PC, open `Command Prompt` window.
+7. In the `Command Prompt` window, change directory to the folder that contains the firmware.
+8. In the `Command Prompt` window, enter
+   `uploadImage.bat COMX`
+   (where X is the “hidden” port number we identified in 4b). You should see a progress bar (no progress until next step).
+9. On the nPOC-BB unit, press its start/stop button at least 3 times.
+10. In the `Command Prompt` window, once the progress reaches 100%, the nPOC-BB LEDs will turn off momentarily.
+11. The firmware is updated on the nPOC-BB when its battery LED breathes blue.
+12. Disconnect the nPOC-BB from the PC.
+
 ## Instruction for Programming Firmware
 
 ### Requirements
