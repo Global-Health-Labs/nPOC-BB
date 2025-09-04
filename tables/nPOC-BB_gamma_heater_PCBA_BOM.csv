@@ -1,0 +1,4 @@
+﻿Designator,Description,Name,Quantity,Install,Manufacturer,Manufacturer P/N
+C1,Ceramic capacitor SMD 0402 100nF 16V X7R 10%,100nF,1,POP,Yageo,CC0402KRX7R7BB104
+J1,Conn Ffc/fpc Connector Skt 40 Pos 0.5MM Solder Ra SMD T/r / Conn Ffc Top 40POS 0.50MM R/a,,1,,Hirose,FH12A-40S-0.5SH(55)
+U1,TSYS01 Series 3.6 V -40 to +125 SMT Digital Temperature Sensor - QFN-16,,1,,TE Connectivity,G-NICO-018

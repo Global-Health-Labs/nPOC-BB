@@ -1,0 +1,71 @@
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    padding: 4px 10px;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+.wy-table-responsive {
+    overflow : visible !important;
+}
+
+.md-typeset__table code { white-space: nowrap; }
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.flashing {
+    animation: flashing 0.8s infinite;
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.breathing {
+    animation: breathing 1.6s infinite alternate;
+}
+
+@keyframes alternating {
+    0% {
+        color: #FFFF00;
+        transform: scale(1.2);
+    }
+    50% {
+        color: #800080;
+        transform: scale(1.2);
+    }
+}
+
+.alternating {
+    animation: alternating 0.8s infinite;
+}
+
+.yellow {
+    color: #FFFF00;
+    transform: scale(1.2);
+}

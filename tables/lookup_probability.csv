@@ -1,0 +1,6 @@
+﻿P1 \ P2,1 - Improbable,2 - Remote,3 - Occasional,4 - Probable,5 - Frequent
+**1 - Improbable**,1 - Improbable,1 - Improbable,2 - Remote,2 - Remote,3 - Occasional
+**2 - Remote**,1 - Improbable,2 - Remote,2 - Remote,3 - Occasional,3 - Occasional
+**3 - Occasional**,2 - Remote,2 - Remote,3 - Occasional,4 - Probable,4 - Probable
+**4 - Probable**,2 - Remote,3 - Occasional,4 - Probable,4 - Probable,5 - Frequent
+**5 - Frequent**,3 - Occasional,3 - Occasional,4 - Probable,5 - Frequent,5 - Frequent

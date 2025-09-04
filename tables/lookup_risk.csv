@@ -1,0 +1,6 @@
+﻿P \ S,1 - Negligible,2 - Minor,3 - Serious,4 - Critical,5 - Catastrophic
+**1 - Improbable**,Low,Low,Low,Low,Medium
+**2 - Remote**,Low,Low,Medium,Medium,Medium
+**3 - Occasional**,Low,Medium,Medium,Medium,High
+**4 - Probable**,Low,Medium,Medium,High,High
+**5 - Frequent**,Medium,Medium,High,High,High

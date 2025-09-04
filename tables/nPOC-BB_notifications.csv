@@ -1,0 +1,15 @@
+﻿Status LED,Status,Battery LED,Battery,Description,User action
+:black_circle:,Off,:black_circle:,Off,Module is off for storage or transport,Turn on the power switch before starting a run
+:black_circle:,Off,:material-circle-outline:,Any,Module is ready,Can load STC in the module
+:green_circle:{.flashing},Green</br>(flashing),:material-circle-outline:,Any,Run is in progress,Wait until the run is completed
+:green_circle:,Green,:material-circle-outline:,Any,Run is completed,Remove Sample Tube for next user step
+:yellow_circle:{.flashing},"Yellow</br>(flashing, 3 s)",:material-circle-outline:,Any,ST/TC is not loading correctly,Remove and reload ST/TC
+:yellow_circle:,Yellow,:material-circle-outline:,Any,Device is not ready,Do not load sample tube/test consumable
+:red_circle:{.flashing},"Red</br>(flashing, 3 s)",:material-circle-outline:,Any,Error encountered. LED will transition to solid red,No action
+:red_circle:,Red,:material-circle-outline:,Any,Run is stopped with error. Run is invalid,Remove Sample Tube from the unit and do not proceed to next user step
+:material-circle:{.alternating .yellow},Yellow/Purple (alternating),:material-circle-outline:,Any,Critical device error,Request for service from a qualified technician
+:material-circle-outline:,Any,:white_circle:,White,Battery is >90%,No action
+:material-circle-outline:,Any,:yellow_circle:,Yellow,Battery is sufficient for 1 run,Recharge battery as soon as possible
+:material-circle-outline:,Any,:red_circle:,Red,Battery is insufficient; Module will not allow a run,Recharge battery
+:material-circle-outline:,Any,:blue_circle:{.breathing},Blue</br>(breathing),Module is charging,No action
+:blue_circle:{.breathing},Blue</br>(breathing),:blue_circle:{.breathing},Blue</br>(breathing),Module is in mass storage mode,Access log file or changing config parameters via PC

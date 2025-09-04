@@ -1,0 +1,17 @@
+﻿Specification,Description,Qty.,Manufacturer,Manufacturer P/N,Vendor,Vendor P/N (linked),Manufacturing Procedure,QC Procedure
+Component,FLOQSwab® Regular Nylon® Flocked Swab,1,Copan,520CS01,Copan,[520CS01](https://www.copanusa.com/products/flocked-swabs-traditional-swabs/floqswabs-flocked-swabs/520cs01/),N/A,Incoming Inspection
+Component,"Disruption Beads for Bacteria, 0.1mm Bead Size, Glass Beads, 2.5 g/cc Density, 454 g",150 mg,Research Products International,9830,Research Products International,[9830](https://www.rpicorp.com/products/laboratory-equipment/homogenizers/disruption-beads-for-bacteria-0-1mm-glass-2-5-g-cc-454-gm.html),N/A,Incoming Inspection
+Component,"Tris HCl (2M), pH 8.8",20 mM,Quality Biological,351-092-101,Quality Biological,[351-092-101](https://www.qualitybiological.com/product/tris-hcl-2-m-ph-8-8/),N/A,Incoming Inspection
+Component,ProClin™ 300,30 ppm,Sigma Aldrich,48912-U,Millipore Sigma,[48912-U](https://www.sigmaaldrich.com/US/en/product/sial/48912u),N/A,Incoming Inspection
+Component,UltraPure™ DNase/RNase-Free Distilled Water,as needed,Invitrogen,10977023,ThermoFisher Scientific,[10977023](https://www.thermofisher.com/order/catalog/product/10977023),N/A,Incoming Inspection
+Assembly,Sample Prep Buffer,500 µL,N/A,N/A,N/A,N/A,N/A,N/A
+Component,3 ml Rapid Test Extraction Tube,1,Kang-Jia (custom addition of filter to cap),KJ7025 -3ML,YuHuan Kang-Jia Enterprise Co,[KJ7025-3ML](https://www.kangjia-bottles.com/lab-consumables/3ml-extraction-tubes.html),N/A,Incoming Inspection
+Component,"Easy Pierce Heat Sealing Foil, Aluminum",1,Thermo Scientific,AB-0559,ThermoFisher Scientific,[AB-0559](https://www.thermofisher.com/order/catalog/product/AB-0559),N/A,Incoming Inspection
+Assembly,"Easy Pierce Heat Sealing Foil, Aluminum, Cut Disk",1,N/A,N/A,N/A,N/A,TBD,TBD
+Assembly,"Easy Pierce Heat Sealing Foil, Aluminum, Cut Disk, Template",1,N/A,N/A,N/A,N/A,TBD,TBD
+Component,"Cryo-WrapTAG™ Thermal-Transfer Wrap-Around Cryo Label, 0.59” × 1.06” + 0.59” Wrap",1,LabTAG,HBTT-338NPNOT,GA International LabTAG,[HBTT-338NPNOT](https://www.labtag.com/shop/product/thermal-transfer-wrap-around-cryo-labels-0-59-x-1-06-0-59-wrap-hbtt-338npnot),N/A,Incoming Inspection
+Assembly,"Glass Bead Filler Rack, 4 × 3",1,N/A,N/A,N/A,N/A,N/A,N/A
+Component,"Carrier Cap, Magnetic",1,"GHL (custom part, 3D printed with magnet inlay)",N/A,N/A,N/A,N/A,N/A
+Component,Foil Seal Coining Tool,1,"GHL (custom part, 3D printed)",N/A,N/A,N/A,N/A,N/A
+Assembly,"Induction Sealing Rack, 4 × 3",1,N/A,N/A,N/A,N/A,N/A,N/A
+Assembly,"Sample Prep Tube Rack, 4 × 3",1,N/A,N/A,N/A,N/A,N/A,N/A
